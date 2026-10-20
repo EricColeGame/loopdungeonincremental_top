@@ -39,22 +39,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Learn the core loop, party roles, upgrade priorities, and first-hour plan without wasting early resources."
         },
         {
           "number": "2",
           "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "description": "Push deeper with a focused carry, efficient permanent upgrades, and a clear path through the first dungeon walls."
         },
         {
           "number": "3",
           "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "description": "Route loot from loops, deeper floors, and monster kills into upgrades that compound across every reset."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Loop Dungeon Incremental."
+          "title": "First Boss Guide",
+          "description": "Build a boss-ready party with sustained damage, Rogue burst, Priest sustain, and well-timed Activate chains."
         }
       ]
     },
@@ -62,237 +62,321 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Prestige Timing",
+        "Best Builds",
+        "Boss Strategy"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
-        },
-        {
-          "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
-        },
-        {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "description": "A first-hour plan covering party building, upgrade priorities, prestige timing, and early mistakes.",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide"
         },
         {
           "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "title": "Hero Roles & Party Size",
+          "description": "Compare Rogue, Priest, Mage, and flex-slot roles, then build a core that survives deeper loops.",
+          "href": "/progression/loop-dungeon-incremental-party-size"
         },
         {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
-        },
-        {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
+          "badge": "Build",
+          "title": "Mage Build Guide",
+          "description": "Core damage pillars, cast timing, party synergies, and the upgrade order behind a stable Mage carry.",
+          "href": "/combat/loop-dungeon-incremental-mage-build"
         },
         {
           "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
+          "title": "Prestige Guide",
+          "description": "Learn when to reset, what carries over, and how to turn a stalled loop into permanent power.",
+          "href": "/progression/loop-dungeon-incremental-prestige"
         },
         {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
+          "badge": "Farming",
+          "title": "Item Farming Guide",
+          "description": "Build a repeatable loot routine around loop depth, monster kills, upgrades, and prestige timing.",
+          "href": "/items/loop-dungeon-incremental-item-farming"
         },
         {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "badge": "Combat",
+          "title": "Boss Guide",
+          "description": "Prepare a boss-ready party, align burst windows, and turn every wipe into a specific fix.",
+          "href": "/combat/loop-dungeon-incremental-boss-guide"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Loop Dungeon Incremental?",
       "paragraphs": [
-        "Loop Dungeon Incremental is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Loop Dungeon Incremental is a single-player incremental RPG from Playsect, released on Steam for Windows on October 19, 2026. You recruit heroes with distinct roles, send a party into repeatable dungeon loops, and let automatic combat handle the fighting while you manage the roster, gear, and upgrade choices.",
+        "Every expedition produces loot and resources that feed permanent improvements. When clear speed stalls, a prestige reset trades current depth for lasting bonuses, so the next run can climb further. Our Loop Dungeon Incremental guides cover the first-hour plan, party roles, Mage builds, skill-tree priorities, item farming, boss preparation, and the 29 Steam achievements."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "Midnight Continent"
+          "value": "Playsect"
         },
         {
           "label": "Platform",
-          "value": "Roblox"
+          "value": "PC (Steam)"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Incremental RPG"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Release",
+          "value": "Oct 19, 2026"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Price",
+          "value": "$4.99"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Achievements",
+          "value": "29"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Languages",
+          "value": "13"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore Loop Dungeon Incremental Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Build a stronger party, route dungeon loops, time prestige resets, and turn every expedition into permanent progress.",
       "modules": [
         {
           "order": 1,
-          "name": "Loop Dungeon Incremental Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes",
-          "displayType": "code-box",
+          "name": "Loop Dungeon Incremental Beginner Guide",
+          "description": "Help new players understand the core gameplay loop, automatic combat, hero recruitment, and the first-hour upgrade choices that keep a run moving.",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Run the starting party through the dungeon without upgrades and note where it stalls."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Recruit a second hero before buying damage upgrades."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Fill the front line so damage is not funneled onto one hero."
+            },
+            {
+              "label": "4",
+              "detail": "Buy cheap permanent upgrades first because their bonuses never become dead weight."
+            },
+            {
+              "label": "5",
+              "detail": "Push until the party wipes twice on the same floor, then invest instead of resetting."
+            },
+            {
+              "label": "6",
+              "detail": "Bank loot until you can afford one meaningful tier upgrade rather than several small purchases."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "Loop Dungeon Incremental Hero Roles Tier List",
+          "description": "Compare confirmed hero roles by damage profile, party utility, and synergy so you can build a reliable core before investing in a wide roster.",
+          "href": "/progression/loop-dungeon-incremental-party-size",
+          "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "S",
+              "detail": "Rogue: high burst damage for priority targets and elite cleanup."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "A",
+              "detail": "Priest: healing plus the Activate skill that triggers party synergies."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "B",
+              "detail": "Mage: sustained ranged pressure from a protected backline."
+            },
+            {
+              "label": "C",
+              "detail": "Flex slot: fills missing healing, burst, or trigger coverage."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/tier-list",
-          "displayType": "tier-grid",
+          "name": "Loop Dungeon Incremental Best Builds",
+          "description": "Show how to assemble a Mage-centered build with area damage, cast timing, Priest support, front-line protection, and a stable upgrade order.",
+          "href": "/combat/loop-dungeon-incremental-mage-build",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Damage",
+              "detail": "Keep the Mage's damage uptime high instead of idling between cooldowns."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Timing",
+              "detail": "Land big casts on clustered enemies rather than single stragglers."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "Synergy",
+              "detail": "Pair the Mage with Priest Activate and Rogue burst for compounding value."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Survival",
+              "detail": "Invest in the front line so the Mage can keep casting through long loops."
+            },
+            {
+              "label": "Economy",
+              "detail": "Route loop currency into the Mage's core path before luxury upgrades."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "Loop Dungeon Incremental Prestige Guide",
+          "description": "Explain when a prestige reset is worth it, which bonuses carry forward, and how to turn a stalled run into permanent power for deeper loops.",
+          "href": "/progression/loop-dungeon-incremental-prestige",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "1",
+              "detail": "Run until clear speed visibly slows and new floors start to drag."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "2",
+              "detail": "Spend banked resources on permanent upgrades before considering a reset."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "3",
+              "detail": "Compare the next meaningful upgrade cost with the bonus a reset would grant."
+            },
+            {
+              "label": "4",
+              "detail": "Prestige when the run stops producing progress and the multiplier is worthwhile."
+            },
+            {
+              "label": "5",
+              "detail": "Use the permanent bonuses to push past your previous best floor, then repeat the cycle."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "Loop Dungeon Incremental Skill Tree Guide",
+          "description": "Map the skill tree's hero, party, loot, and prestige layers, with a spending order that supports one carry instead of spreading points thin.",
+          "href": "/progression/loop-dungeon-incremental-skill-tree",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "Cheap",
+              "detail": "Buy the cheapest hero nodes first so early bonuses compound over more runs."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Carry",
+              "detail": "Identify the hero that ends fights and place multipliers on that carry."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Auras",
+              "detail": "Layer party-wide buffs behind the carry instead of spreading flat nodes."
+            },
+            {
+              "label": "Buffer",
+              "detail": "Bank a resource buffer before the first prestige so the next loop starts smoothly."
+            },
+            {
+              "label": "Survival",
+              "detail": "Add survivability nodes before pushing a new floor depth, not damage alone."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "Loop Dungeon Incremental Farming Guide",
+          "description": "Compare standard loops, deeper floors, monster defeats, prestige resets, and milestones so every farming session feeds permanent growth.",
+          "href": "/items/loop-dungeon-incremental-item-farming",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Loops",
+              "detail": "Standard dungeon loops supply common gear and a steady resource trickle."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Depth",
+              "detail": "Deeper floors produce higher-tier drops and richer payouts after a power spike."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Kills",
+              "detail": "Monster defeats keep resources flowing during automatic combat."
+            },
+            {
+              "label": "Reset",
+              "detail": "Prestige resets convert a finished run into permanent bonuses."
+            },
+            {
+              "label": "Marks",
+              "detail": "Achievements and milestones fill gaps that a repeat farm cannot reach quickly."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Loop Dungeon Incremental Achievements Guide",
+          "description": "Provide a completion route through the roster, skill unlocks, boss content, prestige milestones, and optional secrets, with blockers and fixes noted.",
+          "href": "/guide/loop-dungeon-incremental-100-percent-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Roster",
+              "detail": "Recruit every hero, including the Rogue added in the full release."
+            },
+            {
+              "label": "Skills",
+              "detail": "Unlock every skill, including the Priest's Activate synergy."
+            },
+            {
+              "label": "Prestige",
+              "detail": "Earn prestige currency and reinvest it into permanent upgrades."
+            },
+            {
+              "label": "Bosses",
+              "detail": "Clear the final boss and reach the end of the current dungeon content."
+            },
+            {
+              "label": "Secrets",
+              "detail": "Track optional hidden content that the developer left undocumented."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Loop Dungeon Incremental Release & Updates",
+          "description": "Track the release date, price, platform status, demo, supported languages, and Windows 11 startup crash guidance in one place.",
+          "href": "/platforms/loop-dungeon-incremental-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Release",
+              "detail": "Full release: October 19, 2026 on Windows PC through Steam."
+            },
+            {
+              "label": "Price",
+              "detail": "Base price is $4.99, with a 10% launch discount to $4.49."
+            },
+            {
+              "label": "Platform",
+              "detail": "Windows 10 64-bit is the minimum; Steam Deck remains unrated."
+            },
+            {
+              "label": "Demo",
+              "detail": "A free demo is available on the official Steam store page."
+            },
+            {
+              "label": "Crash",
+              "detail": "Windows 11 Smart App Control can trigger a Failed to load il2cpp error."
             }
           ]
         }
@@ -304,23 +388,23 @@
       "items": [
         {
           "question": "What is Loop Dungeon Incremental?",
-          "answer": "Loop Dungeon Incremental is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "Loop Dungeon Incremental is a single-player incremental RPG from Playsect. You recruit heroes with different combat roles, send a party into automated dungeon loops, collect loot, and invest in permanent upgrades. It released on Windows PC through Steam on October 19, 2026."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "Is there a free demo of Loop Dungeon Incremental?",
+          "answer": "Yes. The official Steam store page for Loop Dungeon Incremental offers a free demo, so you can test the automatic combat, party building, loot loop, and upgrade pacing before buying the full game."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How does prestige work in Loop Dungeon Incremental?",
+          "answer": "A Loop Dungeon Incremental prestige reset ends the current run and grants permanent bonuses for future expeditions. Reset when clear speed stalls and the next meaningful upgrade costs more than the prestige bonus can provide, then use the new multiplier to push past your previous best floor."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "What party size works best in Loop Dungeon Incremental?",
+          "answer": "A focused core of two or three well-invested heroes performs better than a wide bench of half-geared characters. Add a fourth hero when it supplies a specific effect the core lacks, such as Priest healing, Rogue burst, or an Activate-style trigger."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "How do I fix the Loop Dungeon Incremental Windows 11 crash?",
+          "answer": "The launch error reported for Loop Dungeon Incremental is Fatal error: Failed to load il2cpp, tied to Windows 11 Smart App Control. Check the pinned Steam news post, verify the game files through Steam, review whether Smart App Control is enabled, and post the error text with your system specifications in the Steam discussions thread."
         }
       ]
     },
@@ -337,7 +421,7 @@
     "activeCodes": "Active Codes",
     "updated": "Updated",
     "viewAllCodes": "View all codes",
-    "playOnRoblox": "Play on Roblox",
+    "playOnSteam": "Play on Steam",
     "inThisSection": "In this section",
     "tableOfContents": "Table of Contents",
     "nextSteps": "Next Steps",
