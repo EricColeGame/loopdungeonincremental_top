@@ -1,0 +1,104 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental Invincibility Frames Explained: Dodge Windows, Timing, and Combat Tips",
+  description: "Learn how Loop Dungeon Incremental invincibility frames work, how to spot dodge windows mid-fight, and which party setups make the most of i-frame timing.",
+  category: "combat",
+  date: "2026-10-20",
+}
+
+Timing decides runs in Loop Dungeon Incremental. Invincibility frames are the invisible windows that decide whether a burst skill lands cleanly or your front line eats a boss swing it never should have taken. Most players finish a loop without ever noticing them, then wonder why the same party that cruised through floor twelve suddenly collapses on floor fifteen. Understanding Loop Dungeon Incremental invincibility frames turns that guesswork into a repeatable plan you can test, refine, and carry into every new loop.
+
+The good news: you do not need to datamine the game to use Loop Dungeon Incremental invincibility frames well. You need a repeatable way to observe them, a party that can exploit them, and realistic expectations about what i-frames can and cannot save you from. This guide covers all three, with the caveat that the developer has not published official frame data, so everything below blends genre convention with observable, testable behavior.
+
+## What Invincibility Frames Mean in Loop Dungeon Incremental
+
+An invincibility frame is a brief moment when a character ignores incoming damage. In action games, that window usually comes from a dodge roll. In a party-based incremental dungeon crawler like this one, i-frames are far more likely to be attached to skill animations, effect resolutions, or specific upgrade states. That distinction matters because it changes what you control: you are not timing a button press, you are timing the order your heroes act.
+
+The official description on the [Loop Dungeon - Incremental Steam community hub](https://steamcommunity.com/app/4621970) frames the game around leading a party of heroes through endless dungeon loops, gathering loot, unlocking permanent upgrades, and building synergies. Nothing in that pitch promises manual dodging, and nothing in it promises frame-perfect defense either. Treat invincibility frames as an emergent property of skill design rather than a headline mechanic.
+
+| Term | Plain-English meaning | Why it matters in a run |
+|---|---|---|
+| Invincibility frames (i-frames) | A short span where damage is ignored entirely | Lets a hero survive a heavy hit that would otherwise end the run |
+| Dodge window | The stretch of a skill or effect that grants that immunity | Determines when to queue your burst |
+| Tick rate | How often damage-over-time effects apply | I-frames can absorb one tick or several, depending on overlap |
+| Hitstun | Momentary interruption after taking a hit | Can cancel a skill before its i-frames ever start |
+| Damage gating | A cap on how much one hit can deal | Sometimes mimics i-frames but is a separate system |
+
+The practical takeaway is simple: i-frames are a scheduling problem. If your Priest's Activate resolves before the enemy's big swing, the interaction you built the party around actually happens. If it resolves after, you lose the hero and the synergy at the same time.
+
+## How Loop Dungeon Incremental Invincibility Frames Interact With Damage Types
+
+Not every attack respects an immunity window equally, and this is where most assumptions fall apart. Multi-hit attacks, damage-over-time effects, and single heavy strikes all interact with i-frames differently. Community reports and general genre behavior suggest the following patterns, but verify them in your own runs before building a strategy around them.
+
+| Damage source | Typical i-frame behavior | What to watch for |
+|---|---|---|
+| Single heavy strike | Fully absorbed if it lands inside the window | The clearest test case for confirming a window exists |
+| Multi-hit combo | Partially absorbed; later hits often connect | Damage appears reduced, not eliminated |
+| Damage over time | Depends on tick timing; can be fully or partly skipped | Watch the health bar between visible hits |
+| Boss special attacks | Usually absorbed, but recovery frames afterward are vulnerable | The dangerous moment is often right after immunity ends |
+| Environmental or floor effects | Frequently ignores i-frames entirely | Do not assume immunity covers hazards |
+
+Two habits follow from that table. First, never assume an i-frame window covers the whole animation; the vulnerable tail is where heroes die. Second, when a run fails, ask whether the damage came from a hit or from a tick. Those are different problems with different fixes, and blaming invincibility frames for a damage-over-time death sends you tuning the wrong part of the build.
+
+## Reading the Fight: Cues That a Hero Is Inside an I-Frame Window
+
+You cannot manage what you cannot see, and Loop Dungeon Incremental does not stamp a timer on the screen. Instead, learn the tells. These are the cues players most often use to infer that a hero is currently immune, and they are worth memorizing before you start experimenting with party order.
+
+- **Damage numbers vanish, not shrink.** A reduced number means mitigation; no number at all usually means immunity.
+- **The health bar holds perfectly still** through an animation that normally chips it.
+- **A skill effect lingers past its visual peak.** The glow or aura staying up is often the window itself.
+- **The enemy attack animation completes with no reaction.** No flinch, no hit sound, no stagger.
+- **A boss combo "skips" a step.** If the second hit never registers, you were inside a window at that instant.
+
+| Cue | Confidence | How to confirm it |
+|---|---|---|
+| Missing damage numbers | High | Repeat the same fight three times and check consistency |
+| Static health bar | High | Compare against a run without the skill equipped |
+| Lingering visual effect | Medium | Overlaps with animation, so verify with a second cue |
+| No hit sound | Medium | Audio cues can be masked by other effects |
+| Enemy animation skip | Low on its own | Pair with a damage-number check before trusting it |
+
+## Building a Party Around Loop Dungeon Incremental Invincibility Frames
+
+Party composition is where i-frame knowledge pays off. The full release added a Rogue built for high burst damage and a new Priest skill called Activate that interacts with other heroes' skills in unexpected ways. Both are natural candidates for i-frame exploitation, because burst wants a safe window and Activate wants precise ordering.
+
+| Role | I-frame relevance | Practical approach |
+|---|---|---|
+| Rogue (burst damage) | Wants to fire inside a protected window | Place burst after whatever grants immunity |
+| Priest with Activate | Triggers cross-hero interactions that may create windows | Test Activate against each hero's skill individually |
+| Front-line heroes | Absorb hits while windows are active elsewhere | Stagger positioning so tanks are not immune at the same time |
+| Sustain or healing | Fills the gap after immunity ends | Time heals for the vulnerable tail, not the protected peak |
+
+A useful rule of thumb: never stack all your defensive effects at once. Immunity that overlaps is immunity wasted. Stagger your windows so that when one closes, another opens. Players who report smooth progression through deeper loops tend to describe exactly this kind of sequencing, even when they do not use the term invincibility frames.
+
+Worth noting from player experience: several Steam reviews describe the prestige system as unrewarding and the content as short, with runs wrapping up in roughly two hours. That makes efficiency matter more, not less. Every wasted burst window is a bigger share of a short run, so learning to read Loop Dungeon Incremental invincibility frames early is one of the cheapest performance gains available.
+
+## How to Test Invincibility Frames Yourself (No Datamining Required)
+
+Because no official frame data exists, self-testing is the only reliable path. The method below is deliberately boring: change one variable, repeat, record. It works because it removes the noise that makes combat feel random.
+
+| Step | Action | What you learn |
+|---|---|---|
+| 1 | Pick a single repeatable encounter | Creates a stable baseline |
+| 2 | Remove all damage-over-time sources | Isolates hits from ticks |
+| 3 | Run the fight with one skill disabled | Establishes a control result |
+| 4 | Re-enable the skill and repeat three times | Confirms whether a window exists |
+| 5 | Shift the skill's position in the order by one step | Maps the window's start and end |
+| 6 | Record the fight and scrub frame by frame | Converts feel into an actual estimate |
+
+Two warnings. First, do not trust a single observation; combat variance will lie to you. Second, do not chase exact frame counts. Without developer data, your measurement is an estimate, and an estimate used consistently is more valuable than a precise number you cannot verify. Build your rotation around observed behavior, not around a number someone posted without evidence.
+
+If you want to compare notes, the [Steam community discussions for Loop Dungeon - Incremental](https://steamcommunity.com/app/4621970) are the most direct place to ask other players what they have observed. Frame data threads are rare, but combat pacing and party synergy discussions come up regularly.
+
+## FAQ: Loop Dungeon Incremental Invincibility Frames
+
+**Does Loop Dungeon Incremental publish official invincibility frame data?**
+Not as of this writing. The developer has shared patch notes and technical fixes, but no frame-by-frame combat documentation. Any timing you see quoted online should be treated as a player estimate rather than a specification.
+
+**Which skills give the longest invincibility frames in Loop Dungeon Incremental?**
+There is no verified ranking. Community reports point toward longer, more elaborate skill animations as the likeliest candidates, and the Priest's Activate is worth testing because it interacts with other heroes' skills. Test each skill in a controlled encounter rather than trusting a list.
+
+**Do invincibility frames protect against bosses and damage over time?**
+Against direct boss attacks, often yes, though the vulnerable recovery after the window is usually the real danger. Against damage-over-time ticks, protection is inconsistent and depends on tick timing. Do not build a strategy that assumes i-frames cover everything.
+
+**Can I finish the game without learning Loop Dungeon Incremental invincibility frames?**
+Many players do, since the campaign is short. But if you want cleaner runs, fewer wasted burst windows, and a better handle on why certain parties fail at the same floor every time, learning to read these windows is the highest-value skill you can develop.

@@ -6,7 +6,15 @@
     "description": "Explore Loop Dungeon - Incremental with beginner guides, hero builds, upgrade paths, prestige tips, dungeon progression, gameplay mechanics, and the latest game updates.",
     "legalNotice": "Independent fan wiki. Not affiliated with Playsect or Valve."
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "progression": "Progression",
+    "combat": "Combat",
+    "items": "Items",
+    "mechanics": "Mechanics",
+    "platforms": "Platforms",
+    "community": "Community"
+  },
   "home": {
     "meta": {
       "title": "Loop Dungeon Wiki - Builds, Upgrades & Progression",
@@ -415,7 +423,34 @@
       "secondary": "Play on Steam"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "Loop Dungeon Incremental Beginner Guides",
+    "overviewDescription": "Start with the core loop, first-hour priorities, equipment basics, and step-by-step guides for new Loop Dungeon Incremental players."
+  },
+  "progression": {
+    "overviewTitle": "Loop Dungeon Incremental Progression Guides",
+    "overviewDescription": "Plan hero upgrades, party growth, permanent bonuses, prestige resets, and the skill tree path that fits your next run."
+  },
+  "combat": {
+    "overviewTitle": "Loop Dungeon Incremental Combat & Build Guides",
+    "overviewDescription": "Understand boss fights, dungeon difficulty, invincibility frames, and mage or meteor builds that carry deeper loops."
+  },
+  "items": {
+    "overviewTitle": "Loop Dungeon Incremental Items & Gear Guides",
+    "overviewDescription": "Compare equipment, plan gear upgrades, and learn the best farming routes for loot and materials."
+  },
+  "mechanics": {
+    "overviewTitle": "Loop Dungeon Incremental Game Mechanics",
+    "overviewDescription": "Learn how auto-battling, dungeon loops, idle progression, and roguelike systems fit together."
+  },
+  "platforms": {
+    "overviewTitle": "Loop Dungeon Incremental Platforms & Release Info",
+    "overviewDescription": "Check Steam availability, demo details, release date, and system requirements before you start."
+  },
+  "community": {
+    "overviewTitle": "Loop Dungeon Incremental Community",
+    "overviewDescription": "Find the official Discord, Reddit discussions, and community resources for party builds and progression tips."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -447,9 +482,9 @@
     "officialYoutube": "Official YouTube",
     "steamCommunity": "Steam Community Hub",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
+    "raceGuides": "Progression Guides",
+    "bossGuides": "Combat Guides",
+    "buildGuide": "Item & Gear Guides",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }

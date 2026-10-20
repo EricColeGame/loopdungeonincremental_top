@@ -1,0 +1,103 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental First Day Guide: Launch Fixes, Party Builds, and Upgrade Order",
+  description: "New to Loop Dungeon - Incremental? This first day guide covers launch fixes, party setup, upgrade order, and prestige tips for your first loops.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Why Your First Two Hours Decide Everything
+
+Loop Dungeon - Incremental hands you a party of heroes, a dungeon door, and almost no explanation — so your opening session sets the tone for everything after. This **Loop Dungeon Incremental first day guide** is built to get you from a fresh install to a confident prestige reset without wasting a single loop on guesswork. If you follow the order below, you'll clear launch-day technical hurdles first, build a party that actually synergizes, and spend your early currency on upgrades that compound instead of ones you'll rebuy anyway.
+
+That matters because the game is short and front-loaded. Community reports on the Steam hub consistently put a first full playthrough at roughly two to three hours, which means a bad first hour is a huge chunk of the experience. Treat day one as a scouting run: learn the systems, test a hero combination, and only then push deep. Everything in this **Loop Dungeon Incremental first day guide** assumes you want to see the whole arc of the game before you decide how you feel about it.
+
+## What Day One Actually Looks Like
+
+Before you touch a single upgrade, get your expectations calibrated. The full release is a solo-developer project from Playsect, priced at $4.99 with a 10% launch discount that brings it to about $4.49. It's a party-based dungeon crawler with incremental progression layered on top: you loop, you collect loot, you buy permanent upgrades, and you push deeper.
+
+| Detail | What to Know Before You Start |
+|---|---|
+| Platform | Steam (Windows PC) |
+| Developer | Playsect, a solo indie developer |
+| Launch price | $4.99, with a 10% launch discount to $4.49 |
+| Core loop | Run a hero party through dungeon floors, bank loot, buy permanent upgrades |
+| Full-release additions | Rogue hero, Priest "Activate" skill, extra bosses, levels, and hidden secrets |
+| First completion time | Roughly 2–3 hours according to player experience |
+| Progression model | Permanent upgrades persist; a prestige reset converts progress into bonus currency |
+
+You can verify current pricing, patch notes, and system requirements on the [official Steam page for Loop Dungeon - Incremental](https://store.steampowered.com/app/4621970/) before you buy. One thing the store copy doesn't tell you: the game is fully playable offline and saves locally, so a launch-day server wobble won't cost you a run.
+
+## Fix Launch Crashes Before You Play
+
+The single biggest day-one blocker reported on the Steam hub is a Windows 11 startup crash with the message "Fatal error: Failed to load il2cpp." The developer traced it to Windows 11's Smart App Control, which blocks the game's unsigned Unity DLL from loading. A code-signed build is in the works, but until then, work through these fixes in order.
+
+| Order | Fix | How To Do It |
+|---|---|---|
+| 1 | Unblock the game files | Steam Library → right-click the game → Manage → Browse local files → Ctrl+A → right-click → Properties → check "Unblock" → Apply → restart |
+| 2 | Refresh security definitions | Windows Security → Virus & threat protection → Check for updates → reboot |
+| 3 | Force DirectX 11 | Add `-force-d3d11` as a Steam launch option (community-reported workaround for startup crashes) |
+| 4 | Report it | Send the developer your Windows 11 build, a screenshot of the error, and the fixes you tried |
+
+Do fix #1 even if the game launches fine — it costs thirty seconds and prevents a mid-session crash. And keep the game updated: a post-launch patch already corrected a tooltip bug that displayed wrong upgrade information, which is exactly the kind of thing that misleads you during your first hour.
+
+## Build Your First Party Around Synergy, Not Raw Damage
+
+The full release added the Rogue, a burst-damage hero, and gave the Priest a new skill called Activate that interacts with other heroes' abilities. Those two facts should shape your first composition more than any tier list. Activate is a combo enabler — it changes what your other heroes' skills do — so a party built entirely around one damage type leaves value on the table.
+
+| Hero | Role | Day-One Advice |
+|---|---|---|
+| Priest | Support and combo engine | Slot Activate early and watch how it changes your other heroes' skills |
+| Rogue | Burst damage (new in full release) | Strong opener for short floors; pair with a sustain source |
+| Mage | Ranged damage, unlockable | A reliable backline pick once unlocked in the full version |
+| Additional heroes | Varies | Experiment — the developer explicitly invites players to find combos they never designed |
+
+Three practical rules for your first party, drawn from this **Loop Dungeon Incremental first day guide** framework:
+
+- **One sustain, two damage.** Without healing you stall on longer floors; without damage you never reach them.
+- **Test Activate on every hero.** The skill's value depends entirely on what it's modifying, so rotate it through your roster in your first two loops.
+- **Don't rebuild after every loss.** A loop that ends badly still banks currency. Swap one hero at a time so you can tell what changed.
+
+## Upgrade Priorities for Your First Loops
+
+Incremental games reward breadth early and depth later, and this one is no exception. Player experience on the Steam forums describes a system where you largely buy your way forward level by level, which means the temptation is to purchase everything the moment it's affordable. Resist that for the first hour.
+
+| Priority | Upgrade Type | Why It Comes First |
+|---|---|---|
+| 1 | Cheap, broad stat upgrades | Small percentage gains apply to every hero and every floor |
+| 2 | Hero unlocks | More heroes means more Activate targets and more synergy options |
+| 3 | Sustain and survivability | Extends how deep a single loop can reach before you reset |
+| 4 | Deep specialization | Only worth it once you know which hero carries your runs |
+| 5 | Cosmetic or convenience purchases | Zero impact on depth; save for after your first prestige |
+
+A second thing to plan for: abilities are manually triggered by default. Community members have specifically asked for an autocast option, describing the ability management as repetitive clicking. Until that exists, set up a rhythm — buffs first, then burst, then sustain — and you'll stop fumbling mid-fight. If you're playing with a controller or a small keyboard, rebind early rather than adapting later.
+
+## Prestige, Locked Skills, and First-Day Mistakes
+
+Prestige is where most first-day players form their opinion. The system converts your run's progress into a bonus currency that you spend to re-select upgrades you already owned — which feels unrewarding to some players and strategic to others. The honest framing from community reports is that it's a re-purchase system, not a fresh unlock tree. Go in knowing that and it's far less frustrating.
+
+| Mistake | What Happens | Better Approach |
+|---|---|---|
+| Prestiging with a demo save imported | Some skills can re-lock and display "get the full version" even in the full game, per player reports | Verify game files, then report it to the developer with your save details |
+| Buying every upgrade immediately | Currency evaporates and your build has no identity | Follow the priority table above and skip tier 5 |
+| Prestiging the instant it's available | You reset before testing your best hero combination | Run one more loop to confirm your carry first |
+| Expecting infinite scaling | The content ends after a few hours; several reviewers note the finish line arrives fast | Plan to finish the arc in one or two sittings and judge it on that |
+
+The takeaway for a **Loop Dungeon Incremental first day guide** reader is simple: prestige is a tool for repeating a loop faster, not a content faucet. Use your first reset to re-buy only the upgrades that measurably carried you, and skip the rest until you need them.
+
+## Frequently Asked Questions
+
+**How long should my first session of Loop Dungeon - Incremental be?**
+Community reports suggest two to three hours covers most of the game's content. Block out ninety minutes for your first sitting so you can complete at least one prestige cycle and still have time to experiment.
+
+**Is this Loop Dungeon Incremental first day guide still useful after patches?**
+Yes — the structural advice (fix launch issues, one sustain plus two damage, buy broad upgrades first) doesn't depend on version numbers. Only the specific workaround list may change as the developer ships the code-signed build.
+
+**The game won't start on Windows 11. What should I try first?**
+Unblock the game files through Steam's local file browser, then update Windows Security definitions and reboot. If that fails, try the `-force-d3d11` launch option and contact the developer with your Windows build and a screenshot.
+
+**Do I lose everything when I prestige?**
+You lose your in-run upgrades, but the reset grants bonus currency you spend on permanent re-purchases. Nothing you've unlocked as a hero or system disappears permanently — though imported demo saves have caused locked-skill display bugs for some players.
+
+## The Short Version
+
+Day one in Loop Dungeon - Incremental is about sequencing: fix the launcher, pick a party with one sustain and two damage dealers, buy cheap broad upgrades before deep ones, and treat your first prestige as a repeatable routine rather than a finish line. Do that and the two-to-three-hour arc lands as a tight, complete experience instead of a rushed one. The dungeon loops are short — your setup doesn't have to be.

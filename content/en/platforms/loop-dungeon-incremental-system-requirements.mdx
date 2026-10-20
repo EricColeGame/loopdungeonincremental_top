@@ -1,0 +1,135 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental System Requirements: Can Your PC Run It?",
+  description: "Full breakdown of Loop Dungeon Incremental system requirements, minimum vs. recommended specs, platform support, Steam Deck status, and launch fixes.",
+  category: "platforms",
+  date: "2026-10-20",
+}
+
+Loop Dungeon Incremental system requirements are about as forgiving as a modern Steam release gets: a 64-bit Windows 10 machine, integrated graphics, and half a gigabyte of free storage. That matters because Playsect's dungeon-crawling incremental RPG arrived on October 19, 2026, and most of its audience plays on laptops, office PCs, and handhelds rather than dedicated gaming rigs. Checking the Loop Dungeon Incremental system requirements before you buy saves you from a refund request — and tells you exactly how much headroom you have for the long haul.
+
+Below is a full breakdown of what the store page lists, what it quietly leaves out, which platforms are actually confirmed, and how to fix the one startup crash players have been reporting since launch.
+
+## Loop Dungeon Incremental System Requirements at a Glance
+
+The short version: if your computer was built in the last decade and runs Windows 10 or 11, you almost certainly clear the bar. Here is the whole spec sheet condensed into one table.
+
+| Component | What the game asks for | How demanding is it? |
+| --- | --- | --- |
+| Operating system | Windows 10 (64-bit) | Very low |
+| Processor | Intel Core i3-2100 or AMD equivalent | Very low |
+| Graphics | Integrated graphics (Intel HD Graphics 4000) | Very low |
+| Storage | 500 MB available space | Very low |
+| RAM | Not listed on the store page | Unknown |
+| DirectX version | Not listed | Unknown |
+| Architecture | 64-bit processor and OS required | Standard |
+
+The Core i3-2100 launched back in 2011, and Intel HD Graphics 4000 is 2012-era integrated silicon. Those are floor-level targets, not aspirations. For an incremental game built around automatic combat, hero party management, and prestige resets, that tracks — the heavy lifting happens in menus and stat tables, not in real-time 3D rendering.
+
+What the listing does **not** state is equally useful: there is no RAM figure, no DirectX requirement, and no dedicated GPU listed anywhere. Treat that as good news for low-power hardware, but do not treat it as a guarantee.
+
+## Minimum vs. Recommended: Reading the Spec Sheet Carefully
+
+Most Steam pages give you two full tiers. This one gives you one and a half. The recommended column exists but is nearly empty, which is unusual enough to be worth flagging.
+
+| Category | Minimum | Recommended |
+| --- | --- | --- |
+| 64-bit OS | Required | Required |
+| OS version | Windows 10 | Not specified |
+| Processor | Intel Core i3-2100 / AMD equivalent | Not specified |
+| Graphics | Integrated (Intel HD Graphics 4000) | Not specified |
+| Memory | Not specified | Not specified |
+| Storage | 500 MB | Not specified |
+| Additional notes | None listed | None listed |
+
+In practice, this means the minimum tier is the only real reference point you have. A few practical conclusions follow from that:
+
+- **Assume the minimum is the target.** When a developer publishes only one detailed tier, the listed specs are usually the configuration they actually tested against.
+- **Plan for 4 GB of RAM or more.** The game does not state a memory requirement, but any 64-bit Windows 10 install needs roughly 2 GB just to idle. If your machine has 4 GB total, close your browser before launching.
+- **Budget more than 500 MB.** The download itself fits comfortably in 500 MB, but save files, Steam Cloud sync data, and shader/preference caches will add a little on top. A full gigabyte of free space removes the worry entirely.
+- **Integrated graphics are fine.** No dedicated GPU is listed at any tier, so a laptop with Intel or AMD integrated graphics is the expected use case, not an edge case.
+
+If your hardware sits somewhere between "old office desktop" and "gaming laptop," you are well past the threshold. The bigger question for most players is not raw power — it is which platforms are supported at all.
+
+## Platform Support: Windows, Steam Deck, and Everything Else
+
+The store page lists Windows as the platform, full stop. Everything else is either unconfirmed or absent, and that distinction matters if you game on a handheld or a Mac.
+
+| Platform | Status | What that means for you |
+| --- | --- | --- |
+| Windows 10 / 11 (Steam) | Confirmed | The only officially listed platform |
+| Steam Deck | Unknown | Valve marks compatibility as "Unknown," not "Verified" or "Playable" |
+| SteamOS / Linux | Not listed | No native build advertised |
+| macOS | Not listed | No native build advertised |
+| Consoles | Not listed | No PlayStation or Xbox version announced |
+| Mobile | Not listed | No iOS or Android version announced |
+
+The Steam Deck "Unknown" label is worth reading carefully. It does not mean the game fails — it means Valve has not finished or published a compatibility review. Community reports on handheld performance are still thin, so if a Deck is your only machine, download the free demo first and test it yourself rather than assuming either outcome.
+
+Beyond the OS question, the feature list is generous for a $4.99 indie release:
+
+| Feature | Included? | Notes |
+| --- | --- | --- |
+| Single-player | Yes | No multiplayer or co-op |
+| Steam Achievements | Yes | 29 achievements to unlock |
+| Steam Cloud | Yes | Progress carries between machines |
+| Family Sharing | Yes | Shareable within a Steam Family |
+| Controller support | Partial | Xbox and PlayStation controllers listed |
+| Mouse-only option | Yes | Accessibility feature for trackpad or mouse play |
+| Interface languages | 13 | English plus 12 more; interface only, no full audio |
+
+The mouse-only accessibility option is a nice touch for an incremental game, since most of the loop is clicking through upgrade menus. Note that subtitles and full audio are not localized — only the interface text is translated.
+
+## Performance Tips and Known Launch Issues
+
+Launch week has not been perfectly smooth. The developer has publicly acknowledged one specific startup crash, and player experience around it is consistent enough to plan for.
+
+| Symptom | Likely cause | What to try |
+| --- | --- | --- |
+| "Fatal error: Failed to load il2cpp" at startup on Windows 11 | Windows 11 Smart App Control blocking the Unity IL2CPP runtime | Check the developer's Steam news post on the issue; Smart App Control can be reviewed in Windows Security settings |
+| Game closes immediately after the logo | Running a 32-bit version of Windows | Confirm your OS is 64-bit in Settings > System > About |
+| Very low frame rate in menus | Background apps competing for a small RAM budget | Close browser tabs and overlays before launching |
+| Progress not syncing between PCs | Steam Cloud conflict | Verify Cloud is enabled for the title in Steam properties |
+| Nothing happens when clicking Play | Corrupted demo install | Delete local files and reinstall |
+
+Two things are worth emphasizing. First, the il2cpp crash is specifically tied to Windows 11's Smart App Control feature, not to weak hardware — a brand-new gaming PC can hit it while an eight-year-old laptop runs fine. Second, the game ships with a free demo, which is the single cheapest way to confirm the Loop Dungeon Incremental system requirements are satisfied on *your* exact machine before spending anything.
+
+For general performance, a few habits help on low-end hardware:
+
+- **Cap the frame rate.** Incremental games do not benefit from an uncapped refresh rate, and capping reduces heat on laptops.
+- **Run windowed.** Lower resolution in windowed mode lightens the load on integrated graphics.
+- **Let it idle deliberately.** Automatic combat means the game can run unattended; keep the machine plugged in and disable sleep timers during long loops.
+- **Keep save backups.** Cloud sync is supported, but an occasional manual copy of your save folder is cheap insurance before a prestige reset.
+
+## How to Verify Your PC Meets the Requirements
+
+You do not need a benchmarking tool. Windows reports everything you need in about ninety seconds.
+
+| Step | What to do | Where to look |
+| --- | --- | --- |
+| 1. Confirm 64-bit | Open Settings > System > About | "System type" should say 64-bit operating system |
+| 2. Check Windows version | Same About screen | Windows 10 or Windows 11 |
+| 3. Identify your CPU | Task Manager > Performance > CPU | Compare the model name to "Intel Core i3-2100 or AMD equivalent" |
+| 4. Identify your GPU | Task Manager > Performance > GPU | Integrated Intel HD 4000 or newer clears it |
+| 5. Check free storage | File Explorer > This PC | Aim for 1 GB free rather than exactly 500 MB |
+| 6. Check RAM | Task Manager > Performance > Memory | 4 GB minimum is a safe working assumption |
+
+If you clear steps 1, 2, and 5, you are essentially done — the processor and graphics floors are low enough that nearly any functioning Windows 10 machine passes. The official [Loop Dungeon - Incremental page on Steam](https://store.steampowered.com/app/4621970/Loop_Dungeon__Incremental/) is the authoritative source if the spec sheet is ever revised after launch.
+
+One last consideration: the game is priced at $4.99 with a 10% introductory discount running through November 2, 2026. At that price, the cost of a wrong guess is small — but a demo download costs nothing at all, and it is the only test that accounts for your drivers, your background apps, and your specific Windows build.
+
+## FAQ
+
+**Are the Loop Dungeon Incremental system requirements hard to meet?**
+No. The listed minimum is a 64-bit Windows 10 machine with an Intel Core i3-2100 or AMD equivalent, integrated Intel HD Graphics 4000-level graphics, and 500 MB of storage. That is roughly a 2012-era desktop, so almost any working PC from the last decade clears it comfortably.
+
+**Does Loop Dungeon Incremental run on Steam Deck?**
+Valve currently lists Steam Deck compatibility as "Unknown," which means no official rating has been published yet. Since there is no verified status and community testing is still limited, install the free demo on your Deck and check performance yourself before buying.
+
+**How much RAM does Loop Dungeon Incremental need?**
+The store page does not publish a memory requirement at either the minimum or recommended tier. As a practical rule, 4 GB of system RAM is a reasonable assumption for any 64-bit Windows 10 machine running a lightweight 2D incremental game, and more headroom never hurts.
+
+**Why does the game crash on Windows 11 with a "Failed to load il2cpp" error?**
+The developer has acknowledged a startup crash tied to Windows 11's Smart App Control feature interfering with the Unity IL2CPP runtime. It is a security-setting conflict rather than a hardware shortfall, and the developer's Steam news post covers the recommended workaround. Players on Windows 10 do not appear to be affected by this specific issue.
+
+**Is there a demo I can test before buying?**
+Yes. A free demo is available on the Steam store page, and it uses the same engine and assets as the full release — making it the most reliable way to confirm the Loop Dungeon Incremental system requirements on your own hardware.

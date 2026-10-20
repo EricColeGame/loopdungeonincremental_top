@@ -1,0 +1,125 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental Discord: How to Join the Community, Share Builds, and Fix Launch Bugs",
+  description: "A practical guide to the Loop Dungeon Incremental Discord and Steam community: how to find invites, report crashes, and get real build advice from players.",
+  category: "community",
+  date: "2026-10-20",
+}
+
+So you finished your first full loop of **Loop Dungeon - Incremental**, hit the end of the content, and immediately wanted to argue with someone about party comps. That instinct is correct — the **Loop Dungeon Incremental Discord** crowd, along with the Steam hub regulars, is where the real post-game lives. The store page tells you what the game is; other players tell you what actually works.
+
+That matters because this is a small, solo-developed release with a very short main path and a long tail of theorycrafting. Whether you're stuck on a boss, baffled by the prestige loop, or staring at a startup crash on Windows 11, the fastest answers come from the **Loop Dungeon Incremental Discord** and the Steam discussions — not from patch notes that may not exist yet.
+
+## Quick Facts: What You're Actually Playing
+
+Before you dive into community threads, here's the baseline so you don't ask questions the store page already answers.
+
+| Detail | Information |
+|---|---|
+| Developer | Playsect, a solo indie developer |
+| Platform | Steam (PC) |
+| Genre | Party-based dungeon crawler with incremental progression |
+| Core loop | Lead heroes through dungeon loops, collect loot, buy permanent upgrades, stack synergies |
+| Launch price | $4.99, with a 10% launch discount bringing it to $4.49 |
+| Full-release additions | Rogue hero, Priest "Activate" skill, additional bosses, levels, and undisclosed secrets |
+| Official community anchor | [Loop Dungeon - Incremental Steam Community Hub](https://steamcommunity.com/app/4621970) |
+
+The pitch is straightforward: an "ever-growing incremental adventure" where each expedition feeds long-term growth. The gap between that pitch and what shipped is exactly what most community discussion is about — and it's worth knowing before you post.
+
+## Why the Loop Dungeon Incremental Discord Is the Real Endgame
+
+The main story content is short. Community reports consistently put a first full clear at roughly two hours, with a couple of reviewers noting they wrapped up just past the refund window. That's not a scandal for a $5 game, but it does mean the durable part of the experience is optimization: which heroes pair well, when to prestige, and whether the prestige currency actually rewards you.
+
+A solo developer cannot personally answer every bug report and balance question. That's the vacuum the Loop Dungeon Incremental Discord fills. Players who have already pushed through multiple loops tend to know the practical answers — including workarounds the developer hasn't officially documented yet.
+
+### What the developer does cover
+
+Playsect does engage directly on Steam. There's a detailed pinned post about a Windows 11 startup crash, an "out now" announcement walking through the Rogue and the Priest's Activate skill, and a tooltip bug fix note. That's a decent baseline of official communication for a one-person project, but it's episodic. Community channels fill the gaps between posts.
+
+## Where Loop Dungeon Incremental Players Gather
+
+Not every channel is good for every question. Here's how to route your post so you don't get ignored.
+
+| Channel | Best for | Watch out for |
+|---|---|---|
+| Steam Community Hub discussions | Bug reports, launch issues, dev replies | Slow overnight; threads die quietly |
+| Loop Dungeon Incremental Discord | Real-time build talk, patch chatter, screenshots | Invite links expire; verify the source |
+| Steam user reviews | Fast gut-check on value and length | Spoilers and refund-window hot takes |
+| Developer announcements | Patch notes, known issues, hotfix status | Posted less often than players expect |
+| YouTube and streams | Seeing party compositions in action | Thin coverage; few deep dives |
+
+The honest ranking for a new player is: read the Steam hub first, then join a live chat space. Reviews are useful signal but heavily polarized — you'll find "worth it at a steeper discount" sitting right next to praise for the synergy system.
+
+## How to Join the Loop Dungeon Incremental Discord Without Wasting an Hour
+
+Discord invites for small indie games rot fast. Dead links are the single most common complaint in community threads, so work from the most authoritative source outward.
+
+| Step | What to do | Why it matters |
+|---|---|---|
+| 1 | Check the Steam store page's link block | Developers usually list social channels there first |
+| 2 | Scan the community hub for pinned posts | Pinned announcements survive store-page lag |
+| 3 | Search Discord's server discovery for the game name | Surfaces public servers, but verify ownership |
+| 4 | Confirm the server is run by the developer or a known community figure | Avoids impersonator servers and dead rooms |
+| 5 | Read the rules and claim any role menu | Role gates often hide the help channels |
+| 6 | Post in the designated help channel with details | Version, platform, and a screenshot get faster replies |
+| 7 | Lurk for a day before theorycrafting | You'll learn the local vocabulary and avoid repeat questions |
+
+### Etiquette that gets you answers
+
+- **Search before posting.** The Windows 11 crash has been asked dozens of times.
+- **One issue per thread.** Bundling three bugs into one post usually gets zero replies.
+- **Include your platform and build.** "It crashes" is not a report.
+- **Don't dump spoilers.** The full release hides secrets on purpose, and the developer explicitly asked players to discover them.
+- **Thank the people who help.** Small servers live and die on reciprocity.
+
+## Community-Reported Fixes Worth Pinning
+
+The most valuable thing the Loop Dungeon Incremental Discord and Steam hub produce is troubleshooting that actually works. Here are the ones that come up repeatedly.
+
+### The Windows 11 "Failed to load il2cpp" crash
+
+This is the big one. The developer's own investigation attributes it to Windows 11's Smart App Control, which flags the Unity IL2CPP library (`GameAssembly.dll`) as untrusted because the build isn't code-signed yet. A permanent fix — a code signing certificate plus updated Unity dependencies — is in progress. Until then:
+
+| Symptom | Likely cause | Fix to try |
+|---|---|---|
+| "Fatal error: Failed to load il2cpp" at startup | Smart App Control blocking an unsigned DLL | Unblock all files in the install folder via right-click → Properties → Unblock |
+| Crash persists after unblocking | Outdated local security definitions | Update Windows Security intelligence, then reboot |
+| General launch crash | Renderer or driver conflict (player experience) | Add `-force-d3d11` as a Steam launch option |
+| Still broken after all of the above | Unresolved signing issue | Report your Windows version and a screenshot to the developer |
+
+The unblock step is the highest-yield fix: because the files arrived over the internet, Windows tags them with a "web mark," and clearing that mark resolves the block for most players.
+
+### Other recurring reports
+
+- **Locked skills after prestiging a demo save.** At least one player reported skills reverting to "get the full version" prompts after their first prestige in the full game. If you migrated a demo save, back it up before prestiging.
+- **No ability autocast.** A common request — players describe manually firing abilities as "flask piano." Rebind keys or ask the community for a comfortable layout in the meantime.
+- **Tooltip inaccuracies.** A tooltip info bug was fixed in a small patch, so make sure you're on the current build before reporting display errors.
+
+## What the Loop Dungeon Incremental Discord Community Argues About Most
+
+Every small-game community has its perennial fights. Knowing them saves you from starting the fourth thread on the same topic this week.
+
+| Topic | What players say | Practical takeaway |
+|---|---|---|
+| Prestige system | "Taxing and unrewarding" — you re-buy upgrades you already owned | Treat prestige as a build reset, not a power spike; plan your first 20 minutes after each loop |
+| Content length | Community reports a first clear in roughly two hours | Judge it as a short $5 incremental, not an endless idle game |
+| Build variety | Some say you simply buy everything and advance | Test Rogue burst setups and Priest Activate interactions before maxing everything |
+| Quality of life | Repeated requests for autocast and better tooltips | Bind skills comfortably and watch patch notes |
+| Value | Launch discount pushed it under $5 | If you're on the fence, a deeper sale is a reasonable wait |
+
+The most constructive threads are the ones about skill synergies. The Priest's new Activate skill is deliberately designed to interact with other heroes' abilities in unexpected ways, and the developer has openly said players may find combinations the design didn't anticipate. That's the conversation worth having in the Loop Dungeon Incremental Discord — not another "game is too short" post.
+
+## Frequently Asked Questions
+
+**Is there an official Loop Dungeon Incremental Discord server?**
+The verified anchor for everything related to the game is the Steam store page and its community hub. If a Discord exists, the invite should trace back to the developer's own links or a pinned hub announcement — treat any invite you can't source that way with suspicion.
+
+**How do I fix the "Failed to load il2cpp" crash?**
+Unblock the game's files first: right-click the game in your library, browse local files, select everything, open Properties, and check Unblock. Then update Windows Security intelligence and reboot. If it still fails, the developer is working on a code-signed build.
+
+**Is the game really only about two hours long?**
+That's the consistent player experience for a first full clear of the main content. The Loop Dungeon Incremental Discord community stretches that by chasing synergies and prestige optimization, but don't buy it expecting a hundred-hour idle game.
+
+**What should a new player post first in the Loop Dungeon Incremental Discord?**
+A specific question with context: your party composition, how many loops you've cleared, and what you're stuck on. Vague "any tips?" posts get ignored; detailed ones get three answers within the hour.
+
+At the end of the day, the dungeon loops are solo, but the game gets better when you're talking about it. Find the hub, find the chat, and bring a real question — that's how a two-hour indie release turns into a months-long hobby.
