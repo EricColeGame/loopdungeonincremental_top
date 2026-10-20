@@ -1,1 +1,491 @@
-{}
+{
+  "site": {
+    "name": "Loop Dungeon Incremental Wiki",
+    "shortName": "Loop Dungeon",
+    "tagline": "Builds, améliorations et progression du donjon",
+    "description": "Découvrez Loop Dungeon - Incremental avec des guides pour débutants, des builds de héros, des parcours d’amélioration, des conseils de prestige, la progression des donjons, les mécaniques de jeu et les dernières mises à jour.",
+    "legalNotice": "Wiki de fans indépendant. Non affilié à Playsect ou Valve."
+  },
+  "nav": {
+    "guide": "Guides",
+    "progression": "Progression",
+    "combat": "Combat",
+    "items": "Objets",
+    "mechanics": "Mécaniques",
+    "platforms": "Plateformes",
+    "community": "Communauté"
+  },
+  "home": {
+    "meta": {
+      "title": "Loop Dungeon Wiki - Builds, améliorations et progression",
+      "description": "Découvrez Loop Dungeon - Incremental avec des guides pour débutants, des builds de héros, des parcours d’amélioration, des conseils de prestige, la progression des donjons, les mécaniques de jeu et les dernières mises à jour."
+    },
+    "hero": {
+      "eyebrow": "RPG d'exploration de donjon incrémentiel",
+      "title": "Loop Dungeon Incremental Wiki",
+      "description": "Menez un groupe de héros à travers des boucles de donjons sans fin, collectez du butin, débloquez des améliorations permanentes, automatisez les batailles et découvrez de puissantes synergies pour atteindre des étages plus profonds.",
+      "stats": [
+        "Sortie le 19 octobre 2026",
+        "Plus de 8 500 joueurs démo",
+        "Plus de 5 500 listes de souhaits avant le lancement",
+        "13 langues prises en charge"
+      ],
+      "primaryCta": "Guide du débutant",
+      "secondaryCta": "Builds de héros et Tier List",
+      "tertiaryCta": "Jouer sur Steam",
+      "videoLabel": "Bande-annonce officielle du gameplay"
+    },
+    "updates": {
+      "title": "Dernières mises à jour",
+      "browse": "Parcourir tous les guides",
+      "viewAll": "Tout afficher"
+    },
+    "start": {
+      "eyebrow": "Commencez ici",
+      "title": "Votre voyage Loop Dungeon Incremental",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guide du débutant",
+          "description": "Apprenez la boucle principale, les rôles des parties, les priorités de mise à niveau et le plan de la première heure sans gaspiller les premières ressources."
+        },
+        {
+          "number": "2",
+          "title": "Montée en niveau la plus rapide",
+          "description": "Allez plus loin avec un carry ciblé, des améliorations permanentes efficaces et un chemin clair à travers les premiers murs du donjon."
+        },
+        {
+          "number": "3",
+          "title": "Meilleurs spots de farming",
+          "description": "Acheminez le butin des boucles, des étages plus profonds et des monstres tués vers des améliorations qui s'accumulent à chaque réinitialisation."
+        },
+        {
+          "number": "4",
+          "title": "Guide du premier boss",
+          "description": "Préparez une équipe prête pour le boss avec des dégâts soutenus, le burst du Rogue, le soutien du Priest et des chaînes Activate bien synchronisées."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Pages populaires",
+      "title": "Tendance actuelle",
+      "quickLinks": [
+        "Guide du débutant",
+        "Timing Prestige",
+        "Meilleurs builds",
+        "Stratégie de boss"
+      ],
+      "cards": [
+        {
+          "badge": "Débutant",
+          "title": "Guide du débutant",
+          "description": "Un plan de la première heure couvrant la constitution d'un groupe, les priorités de mise à niveau, le timing du prestige et les premières erreurs.",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide"
+        },
+        {
+          "badge": "Populaire",
+          "title": "Rôles des héros et taille du groupe",
+          "description": "Comparez les rôles de Rogue, Priest, Mage et flex-slot, puis construisez un noyau qui survit à des boucles plus profondes.",
+          "href": "/progression/loop-dungeon-incremental-party-size"
+        },
+        {
+          "badge": "Build",
+          "title": "Guide de build Mage",
+          "description": "Piliers de dégâts de base, timing d'incantation, synergies de groupe et ordre de mise à niveau derrière un carry de mage stable.",
+          "href": "/combat/loop-dungeon-incremental-mage-build"
+        },
+        {
+          "badge": "Populaire",
+          "title": "Guide Prestige",
+          "description": "Apprenez quand réinitialiser, ce qui est conservé et comment transformer une boucle bloquée en puissance permanente.",
+          "href": "/progression/loop-dungeon-incremental-prestige"
+        },
+        {
+          "badge": "Farming",
+          "title": "Guide de farming d’objets",
+          "description": "Mettez en place une routine de butin reproductible selon la profondeur des boucles, les monstres vaincus, les améliorations et le timing du prestige.",
+          "href": "/items/loop-dungeon-incremental-item-farming"
+        },
+        {
+          "badge": "Combat",
+          "title": "Guide du boss",
+          "description": "Préparez une équipe prête pour le boss, alignez les fenêtres de burst et transformez chaque wipe en correction précise.",
+          "href": "/combat/loop-dungeon-incremental-boss-guide"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Qu'est-ce que Loop Dungeon Incremental ?",
+      "paragraphs": [
+        "Loop Dungeon Incremental est un RPG incrémental solo de Playsect, sorti sur Steam pour Windows le 19 octobre 2026. Recrutez des héros aux rôles distincts, envoyez une équipe dans des boucles de donjon répétables et laissez le combat automatique gérer les affrontements pendant que vous gérez le roster, l’équipement et les améliorations.",
+        "Chaque expédition produit du butin et des ressources qui alimentent des améliorations permanentes. Lorsque la vitesse de clear ralentit, une réinitialisation de prestige échange la profondeur actuelle contre des bonus durables, afin que la prochaine partie puisse aller plus loin. Nos guides Loop Dungeon Incremental couvrent le plan de la première heure, les rôles d’équipe, les builds de Mage, les priorités de l’arbre de compétences, le farming d’objets, la préparation des boss et les 29 succès Steam."
+      ],
+      "stats": [
+        {
+          "label": "Promoteur",
+          "value": "Playsect"
+        },
+        {
+          "label": "Plate-forme",
+          "value": "PC (Steam)"
+        },
+        {
+          "label": "Genre",
+          "value": "RPG incrémentiel"
+        },
+        {
+          "label": "Libérer",
+          "value": "19 octobre 2026"
+        },
+        {
+          "label": "Prix",
+          "value": "$4.99"
+        },
+        {
+          "label": "Réalisations",
+          "value": "29"
+        },
+        {
+          "label": "Langues",
+          "value": "13"
+        }
+      ],
+      "cta": "Explorez tous les guides"
+    },
+    "explore": {
+      "title": "Explorez le wiki Loop Dungeon Incremental",
+      "description": "Construisez un groupe plus fort, parcourez des boucles de donjons, réinitialisez votre prestige temporel et transformez chaque expédition en progrès permanent.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Guide du débutant Loop Dungeon Incremental",
+          "description": "Aidez les nouveaux joueurs à comprendre la boucle de jeu principale, le combat automatique, le recrutement de héros et les choix de mise à niveau de la première heure qui permettent de faire avancer une partie.",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Dirigez le groupe de départ à travers le donjon sans améliorations et notez où il cale."
+            },
+            {
+              "label": "2",
+              "detail": "Recrutez un deuxième héros avant d’acheter des améliorations de dégâts."
+            },
+            {
+              "label": "3",
+              "detail": "Remplissez la ligne de front afin que les dégâts ne soient pas canalisés vers un seul héros."
+            },
+            {
+              "label": "4",
+              "detail": "Achetez d’abord des mises à niveau permanentes bon marché, car leurs bonus ne deviennent jamais un poids mort."
+            },
+            {
+              "label": "5",
+              "detail": "Appuyez jusqu'à ce que le groupe efface deux fois le même étage, puis investissez au lieu de réinitialiser."
+            },
+            {
+              "label": "6",
+              "detail": "Butin en banque jusqu'à ce que vous puissiez vous permettre une mise à niveau significative de niveau plutôt que plusieurs petits achats."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Tier List des rôles de héros Loop Dungeon Incremental",
+          "description": "Comparez les rôles de héros confirmés par profil de dégâts, utilité de groupe et synergie afin de pouvoir constituer un noyau fiable avant d'investir dans une large liste.",
+          "href": "/progression/loop-dungeon-incremental-party-size",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Rogue : dégâts élevés en rafale pour les cibles prioritaires et nettoyage d'élite."
+            },
+            {
+              "label": "UN",
+              "detail": "Prêtre : soins plus la compétence Activate qui déclenche les synergies de groupe."
+            },
+            {
+              "label": "B",
+              "detail": "Mage : pression soutenue à distance provenant d'une ligne arrière protégée."
+            },
+            {
+              "label": "C",
+              "detail": "Emplacement flexible : remplit la couverture de guérison, d'éclatement ou de déclenchement manquante."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Meilleurs builds Loop Dungeon Incremental",
+          "description": "Montrez comment assembler une construction centrée sur le mage avec des dégâts de zone, un timing d'incantation, un soutien de prêtre, une protection de première ligne et un ordre de mise à niveau stable.",
+          "href": "/combat/loop-dungeon-incremental-mage-build",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Dommage",
+              "detail": "Maintenez la disponibilité des dégâts du Mage à un niveau élevé au lieu de rester inactif entre les temps de recharge."
+            },
+            {
+              "label": "Timing",
+              "detail": "Lancez de gros lancers sur des ennemis regroupés plutôt que sur des traînards isolés."
+            },
+            {
+              "label": "Synergie",
+              "detail": "Associez le Mage avec Priest Activate et Rogue burst pour une valeur composée."
+            },
+            {
+              "label": "Survie",
+              "detail": "Investissez en première ligne pour que le Mage puisse continuer à lancer de longues boucles."
+            },
+            {
+              "label": "Économie",
+              "detail": "Acheminez la monnaie de la boucle vers le chemin principal du Mage avant les mises à niveau de luxe."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Guide Prestige Loop Dungeon Incremental",
+          "description": "Expliquez quand une réinitialisation du prestige en vaut la peine, quels bonus sont reportés et comment transformer une course bloquée en puissance permanente pour des boucles plus profondes.",
+          "href": "/progression/loop-dungeon-incremental-prestige",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Courez jusqu'à ce que la vitesse claire ralentisse visiblement et que les nouveaux sols commencent à glisser."
+            },
+            {
+              "label": "2",
+              "detail": "Dépensez les ressources mises en banque pour des mises à niveau permanentes avant d’envisager une réinitialisation."
+            },
+            {
+              "label": "3",
+              "detail": "Comparez le prochain coût de mise à niveau significatif avec le bonus qu’une réinitialisation accorderait."
+            },
+            {
+              "label": "4",
+              "detail": "Prestige lorsque la course cesse de produire des progrès et que le multiplicateur en vaut la peine."
+            },
+            {
+              "label": "5",
+              "detail": "Utilisez les bonus permanents pour dépasser votre meilleur étage précédent, puis répétez le cycle."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Guide de l'arbre de compétences Loop Dungeon Incremental",
+          "description": "Cartographiez les couches de héros, de groupe, de butin et de prestige de l'arbre de compétences, avec un ordre de dépenses qui prend en charge un seul report au lieu de répartir les points.",
+          "href": "/progression/loop-dungeon-incremental-skill-tree",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Bon marché",
+              "detail": "Achetez d'abord les nœuds de héros les moins chers afin que les premiers bonus s'accumulent sur plusieurs courses."
+            },
+            {
+              "label": "Porter",
+              "detail": "Identifiez le héros qui met fin aux combats et placez des multiplicateurs sur ce carry."
+            },
+            {
+              "label": "Auras",
+              "detail": "Superposez des buffs à l'échelle du groupe derrière le carry au lieu de répartir des nœuds plats."
+            },
+            {
+              "label": "Tampon",
+              "detail": "Mettez en banque un tampon de ressources avant le premier prestige pour que la boucle suivante démarre en douceur."
+            },
+            {
+              "label": "Survie",
+              "detail": "Ajoutez des nœuds de survie avant de pousser une nouvelle profondeur de sol, pas seulement des dégâts."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Guide de farming Loop Dungeon Incremental",
+          "description": "Comparez les boucles standards, les étages plus profonds, les défaites de monstres, les réinitialisations de prestige et les jalons afin que chaque session d'farming nourrisse une croissance permanente.",
+          "href": "/items/loop-dungeon-incremental-item-farming",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Boucles",
+              "detail": "Les boucles de donjon standard fournissent un équipement commun et un filet de ressources constant."
+            },
+            {
+              "label": "Profondeur",
+              "detail": "Les étages plus profonds produisent des baisses de niveau plus élevé et des paiements plus riches après un pic de puissance."
+            },
+            {
+              "label": "Tue",
+              "detail": "Les défaites de monstres maintiennent les ressources à flot pendant le combat automatique."
+            },
+            {
+              "label": "Réinitialiser",
+              "detail": "Les réinitialisations de prestige convertissent une partie terminée en bonus permanents."
+            },
+            {
+              "label": "Marques",
+              "detail": "Les réalisations et les jalons comblent les lacunes qu'une ferme récurrente ne peut pas atteindre rapidement."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Guide des réalisations de Loop Dungeon Incremental",
+          "description": "Fournissez un itinéraire d'achèvement à travers la liste, les compétences débloquées, le contenu du boss, les jalons de prestige et les secrets facultatifs, avec les bloqueurs et les correctifs notés.",
+          "href": "/guide/loop-dungeon-incremental-100-percent-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Liste",
+              "detail": "Recrutez tous les héros, y compris le Rogue ajouté dans la version complète."
+            },
+            {
+              "label": "Compétences",
+              "detail": "Débloquez toutes les compétences, y compris la synergie Activate du prêtre."
+            },
+            {
+              "label": "Prestige",
+              "detail": "Gagnez de la monnaie de prestige et réinvestissez-la dans des améliorations permanentes."
+            },
+            {
+              "label": "Patrons",
+              "detail": "Éliminez le boss final et atteignez la fin du contenu actuel du donjon."
+            },
+            {
+              "label": "Secrets",
+              "detail": "Suivez le contenu caché facultatif que le développeur a laissé sans documentation."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Sortie et mises à jour de Loop Dungeon Incremental",
+          "description": "Suivez la date de sortie, le prix, l'état de la plate-forme, la démo, les langues prises en charge et les conseils en cas de crash de démarrage de Windows 11 en un seul endroit.",
+          "href": "/platforms/loop-dungeon-incremental-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Libérer",
+              "detail": "Sortie complète : 19 octobre 2026 sur PC Windows via Steam."
+            },
+            {
+              "label": "Prix",
+              "detail": "Le prix de base est de 4,99 $, avec une remise de lancement de 10 % à 4,49 $."
+            },
+            {
+              "label": "Plate-forme",
+              "detail": "Windows 10 64 bits est le minimum ; Le Deck Steam reste non classé."
+            },
+            {
+              "label": "Démo",
+              "detail": "Une démo gratuite est disponible sur la page officielle de la boutique Steam."
+            },
+            {
+              "label": "Accident",
+              "detail": "Windows 11 Smart App Control peut déclencher une erreur Échec du chargement il2cpp."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Foire aux questions",
+      "description": "Réponses rapides aux questions les plus courantes sur Loop Dungeon Incremental.",
+      "items": [
+        {
+          "question": "Qu'est-ce que Loop Dungeon Incremental ?",
+          "answer": "Loop Dungeon Incremental est un RPG incrémentiel solo de Playsect. Vous recrutez des héros avec différents rôles de combat, envoyez un groupe dans des boucles de donjons automatisées, collectez du butin et investissez dans des améliorations permanentes. Il est sorti sur Windows PC via Steam le 19 octobre 2026."
+        },
+        {
+          "question": "Existe-t-il une démo gratuite de Loop Dungeon Incremental ?",
+          "answer": "Oui. La page officielle de la boutique Steam pour Loop Dungeon Incremental propose une démo gratuite, afin que vous puissiez tester le combat automatique, la création de groupes, la boucle de loot et la mise à niveau avant d'acheter le jeu complet."
+        },
+        {
+          "question": "Comment fonctionne le prestige dans Loop Dungeon Incremental ?",
+          "answer": "Une réinitialisation du prestige Loop Dungeon Incremental met fin à la partie en cours et accorde des bonus permanents pour les expéditions futures. Réinitialisez lorsque la vitesse de clear s'arrête et que la prochaine mise à niveau significative coûte plus cher que ce que le bonus de prestige peut offrir, puis utilisez le nouveau multiplicateur pour dépasser votre meilleur étage précédent."
+        },
+        {
+          "question": "Quelle taille de groupe fonctionne le mieux dans Loop Dungeon Incremental ?",
+          "answer": "Un noyau concentré de deux ou trois héros bien investis est plus performant qu’un large panel de personnages à moitié équipés. Ajoutez un quatrième héros lorsqu'il fournit un effet spécifique qui manque au noyau, comme la guérison du prêtre, l'éclatement du voleur ou un déclencheur de style Activate."
+        },
+        {
+          "question": "Comment puis-je réparer le crash de Loop Dungeon Incremental Windows 11 ?",
+          "answer": "L'erreur de lancement signalée pour Loop Dungeon Incremental est Erreur fatale : échec du chargement de il2cpp, lié à Windows 11 Smart App Control. Consultez le message d'actualité Steam épinglé, vérifiez les fichiers du jeu via Steam, vérifiez si Smart App Control est activé et publiez le texte d'erreur avec les spécifications de votre système dans le fil de discussion Steam."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Prêt à plonger dans Loop Dungeon Incremental ?",
+      "description": "Planifiez votre première équipe, choisissez les bonnes améliorations permanentes et progressez dans chaque boucle de donjon grâce à des guides gratuits et à jour.",
+      "primary": "Lire le guide du débutant",
+      "secondary": "Jouer sur Steam"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Guides débutants Loop Dungeon Incremental",
+    "overviewDescription": "Commencez par la boucle principale, les priorités de la première heure, les bases de l'équipement et les guides étape par étape pour les nouveaux joueurs de Loop Dungeon Incremental."
+  },
+  "progression": {
+    "overviewTitle": "Guides de progression Loop Dungeon Incremental",
+    "overviewDescription": "Planifiez des améliorations de héros, la croissance de votre groupe, des bonus permanents, des réinitialisations de prestige et le chemin de l'arbre de compétences qui correspond à votre prochaine course."
+  },
+  "combat": {
+    "overviewTitle": "Guides de combat et de builds Loop Dungeon Incremental",
+    "overviewDescription": "Comprenez les combats de boss, la difficulté des donjons, les cadres d'invincibilité et les builds de mage ou de météore qui comportent des boucles plus profondes."
+  },
+  "items": {
+    "overviewTitle": "Guides d’objets et d’équipement Loop Dungeon Incremental",
+    "overviewDescription": "Comparez l'équipement, planifiez les améliorations de l'équipement et découvrez les meilleurs itinéraires de farming pour le butin et les matériaux."
+  },
+  "mechanics": {
+    "overviewTitle": "Mécaniques de jeu Loop Dungeon Incremental",
+    "overviewDescription": "Découvrez comment les combats automatiques, les boucles de donjon, la progression inactive et les systèmes roguelike s'articulent."
+  },
+  "platforms": {
+    "overviewTitle": "Plateformes et sortie de Loop Dungeon Incremental",
+    "overviewDescription": "Vérifiez la disponibilité de Steam, les détails de la démo, la date de sortie et la configuration système requise avant de commencer."
+  },
+  "community": {
+    "overviewTitle": "Communauté Loop Dungeon Incremental",
+    "overviewDescription": "Trouvez les discussions officielles sur Discord, Reddit et les ressources communautaires pour les builds de groupe et les conseils de progression."
+  },
+  "shared": {
+    "wikiNavigation": "Navigation du wiki",
+    "activeCodes": "Codes actifs",
+    "updated": "Mis à jour",
+    "viewAllCodes": "Afficher tous les codes",
+    "playOnSteam": "Jouer sur Steam",
+    "inThisSection": "Dans cette section",
+    "tableOfContents": "Table des matières",
+    "nextSteps": "Prochaines étapes",
+    "needHelp": "Besoin d'aide ?",
+    "relatedReading": "Lectures associées",
+    "relatedGuides": "Guides connexes",
+    "readMore": "En savoir plus",
+    "officialMedia": "Médias officiels",
+    "home": "Accueil",
+    "noGuidesAvailable": "Aucun guide disponible pour l'instant. Revenez bientôt !"
+  },
+  "footer": {
+    "aboutTitle": "Loop Dungeon Incremental Wiki",
+    "about": "Loop Dungeon Incremental Wiki est un guide indépendant créé par des fans couvrant la composition du groupe, les améliorations permanentes, les itinéraires de prestige, la progression des donjons et les connaissances essentielles du jeu pour les joueurs nouveaux et vétérans.",
+    "quickLinks": "Liens rapides",
+    "guides": "Guides",
+    "legal": "Mentions légales",
+    "copyright": "© 2026 Loop Dungeon Incremental Wiki. Non affilié à Playsect ou Valve.",
+    "description": "RPG d'exploration de donjon incrémentiel sur Steam. Construisez un groupe, collectez du butin, débloquez des améliorations permanentes et bouclez plus profondément.",
+    "playGame": "Jouer sur Steam",
+    "officialWebsite": "Site officiel",
+    "officialDiscord": "Discord officiel",
+    "officialYoutube": "YouTube officiel",
+    "steamCommunity": "Centre communautaire Steam",
+    "beginnerGuide": "Guide du débutant",
+    "raceGuides": "Guides de progression",
+    "bossGuides": "Guides de combat",
+    "buildGuide": "Guides d'objets et d'équipement",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation"
+  }
+}

@@ -1,1 +1,491 @@
-{}
+{
+  "site": {
+    "name": "Loop Dungeon Incremental Wiki",
+    "shortName": "Loop Dungeon",
+    "tagline": "Builds, Upgrades & Dungeon-Fortschritt",
+    "description": "Entdecken Sie Loop Dungeon - Incremental mit Anfängerleitfäden, Helden-Builds, Upgrade-Pfaden, Prestige-Tipps, Dungeon-Fortschritt, Spielmechaniken und den neuesten Spiel-Updates.",
+    "legalNotice": "Unabhängiges Fan-Wiki. Nicht mit Playsect oder Valve verbunden."
+  },
+  "nav": {
+    "guide": "Leitfaden",
+    "progression": "Fortschritt",
+    "combat": "Kampf",
+    "items": "Ausrüstung",
+    "mechanics": "Mechaniken",
+    "platforms": "Plattformen",
+    "community": "Community"
+  },
+  "home": {
+    "meta": {
+      "title": "Loop Dungeon Wiki - Builds, Upgrades & Fortschritt",
+      "description": "Entdecken Sie Loop Dungeon - Incremental mit Anfängerleitfäden, Helden-Builds, Upgrade-Pfaden, Prestige-Tipps, Dungeon-Fortschritt, Spielmechaniken und den neuesten Spiel-Updates."
+    },
+    "hero": {
+      "eyebrow": "Inkrementelles Dungeon-Crawler-Rollenspiel",
+      "title": "Loop Dungeon Incremental Wiki",
+      "description": "Führe eine Heldengruppe durch endlose Dungeon-Schleifen, sammle Beute, schalte permanente Upgrades frei, automatisiere Schlachten und entdecke mächtige Synergien, um tiefere Stockwerke zu erreichen.",
+      "stats": [
+        "Veröffentlicht am 19. Okt. 2026",
+        "Über 8.500 Demospieler",
+        "Über 5.500 Wunschlisten vor dem Start",
+        "13 unterstützte Sprachen"
+      ],
+      "primaryCta": "Anfängerleitfaden",
+      "secondaryCta": "Helden-Builds & Tier List",
+      "tertiaryCta": "Auf Steam spielen",
+      "videoLabel": "Offizieller Gameplay-Trailer"
+    },
+    "updates": {
+      "title": "Neueste Updates",
+      "browse": "Durchsuchen Sie alle Leitfäden",
+      "viewAll": "Alle anzeigen"
+    },
+    "start": {
+      "eyebrow": "Beginnen Sie hier",
+      "title": "Deine Loop Dungeon Incremental-Reise",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Anfängerleitfaden",
+          "description": "Lernen Sie die Kernschleife, die Gruppenrollen, die Upgrade-Prioritäten und den Plan für die erste Stunde kennen, ohne frühe Ressourcen zu verschwenden."
+        },
+        {
+          "number": "2",
+          "title": "Schnellstes Leveling",
+          "description": "Dringen Sie tiefer vor mit einem gezielten Carry, effizienten permanenten Upgrades und einem freien Weg durch die ersten Dungeonwände."
+        },
+        {
+          "number": "3",
+          "title": "Beste Farm-Spots",
+          "description": "Leiten Sie Beute aus Schleifen, tieferen Etagen und Monstertötungen in Upgrades um, die sich bei jedem Zurücksetzen verstärken."
+        },
+        {
+          "number": "4",
+          "title": "Erster Boss-Guide",
+          "description": "Stellen Sie eine bossbereite Gruppe mit anhaltendem Schaden, Rogue-Burst, Priester-Sustain und gut getimten Activate-Ketten zusammen."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Beliebte Seiten",
+      "title": "Jetzt im Trend",
+      "quickLinks": [
+        "Anfängerleitfaden",
+        "Prestige-Timing",
+        "Beste Builds",
+        "Boss-Strategie"
+      ],
+      "cards": [
+        {
+          "badge": "Anfänger",
+          "title": "Anfängerleitfaden",
+          "description": "Ein Plan für die erste Stunde, der den Gruppenaufbau, Upgrade-Prioritäten, Prestige-Timing und frühe Fehler abdeckt.",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide"
+        },
+        {
+          "badge": "Beliebt",
+          "title": "Heldenrollen und Gruppengröße",
+          "description": "Vergleichen Sie die Rollen Schurke, Priester, Magier und Flex-Slot und bauen Sie dann einen Kern auf, der tiefere Schleifen übersteht.",
+          "href": "/progression/loop-dungeon-incremental-party-size"
+        },
+        {
+          "badge": "Build",
+          "title": "Magier-Build-Guide",
+          "description": "Kernschadenssäulen, Zauberzeitpunkt, Gruppensynergien und die Upgrade-Reihenfolge hinter einem stabilen Magier-Carry.",
+          "href": "/combat/loop-dungeon-incremental-mage-build"
+        },
+        {
+          "badge": "Beliebt",
+          "title": "Prestige-Guide",
+          "description": "Erfahren Sie, wann Sie zurücksetzen sollten, was erhalten bleibt und wie Sie einen stagnierenden Loop in dauerhafte Stärke verwandeln.",
+          "href": "/progression/loop-dungeon-incremental-prestige"
+        },
+        {
+          "badge": "Farming",
+          "title": "Item-Farming-Guide",
+          "description": "Erstellen Sie eine wiederholbare Beuteroutine rund um Schleifentiefe, Monstertötungen, Upgrades und Prestige-Timing.",
+          "href": "/items/loop-dungeon-incremental-item-farming"
+        },
+        {
+          "badge": "Kampf",
+          "title": "Boss-Guide",
+          "description": "Bereiten Sie eine bossbereite Gruppe vor, richten Sie Burst-Fenster aus und verwandeln Sie jeden Wipe in eine konkrete Lösung.",
+          "href": "/combat/loop-dungeon-incremental-boss-guide"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Was ist Loop Dungeon Incremental?",
+      "paragraphs": [
+        "Loop Dungeon Incremental ist ein inkrementelles Einzelspieler-Rollenspiel von Playsect, das am 19. Oktober 2026 auf Steam für Windows veröffentlicht wurde. Sie rekrutieren Helden mit unterschiedlichen Rollen, schicken eine Gruppe in wiederholbare Dungeon-Schleifen und überlassen die Kämpfe dem automatischen Kampf, während Sie die Auswahl an Kadern, Ausrüstung und Upgrades verwalten.",
+        "Jede Expedition liefert Beute und Ressourcen für dauerhafte Verbesserungen. Wenn die Clear-Geschwindigkeit nachlässt, tauscht ein Prestige-Reset die aktuelle Tiefe gegen dauerhafte Boni, damit der nächste Run weiter kommt. Unsere Loop Dungeon Incremental-Guides behandeln den Plan für die erste Stunde, Gruppenrollen, Magier-Builds, Skill-Tree-Prioritäten, Item-Farming, Bossvorbereitung und die 29 Steam-Erfolge."
+      ],
+      "stats": [
+        {
+          "label": "Entwickler",
+          "value": "Playsect"
+        },
+        {
+          "label": "Plattform",
+          "value": "PC (Steam)"
+        },
+        {
+          "label": "Genre",
+          "value": "Inkrementelles Rollenspiel"
+        },
+        {
+          "label": "Freigeben",
+          "value": "19. Okt. 2026"
+        },
+        {
+          "label": "Preis",
+          "value": "$4.99"
+        },
+        {
+          "label": "Erfolge",
+          "value": "29"
+        },
+        {
+          "label": "Sprachen",
+          "value": "13"
+        }
+      ],
+      "cta": "Entdecken Sie alle Leitfäden"
+    },
+    "explore": {
+      "title": "Entdecken Sie das Loop Dungeon Incremental-Wiki",
+      "description": "Bauen Sie eine stärkere Gruppe auf, führen Sie Dungeon-Schleifen durch, setzen Sie Zeitprestige zurück und verwandeln Sie jede Expedition in dauerhaften Fortschritt.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Loop Dungeon Incremental Anfängerleitfaden",
+          "description": "Helfen Sie neuen Spielern, die Kernspielschleife, den automatischen Kampf, die Heldenrekrutierung und die Upgrade-Optionen in der ersten Stunde zu verstehen, die einen Lauf am Laufen halten.",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Führen Sie die Startgruppe ohne Upgrades durch den Dungeon und notieren Sie, wo sie ins Stocken gerät."
+            },
+            {
+              "label": "2",
+              "detail": "Rekrutiere einen zweiten Helden, bevor du Schadens-Upgrades kaufst."
+            },
+            {
+              "label": "3",
+              "detail": "Füllen Sie die Frontlinie aus, damit der Schaden nicht auf einen Helden abgewälzt wird."
+            },
+            {
+              "label": "4",
+              "detail": "Kaufen Sie zuerst günstige permanente Upgrades, da deren Boni nie ins Gewicht fallen."
+            },
+            {
+              "label": "5",
+              "detail": "Drücken Sie, bis die Gruppe zweimal auf derselben Etage wischt, und investieren Sie dann, anstatt zurückzusetzen."
+            },
+            {
+              "label": "6",
+              "detail": "Sparen Sie Beute, bis Sie sich ein sinnvolles Stufen-Upgrade statt mehrerer kleiner Einkäufe leisten können."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Loop Dungeon Incremental Heldenrollen-Tier-List",
+          "description": "Vergleichen Sie bestätigte Heldenrollen nach Schadensprofil, Gruppennutzen und Synergien, damit Sie einen zuverlässigen Kern aufbauen können, bevor Sie in einen breiten Kader investieren.",
+          "href": "/progression/loop-dungeon-incremental-party-size",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Schurke: Hoher Burst-Schaden für Prioritätsziele und Elite-Aufräumarbeiten."
+            },
+            {
+              "label": "A",
+              "detail": "Priester: Heilung plus die Fertigkeit Activate, die Gruppensynergien auslöst."
+            },
+            {
+              "label": "B",
+              "detail": "Magier: Anhaltender Fernkampfdruck durch eine geschützte Abwehrreihe."
+            },
+            {
+              "label": "C",
+              "detail": "Flex-Slot: Füllt fehlende Heilungs-, Burst- oder Trigger-Abdeckung aus."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Loop Dungeon Incremental Beste Builds",
+          "description": "Zeigen Sie, wie Sie einen auf Magier ausgerichteten Build mit Flächenschaden, Zauberzeitpunkt, Priesterunterstützung, Frontschutz und einer stabilen Upgrade-Reihenfolge zusammenstellen.",
+          "href": "/combat/loop-dungeon-incremental-mage-build",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Schaden",
+              "detail": "Halten Sie die Schadensverfügbarkeit des Magiers hoch, anstatt zwischen den Abklingzeiten untätig zu bleiben."
+            },
+            {
+              "label": "Timing",
+              "detail": "Führe große Angriffe auf gruppierte Feinde aus, statt auf einzelne Nachzügler."
+            },
+            {
+              "label": "Synergie",
+              "detail": "Kombiniere den Magier mit dem Priester Activate und dem Schurkenstoß, um den Wert zu steigern."
+            },
+            {
+              "label": "Überleben",
+              "detail": "Investieren Sie in die Frontlinie, damit der Magier weiterhin durch lange Schleifen werfen kann."
+            },
+            {
+              "label": "Wirtschaft",
+              "detail": "Leiten Sie die Schleifenwährung vor Luxus-Upgrades in den Kernpfad des Magiers ein."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Loop Dungeon Incremental Prestige-Guide",
+          "description": "Erklären Sie, wann sich ein Prestige-Reset lohnt, welche Boni übertragen werden und wie Sie einen ins Stocken geratenen Lauf in dauerhafte Kraft für tiefere Schleifen verwandeln können.",
+          "href": "/progression/loop-dungeon-incremental-prestige",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Laufen Sie, bis die Freigeschwindigkeit sichtlich abnimmt und neue Böden zu schleifen beginnen."
+            },
+            {
+              "label": "2",
+              "detail": "Geben Sie Ihre gespeicherten Ressourcen für dauerhafte Upgrades aus, bevor Sie über einen Reset nachdenken."
+            },
+            {
+              "label": "3",
+              "detail": "Vergleichen Sie die nächsten sinnvollen Upgrade-Kosten mit dem Bonus, den ein Reset gewähren würde."
+            },
+            {
+              "label": "4",
+              "detail": "Prestige, wenn der Lauf keinen Fortschritt mehr bringt und der Multiplikator sich lohnt."
+            },
+            {
+              "label": "5",
+              "detail": "Nutzen Sie die permanenten Boni, um Ihre bisher beste Etage zu übertreffen, und wiederholen Sie dann den Zyklus."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Loop Dungeon Incremental Skill-Tree-Guide",
+          "description": "Ordnen Sie die Helden-, Gruppen-, Beute- und Prestigeebenen des Fertigkeitsbaums zu, mit einer Ausgabereihenfolge, die einen Carry unterstützt, anstatt Punkte dünn zu verteilen.",
+          "href": "/progression/loop-dungeon-incremental-skill-tree",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Billig",
+              "detail": "Kaufen Sie zuerst die günstigsten Heldenknoten, damit sich die frühen Boni über mehrere Läufe hinweg summieren."
+            },
+            {
+              "label": "Tragen",
+              "detail": "Identifizieren Sie den Helden, der Kämpfe beendet, und platzieren Sie Multiplikatoren auf diesem Träger."
+            },
+            {
+              "label": "Auren",
+              "detail": "Lagern Sie gruppenweite Buffs hinter dem Carry, anstatt flache Knoten zu verteilen."
+            },
+            {
+              "label": "Puffer",
+              "detail": "Legen Sie vor dem ersten Prestige einen Ressourcenpuffer an, damit die nächste Schleife reibungslos beginnt."
+            },
+            {
+              "label": "Überleben",
+              "detail": "Fügen Sie Überlebensfähigkeitsknoten hinzu, bevor Sie eine neue Bodentiefe erreichen, nicht nur den Schaden."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Loop Dungeon Incremental Farming-Guide",
+          "description": "Vergleichen Sie Standardschleifen, tiefere Etagen, Monsterbesiege, Prestige-Resets und Meilensteine, damit jede Farming-Sitzung dauerhaftes Wachstum fördert.",
+          "href": "/items/loop-dungeon-incremental-item-farming",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Schleifen",
+              "detail": "Standard-Dungeon-Loops liefern gemeinsame Ausrüstung und einen stetigen Ressourcenfluss."
+            },
+            {
+              "label": "Tiefe",
+              "detail": "Tiefere Böden führen zu höherstufigen Drops und höheren Auszahlungen nach einem Leistungsanstieg."
+            },
+            {
+              "label": "Tötet",
+              "detail": "Monsterbesiege sorgen dafür, dass die Ressourcen im automatischen Kampf weiterfließen."
+            },
+            {
+              "label": "Zurücksetzen",
+              "detail": "Prestige-Resets wandeln einen abgeschlossenen Lauf in permanente Boni um."
+            },
+            {
+              "label": "Markierungen",
+              "detail": "Erfolge und Meilensteine ​​schließen Lücken, die ein Wiederholungsbetrieb nicht schnell erreichen kann."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Loop Dungeon Incremental Erfolgs-Guide",
+          "description": "Stellen Sie einen Abschlussweg durch die Liste, freigeschaltete Fertigkeiten, Boss-Inhalte, Prestige-Meilensteine ​​und optionale Geheimnisse bereit, mit Angabe von Blockern und Korrekturen.",
+          "href": "/guide/loop-dungeon-incremental-100-percent-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Dienstplan",
+              "detail": "Rekrutiere jeden Helden, einschließlich des in der Vollversion hinzugefügten Schurken."
+            },
+            {
+              "label": "Fähigkeiten",
+              "detail": "Schalte alle Fertigkeiten frei, einschließlich der Activate-Synergie des Priesters."
+            },
+            {
+              "label": "Prestige",
+              "detail": "Verdienen Sie Prestigewährung und investieren Sie diese in permanente Upgrades."
+            },
+            {
+              "label": "Bosse",
+              "detail": "Bewältige den Endgegner und erreiche das Ende des aktuellen Dungeon-Inhalts."
+            },
+            {
+              "label": "Geheimnisse",
+              "detail": "Verfolgen Sie optionale versteckte Inhalte, die der Entwickler undokumentiert gelassen hat."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Loop Dungeon Incremental Release & Updates",
+          "description": "Verfolgen Sie das Veröffentlichungsdatum, den Preis, den Plattformstatus, die Demo, die unterstützten Sprachen und die Windows 11-Startup-Crash-Anleitung an einem Ort.",
+          "href": "/platforms/loop-dungeon-incremental-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Freigeben",
+              "detail": "Vollständige Veröffentlichung: 19. Oktober 2026 auf Windows PC über Steam."
+            },
+            {
+              "label": "Preis",
+              "detail": "Der Grundpreis beträgt 4,99 $, mit einem Einführungsrabatt von 10 % auf 4,49 $."
+            },
+            {
+              "label": "Plattform",
+              "detail": "Windows 10 64-Bit ist das Minimum; Das Steam-Deck bleibt ohne Bewertung."
+            },
+            {
+              "label": "Demo",
+              "detail": "Eine kostenlose Demo ist auf der offiziellen Steam-Store-Seite verfügbar."
+            },
+            {
+              "label": "Absturz",
+              "detail": "Windows 11 Smart App Control kann einen Fehler beim Laden von il2cpp auslösen."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "description": "Schnelle Antworten auf die häufigsten Fragen zu Loop Dungeon Incremental.",
+      "items": [
+        {
+          "question": "Was ist Loop Dungeon Incremental?",
+          "answer": "Loop Dungeon Incremental ist ein inkrementelles Einzelspieler-Rollenspiel von Playsect. Sie rekrutieren Helden mit unterschiedlichen Kampfrollen, schicken eine Gruppe in automatisierte Dungeon-Schleifen, sammeln Beute und investieren in permanente Upgrades. Es wurde am 19. Oktober 2026 über Steam auf dem Windows-PC veröffentlicht."
+        },
+        {
+          "question": "Gibt es eine kostenlose Demo von Loop Dungeon Incremental?",
+          "answer": "Ja. Die offizielle Steam-Store-Seite für Loop Dungeon Incremental bietet eine kostenlose Demo, sodass Sie den automatischen Kampf, den Gruppenaufbau, die Beuteschleife und das Upgrade-Tempo testen können, bevor Sie die Vollversion kaufen."
+        },
+        {
+          "question": "Wie funktioniert Prestige in Loop Dungeon Incremental?",
+          "answer": "Ein Loop Dungeon Incremental-Prestige-Reset beendet den aktuellen Lauf und gewährt dauerhafte Boni für zukünftige Expeditionen. Zurücksetzen, wenn die Clear-Geschwindigkeit ins Stocken gerät und das nächste sinnvolle Upgrade mehr kostet, als der Prestige-Bonus bieten kann, und dann den neuen Multiplikator verwenden, um über die bisher beste Stufe hinauszukommen."
+        },
+        {
+          "question": "Welche Gruppengröße funktioniert am besten in Loop Dungeon Incremental?",
+          "answer": "Ein fokussierter Kern aus zwei oder drei gut investierten Helden schneidet besser ab als eine breite Palette halb ausgerüsteter Charaktere. Fügen Sie einen vierten Helden hinzu, wenn dieser einen bestimmten Effekt liefert, der dem Kern fehlt, z. B. Priesterheilung, Schurkenstoß oder einen Auslöser im Activate-Stil."
+        },
+        {
+          "question": "Wie behebe ich den Absturz von Loop Dungeon Incremental Windows 11?",
+          "answer": "Der für Loop Dungeon Incremental gemeldete Startfehler ist Schwerwiegender Fehler: Laden von il2cpp fehlgeschlagen, gebunden an Windows 11 Smart App Control. Überprüfen Sie den angehefteten Steam-Newsbeitrag, überprüfen Sie die Spieledateien über Steam, überprüfen Sie, ob Smart App Control aktiviert ist, und veröffentlichen Sie den Fehlertext mit Ihren Systemspezifikationen im Steam-Diskussionsthread."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Bereit, in Loop Dungeon Incremental einzutauchen?",
+      "description": "Planen Sie Ihre erste Party, wählen Sie die richtigen permanenten Upgrades und meistern Sie jede Dungeon-Schleife mit kostenlosen, aktuellen Anleitungen.",
+      "primary": "Lesen Sie den Anfängerleitfaden",
+      "secondary": "Auf Steam spielen"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Loop Dungeon Incremental Anfänger-Guides",
+    "overviewDescription": "Beginnen Sie mit der Kernschleife, den Prioritäten der ersten Stunde, den Ausrüstungsgrundlagen und Schritt-für-Schritt-Anleitungen für neue Loop Dungeon Incremental-Spieler."
+  },
+  "progression": {
+    "overviewTitle": "Loop Dungeon Incremental Fortschritts-Guides",
+    "overviewDescription": "Planen Sie Helden-Upgrades, Gruppenwachstum, permanente Boni, Prestige-Resets und den Skill-Tree-Pfad, der zu Ihrem nächsten Lauf passt."
+  },
+  "combat": {
+    "overviewTitle": "Loop Dungeon Incremental Kampf- & Build-Guides",
+    "overviewDescription": "Verstehen Sie Bosskämpfe, Dungeon-Schwierigkeiten, Unbesiegbarkeitsrahmen und Magier- oder Meteor-Builds, die tiefere Schleifen beinhalten."
+  },
+  "items": {
+    "overviewTitle": "Loop Dungeon Incremental Item- & Ausrüstungs-Guides",
+    "overviewDescription": "Vergleichen Sie Ausrüstung, planen Sie Ausrüstungs-Upgrades und lernen Sie die besten Farmrouten für Beute und Materialien kennen."
+  },
+  "mechanics": {
+    "overviewTitle": "Loop Dungeon Incremental Spielmechanik",
+    "overviewDescription": "Erfahren Sie, wie automatische Kämpfe, Dungeon-Loops, Idle-Fortschritt und Roguelike-Systeme zusammenpassen."
+  },
+  "platforms": {
+    "overviewTitle": "Loop Dungeon Incremental Plattformen und Release-Informationen",
+    "overviewDescription": "Überprüfen Sie die Verfügbarkeit von Steam, die Demodetails, das Veröffentlichungsdatum und die Systemanforderungen, bevor Sie beginnen."
+  },
+  "community": {
+    "overviewTitle": "Loop Dungeon Incremental-Community",
+    "overviewDescription": "Hier finden Sie die offiziellen Discord-, Reddit-Diskussionen und Community-Ressourcen für Gruppenaufbau und Fortschrittstipps."
+  },
+  "shared": {
+    "wikiNavigation": "Wiki-Navigation",
+    "activeCodes": "Aktive Codes",
+    "updated": "Aktualisiert",
+    "viewAllCodes": "Alle Codes anzeigen",
+    "playOnSteam": "Auf Steam spielen",
+    "inThisSection": "In diesem Abschnitt",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "nextSteps": "Nächste Schritte",
+    "needHelp": "Brauchen Sie Hilfe?",
+    "relatedReading": "Weiterlesen",
+    "relatedGuides": "Verwandte Leitfäden",
+    "readMore": "Mehr lesen",
+    "officialMedia": "Offizielle Medien",
+    "home": "Startseite",
+    "noGuidesAvailable": "Noch keine Anleitungen verfügbar. Schauen Sie bald wieder vorbei!"
+  },
+  "footer": {
+    "aboutTitle": "Loop Dungeon Incremental Wiki",
+    "about": "Loop Dungeon Incremental Wiki ist ein unabhängiger, von Fans erstellter Leitfaden-Hub, der die Gruppenzusammensetzung, permanente Upgrades, Prestige-Routen, Dungeon-Fortschritt und grundlegendes Spielwissen für neue und erfahrene Spieler gleichermaßen abdeckt.",
+    "quickLinks": "Quicklinks",
+    "guides": "Guides",
+    "legal": "Rechtliches",
+    "copyright": "© 2026 Loop Dungeon Incremental Wiki. Nicht mit Playsect oder Valve verbunden.",
+    "description": "Inkrementelles Dungeon-Crawler-Rollenspiel auf Steam. Bilden Sie eine Gruppe, sammeln Sie Beute, schalten Sie permanente Upgrades frei und tauchen Sie tiefer ein.",
+    "playGame": "Auf Steam spielen",
+    "officialWebsite": "Offizielle Website",
+    "officialDiscord": "Offizielles Discord",
+    "officialYoutube": "Offizielles YouTube",
+    "steamCommunity": "Steam Community Hub",
+    "beginnerGuide": "Anfängerleitfaden",
+    "raceGuides": "Fortschritts-Guides",
+    "bossGuides": "Kampf-Guides",
+    "buildGuide": "Item- & Ausrüstungs-Guides",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen"
+  }
+}

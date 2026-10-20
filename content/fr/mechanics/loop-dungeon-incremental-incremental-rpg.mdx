@@ -1,0 +1,122 @@
+export const metadata = {
+  title: "Mécaniques de Loop Dungeon Incremental : comment fonctionne la boucle du RPG incrémental",
+  description: "Une analyse centrée sur les mécaniques de Loop Dungeon Incremental : comment la boucle de run, les synergies de héros, les améliorations permanentes et les resets de prestige s'articulent.",
+  category: "mechanics",
+  date: "2026-10-20",
+}
+
+## Pourquoi la boucle de Loop Dungeon Incremental compte plus que n'importe quel build
+
+La plupart des jeux incrémentaux vous demandent d'appuyer sur un bouton et d'attendre. Loop Dungeon Incremental vous demande de constituer une équipe, de l'envoyer dans un donjon, puis de décider quoi faire de tout ce qu'elle en rapporte. Si votre escouade cale toujours au même étage ou si vous ne savez pas encore si un reset de prestige en vaut la peine, comprendre les mécaniques sous-jacentes de Loop Dungeon Incremental fait toute la différence entre une run qui s'emballe et une qui s'éteint discrètement.
+
+Ce guide décompose comment les systèmes de RPG incrémental de Loop Dungeon Incremental interagissent réellement — la boucle de run, les synergies de héros, les arbres d'amélioration permanente et les calculs de prestige — pour que vous puissiez arrêter de deviner et commencer à optimiser. Tout ce qui suit s'appuie sur ce que le développeur, Playsect, a documenté à propos du jeu, ainsi que sur des principes généraux valables dans tout le genre du RPG incrémental.
+
+## Comment fonctionne réellement la boucle principale
+
+La structure est inscrite dans le nom même. Vous constituez une équipe, vous la plongez dans une boucle de donjon, vous laissez le combat automatique résoudre l'étage, vous récupérez le butin, vous le dépensez en améliorations et vous poussez plus profond. Quand la progression ralentit, vous réinitialisez — mais vous réinitialisez avec des bonus permanents qui rendent la tentative suivante plus rapide.
+
+Le modèle mental essentiel : **une run n'est pas un état d'échec.** Dans Loop Dungeon Incremental, chaque expédition nourrit la croissance à long terme, même celles qui se terminent mal. Cela signifie que votre prise de décision doit passer de « jusqu'où puis-je aller cette run ? » à « qu'est-ce que cette run apporte à mon compte ? »
+
+| Étape de la boucle | Ce que vous faites | Ce qui se transmet |
+|---|---|---|
+| Constitution | Recruter et organiser les héros par rôle | Roster de héros et personnages débloqués |
+| Descente | Envoyer l'équipe dans le combat automatique du donjon | Rien encore — c'est le test |
+| Butin | Collecter ressources et équipement des étages franchis | Ressources mises en réserve pendant la run |
+| Investissement | Dépenser en améliorations permanentes | Améliorations qui persistent à travers les resets |
+| Réinitialisation | Prestige pour des bonus à long terme | Bonus de prestige et accès à des étages plus profonds |
+| Répétition | Reconstruire plus vite avec une base plus solide | Puissance cumulée à travers les boucles |
+
+Deux enseignements pratiques à tirer de ce tableau. D'abord, **ne thésaurisez pas la monnaie en attendant l'achat parfait** — les premières améliorations permanentes se cumulent, et une ressource qui dort dans votre banque ne fait rien. Ensuite, **traitez vos premières boucles comme de la reconnaissance**, pas comme une compétition. Vous apprenez quels types d'ennemis bloquent votre équipe et quelles catégories d'améliorations les débloquent.
+
+## Composition d'équipe et synergie : la couche que la plupart des joueurs ignorent
+
+Loop Dungeon Incremental est construit autour de la gestion d'une équipe de héros, et le jeu présente explicitement la synergie entre personnages et améliorations comme un système central. C'est un signal de design significatif : une équipe de quatre héros individuellement puissants sans interaction est généralement moins bonne qu'une équipe de trois qui se multiplient mutuellement.
+
+Les retours de la communauté au moment du lancement suggèrent que l'erreur la plus courante est de trop investir dans un seul héros carry. Comme le combat est automatique, vous ne pouvez pas secourir manuellement un carry qui se fait cibler — vos seuls leviers sont la composition, l'équipement et les améliorations décidées *avant* le début de l'étage.
+
+| Archétype de rôle | Tâche dans la boucle | Avec quoi l'associer |
+|---|---|---|
+| Dégâts / DPS | Convertit vos statistiques en étages franchis | Soutien de survie pour qu'il vive assez longtemps pour compter |
+| Tank / première ligne | Absorbe la pression, gagne du temps pour le scaling | Effets de soin ou de régénération qui évoluent avec sa réserve de vie |
+| Soutien / soigneur | Prolonge la durée de fonctionnement de l'équipe | Dégâts multi-cibles, car les combats longs favorisent la tenue sur la durée |
+| Utilitaire / affaiblisseur | Affaiblit les ennemis ou accélère l'équipe | Héros à fort potentiel de dégâts qui capitalisent sur l'ouverture |
+
+Conseils concrets pour construire autour des synergies dans Loop Dungeon Incremental :
+
+- **Lisez le texte des améliorations pour les multiplicateurs, pas seulement les valeurs fixes.** Les bonus fixes aident au début ; ce sont les effets en pourcentage et conditionnels qui permettent à une équipe de monter en puissance dans les étages profonds.
+- **Testez une variable à la fois.** Remplacez un seul héros ou une seule amélioration, puis refaites la même profondeur d'étage. Si vous changez trois choses et que vous progressez, vous n'apprenez rien.
+- **Construisez pour le mur que vous rencontrez réellement.** Si votre équipe meurt lentement, il vous faut des dégâts. Si elle meurt instantanément, il vous faut de la robustesse ou du soin. Ce sont des chemins d'amélioration différents.
+- **Gardez un banc.** Les héros qui ne correspondent pas à la boucle actuelle peuvent devenir pertinents après qu'un bonus de prestige a changé votre base.
+
+## Améliorations permanentes et prestige : là où réside la vraie progression
+
+Le prestige est le moteur de tout RPG incrémental, et Loop Dungeon Incremental y mise fortement. Le développeur décrit une progression qui continue après un reset grâce à des bonus de prestige qui vous aident à atteindre des étages plus profonds — ce qui signifie que le reset lui-même est une ressource, pas une pénalité.
+
+La question stratégique est *quand* réinitialiser. La réponse standard du genre s'applique ici : réinitialisez quand votre taux de croissance s'aplatit, pas quand vous êtes frustré. Si une boucle prend nettement plus de temps que la précédente pour un gain de profondeur similaire, vous avez probablement extrait l'essentiel de la valeur disponible.
+
+| Catégorie d'amélioration | Gain à court terme | Gain à long terme | Quand prioriser |
+|---|---|---|---|
+| Statistiques de combat brutes | Élevé — franchit immédiatement des étages | Faible — devient obsolète | Premières boucles, quand rien d'autre n'est abordable |
+| Génération de ressources | Moyen | Élevé — accélère chaque boucle future | Dès que c'est disponible |
+| Déblocages de héros et de roster | Moyen | Très élevé — élargit vos options | Quand vous vous sentez bloqué en composition |
+| Multiplicateurs de prestige | Aucun cette run | Cumulatifs | Juste avant un reset planifié |
+| Qualité de vie / automatisation | Faible | Élevé sur des dizaines de boucles | Une fois que les boucles commencent à sembler répétitives |
+
+Une règle empirique utile pour Loop Dungeon Incremental : **dépensez en génération avant de dépenser en puissance.** La puissance franchit l'étage devant vous. La génération franchit les dix étages qui suivent. Les joueurs qui intègrent cela progressent généralement plus vite que ceux qui investissent tout dans les dégâts.
+
+À noter également : le jeu propose des succès Steam (29 au lancement) qui fonctionnent comme des jalons indicatifs. Si vous ne savez pas quoi viser ensuite, la liste des succès est une feuille de route non officielle de la courbe de progression.
+
+## Optimisation active vs progression passive
+
+Playsect a conçu Loop Dungeon Incremental pour servir les deux styles de jeu — le joueur qui veut bricoler les chiffres toutes les quelques minutes et celui qui veut faire un point deux fois par jour. Le combat automatique est ce qui rend les deux viables.
+
+| Style de jeu | Idéal pour | Risque principal | Comment bien le jouer |
+|---|---|---|---|
+| Optimisation active | Joueurs qui aiment les tableurs et le réglage fin | Épuisement dû aux micro-décisions constantes | Regroupez vos décisions : faites un point, appliquez trois changements, éloignez-vous |
+| Progression passive | Emplois du temps chargés, jeu en arrière-plan | Retour d'information lent sur ce qui fonctionne | Fixez un objectif de profondeur clair avant chaque point |
+| Hybride | La plupart des joueurs, réalistement | Ni optimisé ni totalement idle | Actif pendant les resets, passif entre eux |
+
+L'approche hybride est généralement la plus forte. Les resets sont les moments à plus fort levier dans Loop Dungeon Incremental — c'est là que vous replanifiez votre équipe et vos priorités d'amélioration. Entre les resets, laissez le combat automatique faire son travail et résistez à l'envie de reconstruire en permanence.
+
+Il y a aussi une note pratique d'accessibilité : la page du magasin mentionne une option souris uniquement, ce qui vous permet de jouer à l'intégralité du RPG incrémental d'une seule main si c'est votre préférence. Pour un jeu construit sur des points fréquents et courts, cela compte plus qu'il n'y paraît.
+
+## Réalité du lancement : ce que disent la page du magasin et les joueurs
+
+Être honnête sur l'état d'un jeu fait partie de l'écriture d'un contenu mécanique utile. Voici l'instantané factuel de la fiche Steam du jeu.
+
+| Détail | Information |
+|---|---|
+| Développeur / Éditeur | Playsect |
+| Date de sortie | 19 octobre 2026 |
+| Genres | Occasionnel, Indépendant, Simulation, Stratégie |
+| Statut des avis | Mitigé — environ 65 % de 108 avis positifs au moment de la collecte |
+| Prix | 4,99 $, avec une remise de lancement de 10 % pendant l'offre de lancement |
+| Plateformes | Windows 10, 64 bits, ~500 Mo d'espace de stockage |
+| Langues de l'interface | Anglais plus 12 autres |
+| Fonctionnalités notables | Solo, succès Steam, Steam Cloud, partage familial |
+
+Une note « Mitigé » sur un RPG incrémental indé à 5 $ n'est pas un signal d'alarme — c'est typique pour un titre de niche en semaine de lancement, et les avis dans ce genre basculent souvent une fois les patchs d'équilibrage arrivés. Le développeur a aussi publiquement reconnu un crash au démarrage affectant certains joueurs sous Windows 11, lié à Smart App Control et à une erreur de chargement il2cpp, ce qui est utile à savoir avant d'acheter si vous êtes sur cet OS.
+
+Si vous voulez la version faisant autorité et toujours à jour de ces informations, la [page officielle de Loop Dungeon - Incremental sur Steam](https://store.steampowered.com/app/4621970/Loop_Dungeon__Incremental/) contient le prix en direct, les notes de patch et le détail complet des avis.
+
+Un dernier détail mécanique à signaler : le jeu est livré avec la prise en charge de Steam Cloud, ce qui signifie que votre progression incrémentale vous suit d'une machine à l'autre. Pour un genre construit sur l'accumulation à long terme, ce n'est pas un détail mineur — cela protège exactement ce que le jeu vous demande d'investir.
+
+## Rassembler le tout
+
+Les mécaniques de Loop Dungeon Incremental ne sont pas compliquées prises individuellement — recruter, descendre, récupérer du butin, améliorer, réinitialiser. La complexité réside dans les interactions : quels héros se multiplient mutuellement, quelles améliorations se cumulent, et quand un reset rapporte plus qu'il ne coûte. Les joueurs qui traitent chaque boucle comme un exercice de collecte de données plutôt que comme une tentative de score trouvent généralement les étages plus profonds bien plus vite que ceux qui courent après une seule run parfaite.
+
+Commencez par les améliorations de génération, gardez votre équipe suffisamment équilibrée pour survivre, réinitialisez quand la croissance s'aplatit, et laissez le cumul faire le travail.
+
+## FAQ
+
+**Loop Dungeon Incremental est-il un véritable RPG incrémental ou plutôt un idle game ?**
+Il se situe plutôt vers l'extrémité RPG incrémental du spectre. Loop Dungeon Incremental utilise le combat automatique, mais la progression dépend de la composition de l'équipe, des choix d'améliorations permanentes et du timing du prestige — des décisions qu'un idle game automatiserait généralement pour vous.
+
+**À quelle fréquence dois-je faire un prestige dans Loop Dungeon Incremental ?**
+Il n'y a pas de chiffre universel, mais le signal est cohérent : réinitialisez quand le temps nécessaire pour gagner un étage augmente fortement par rapport à votre dernière boucle. Si vous farmez la même profondeur bien plus longtemps qu'avant, vous avez probablement maximisé la valeur de la run actuelle.
+
+**Dois-je jouer activement pour progresser ?**
+Non. Loop Dungeon Incremental est explicitement conçu pour que les optimiseurs actifs comme les joueurs passifs puissent avancer, et chaque expédition contribue à la croissance à long terme, peu importe à quel point vous surveillez.
+
+**Quelle est la plus grosse erreur de débutant dans Loop Dungeon Incremental ?**
+Tout investir dans les dégâts bruts en ignorant la génération de ressources et l'expansion du roster. Les dégâts franchissent l'étage où vous êtes ; la génération et les nouveaux héros sont ce qui vous porte à travers les dix boucles suivantes.

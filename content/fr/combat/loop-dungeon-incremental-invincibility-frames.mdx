@@ -1,0 +1,104 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental : les images d'invincibilité expliquées — fenêtres d'esquive, timing et conseils de combat",
+  description: "Découvrez comment fonctionnent les images d'invincibilité de Loop Dungeon Incremental, comment repérer les fenêtres d'esquive en plein combat et quelles compositions d'équipe tirent le meilleur parti du timing des i-frames.",
+  category: "combat",
+  date: "2026-10-20",
+}
+
+Le timing décide des runs dans Loop Dungeon Incremental. Les images d'invincibilité sont ces fenêtres invisibles qui déterminent si une compétence de burst passe proprement ou si votre première ligne encaisse un coup de boss qu'elle n'aurait jamais dû subir. La plupart des joueurs terminent une boucle sans jamais les remarquer, puis se demandent pourquoi la même équipe qui traversait le douzième étage sans encombre s'effondre soudain au quinzième. Comprendre les images d'invincibilité de Loop Dungeon Incremental transforme cette approximation en un plan reproductible que vous pouvez tester, affiner et emporter dans chaque nouvelle boucle.
+
+La bonne nouvelle : vous n'avez pas besoin de dataminer le jeu pour bien utiliser les images d'invincibilité de Loop Dungeon Incremental. Il vous faut une méthode reproductible pour les observer, une équipe capable de les exploiter et des attentes réalistes sur ce que les i-frames peuvent ou ne peuvent pas vous sauver. Ce guide couvre ces trois points, avec la réserve que le développeur n'a pas publié de données de frames officielles, si bien que tout ce qui suit mêle conventions du genre et comportements observables et testables.
+
+## Ce que signifient les images d'invincibilité dans Loop Dungeon Incremental
+
+Une image d'invincibilité est un bref instant où un personnage ignore les dégâts entrants. Dans les jeux d'action, cette fenêtre provient généralement d'une roulade d'esquive. Dans un dungeon crawler incrémental basé sur une équipe comme celui-ci, les i-frames sont bien plus susceptibles d'être liées à des animations de compétence, à la résolution d'effets ou à des états d'amélioration spécifiques. Cette distinction compte, car elle change ce que vous contrôlez : vous ne chronométrez pas une pression de bouton, vous chronométrez l'ordre dans lequel vos héros agissent.
+
+La description officielle sur le [hub Steam de Loop Dungeon - Incremental](https://steamcommunity.com/app/4621970) présente le jeu comme consistant à mener une équipe de héros à travers des boucles de donjon sans fin, à récolter du butin, à débloquer des améliorations permanentes et à construire des synergies. Rien dans ce pitch ne promet d'esquive manuelle, et rien n'y promet non plus une défense à la frame près. Traitez les images d'invincibilité comme une propriété émergente du design des compétences plutôt que comme une mécanique mise en avant.
+
+| Terme | Signification en clair | Pourquoi c'est important en run |
+|---|---|---|
+| Images d'invincibilité (i-frames) | Un court laps de temps où les dégâts sont entièrement ignorés | Permet à un héros de survivre à un coup lourd qui aurait sinon mis fin à la run |
+| Fenêtre d'esquive | La portion d'une compétence ou d'un effet qui accorde cette immunité | Détermine quand lancer votre burst |
+| Taux de tick | La fréquence d'application des effets de dégâts dans le temps | Les i-frames peuvent absorber un tick ou plusieurs, selon le chevauchement |
+| Hitstun | L'interruption momentanée après avoir subi un coup | Peut annuler une compétence avant même que ses i-frames ne commencent |
+| Limitation des dégâts | Un plafond sur les dégâts qu'un coup peut infliger | Imite parfois les i-frames, mais c'est un système distinct |
+
+Le point pratique est simple : les i-frames sont un problème d'ordonnancement. Si l'Activate de votre Prêtre se résout avant le grand coup de l'ennemi, l'interaction autour de laquelle vous avez construit l'équipe se produit réellement. Si elle se résout après, vous perdez le héros et la synergie en même temps.
+
+## Comment les images d'invincibilité de Loop Dungeon Incremental interagissent avec les types de dégâts
+
+Toutes les attaques ne respectent pas une fenêtre d'immunité de la même manière, et c'est là que la plupart des suppositions s'effondrent. Les attaques multi-coups, les effets de dégâts dans le temps et les frappes lourdes uniques interagissent tous différemment avec les i-frames. Les retours de la communauté et le comportement général du genre suggèrent les schémas suivants, mais vérifiez-les dans vos propres runs avant de bâtir une stratégie dessus.
+
+| Source de dégâts | Comportement typique des i-frames | Ce qu'il faut surveiller |
+|---|---|---|
+| Frappe lourde unique | Entièrement absorbée si elle touche pendant la fenêtre | Le cas de test le plus clair pour confirmer l'existence d'une fenêtre |
+| Combo multi-coups | Partiellement absorbé ; les coups suivants touchent souvent | Les dégâts semblent réduits, pas éliminés |
+| Dégâts dans le temps | Dépend du timing des ticks ; peut être totalement ou partiellement évité | Surveillez la barre de vie entre les coups visibles |
+| Attaques spéciales de boss | Généralement absorbées, mais les frames de récupération qui suivent sont vulnérables | Le moment dangereux arrive souvent juste après la fin de l'immunité |
+| Effets environnementaux ou de sol | Ignorent fréquemment les i-frames | Ne supposez pas que l'immunité couvre les dangers |
+
+Deux habitudes découlent de ce tableau. Premièrement, ne supposez jamais qu'une fenêtre d'i-frames couvre toute l'animation ; la queue vulnérable est l'endroit où les héros meurent. Deuxièmement, quand une run échoue, demandez-vous si les dégâts venaient d'un coup ou d'un tick. Ce sont des problèmes différents avec des solutions différentes, et blâmer les images d'invincibilité pour une mort due aux dégâts dans le temps vous fait ajuster la mauvaise partie du build.
+
+## Lire le combat : les indices qu'un héros est dans une fenêtre d'i-frames
+
+On ne peut pas gérer ce qu'on ne voit pas, et Loop Dungeon Incremental n'affiche pas de minuteur à l'écran. Apprenez plutôt les signes. Voici les indices que les joueurs utilisent le plus souvent pour déduire qu'un héros est actuellement immunisé, et ils valent la peine d'être mémorisés avant de commencer à expérimenter avec l'ordre de l'équipe.
+
+- **Les chiffres de dégâts disparaissent, ils ne diminuent pas.** Un chiffre réduit signifie une mitigation ; aucun chiffre du tout signifie généralement une immunité.
+- **La barre de vie reste parfaitement immobile** pendant une animation qui l'égratigne normalement.
+- **Un effet de compétence persiste au-delà de son pic visuel.** La lueur ou l'aura qui reste affichée est souvent la fenêtre elle-même.
+- **L'animation d'attaque de l'ennemi se termine sans réaction.** Pas de tressaillement, pas de son de coup, pas d'étourdissement.
+- **Un combo de boss « saute » une étape.** Si le deuxième coup ne s'enregistre jamais, vous étiez dans une fenêtre à cet instant.
+
+| Indice | Confiance | Comment le confirmer |
+|---|---|---|
+| Chiffres de dégâts absents | Élevée | Répétez le même combat trois fois et vérifiez la cohérence |
+| Barre de vie statique | Élevée | Comparez avec une run sans la compétence équipée |
+| Effet visuel persistant | Moyenne | Se chevauche avec l'animation, vérifiez donc avec un second indice |
+| Absence de son de coup | Moyenne | Les indices audio peuvent être masqués par d'autres effets |
+| Saut d'animation de l'ennemi | Faible seul | Associez-le à une vérification des chiffres de dégâts avant de vous y fier |
+
+## Construire une équipe autour des images d'invincibilité de Loop Dungeon Incremental
+
+La composition d'équipe est là où la connaissance des i-frames porte ses fruits. La sortie complète a ajouté un Rogue conçu pour les dégâts de burst élevés et une nouvelle compétence de Prêtre appelée Activate qui interagit avec les compétences des autres héros de manière inattendue. Les deux sont des candidats naturels à l'exploitation des i-frames, car le burst veut une fenêtre sûre et Activate veut un ordonnancement précis.
+
+| Rôle | Pertinence des i-frames | Approche pratique |
+|---|---|---|
+| Rogue (dégâts de burst) | Veut frapper pendant une fenêtre protégée | Placez le burst après ce qui accorde l'immunité |
+| Prêtre avec Activate | Déclenche des interactions entre héros qui peuvent créer des fenêtres | Testez Activate contre la compétence de chaque héros individuellement |
+| Héros de première ligne | Absorbent les coups pendant que les fenêtres sont actives ailleurs | Décalez le positionnement pour que les tanks ne soient pas immunisés en même temps |
+| Soutien ou soins | Comble le vide après la fin de l'immunité | Chronométrez les soins pour la queue vulnérable, pas pour le pic protégé |
+
+Une règle empirique utile : n'empilez jamais tous vos effets défensifs en même temps. Une immunité qui se chevauche est une immunité gaspillée. Décalez vos fenêtres pour que, quand l'une se ferme, une autre s'ouvre. Les joueurs qui rapportent une progression fluide dans les boucles plus profondes décrivent généralement exactement ce type de séquencement, même lorsqu'ils n'emploient pas le terme d'images d'invincibilité.
+
+À noter d'après l'expérience des joueurs : plusieurs avis Steam décrivent le système de prestige comme peu gratifiant et le contenu comme court, les runs se bouclant en environ deux heures. Cela rend l'efficacité plus importante, pas moins. Chaque fenêtre de burst gaspillée représente une part plus grande d'une run courte, donc apprendre tôt à lire les images d'invincibilité de Loop Dungeon Incremental est l'un des gains de performance les moins coûteux qui soient.
+
+## Comment tester vous-même les images d'invincibilité (sans datamining)
+
+Puisqu'aucune donnée de frames officielle n'existe, l'auto-test est la seule voie fiable. La méthode ci-dessous est volontairement ennuyeuse : changez une variable, répétez, notez. Elle fonctionne parce qu'elle élimine le bruit qui fait paraître le combat aléatoire.
+
+| Étape | Action | Ce que vous apprenez |
+|---|---|---|
+| 1 | Choisissez une seule rencontre répétable | Crée une base de référence stable |
+| 2 | Retirez toutes les sources de dégâts dans le temps | Isole les coups des ticks |
+| 3 | Lancez le combat avec une compétence désactivée | Établit un résultat de contrôle |
+| 4 | Réactivez la compétence et répétez trois fois | Confirme si une fenêtre existe |
+| 5 | Décalez la position de la compétence dans l'ordre d'un cran | Cartographie le début et la fin de la fenêtre |
+| 6 | Enregistrez le combat et avancez image par image | Convertit la sensation en estimation réelle |
+
+Deux avertissements. Premièrement, ne vous fiez pas à une seule observation ; la variance du combat vous mentira. Deuxièmement, ne poursuivez pas des décomptes de frames exacts. Sans données du développeur, votre mesure est une estimation, et une estimation utilisée de façon cohérente vaut mieux qu'un nombre précis que vous ne pouvez pas vérifier. Construisez votre rotation autour du comportement observé, pas autour d'un nombre que quelqu'un a posté sans preuve.
+
+Si vous voulez comparer vos notes, les [discussions de la communauté Steam pour Loop Dungeon - Incremental](https://steamcommunity.com/app/4621970) sont l'endroit le plus direct pour demander aux autres joueurs ce qu'ils ont observé. Les fils sur les données de frames sont rares, mais les discussions sur le rythme des combats et les synergies d'équipe reviennent régulièrement.
+
+## FAQ : les images d'invincibilité de Loop Dungeon Incremental
+
+**Loop Dungeon Incremental publie-t-il des données officielles sur les images d'invincibilité ?**
+Pas à notre connaissance. Le développeur a partagé des notes de patch et des correctifs techniques, mais aucune documentation de combat image par image. Tout timing cité en ligne doit être traité comme une estimation de joueur plutôt que comme une spécification.
+
+**Quelles compétences offrent les images d'invincibilité les plus longues dans Loop Dungeon Incremental ?**
+Il n'existe aucun classement vérifié. Les retours de la communauté pointent vers les animations de compétence plus longues et plus élaborées comme les candidates les plus probables, et l'Activate du Prêtre mérite d'être testé car il interagit avec les compétences des autres héros. Testez chaque compétence dans une rencontre contrôlée plutôt que de faire confiance à une liste.
+
+**Les images d'invincibilité protègent-elles contre les boss et les dégâts dans le temps ?**
+Contre les attaques directes des boss, souvent oui, bien que la récupération vulnérable après la fenêtre soit généralement le vrai danger. Contre les ticks de dégâts dans le temps, la protection est incohérente et dépend du timing des ticks. Ne construisez pas de stratégie qui suppose que les i-frames couvrent tout.
+
+**Puis-je terminer le jeu sans apprendre les images d'invincibilité de Loop Dungeon Incremental ?**
+Beaucoup de joueurs le font, la campagne étant courte. Mais si vous voulez des runs plus propres, moins de fenêtres de burst gaspillées et une meilleure compréhension des raisons pour lesquelles certaines équipes échouent au même étage à chaque fois, apprendre à lire ces fenêtres est la compétence la plus rentable que vous puissiez développer.

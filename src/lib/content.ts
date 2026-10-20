@@ -257,13 +257,39 @@ const GROUP_TITLES_JA: Record<string, string> = {
   community: "コミュニティ",
 };
 
+// 德文分组标题映射
+const GROUP_TITLES_DE: Record<string, string> = {
+  guide: "Erste Schritte",
+  progression: "Fortschritt",
+  combat: "Kampf & Builds",
+  items: "Items & Ausrüstung",
+  mechanics: "Spielmechaniken",
+  platforms: "Plattformen & Release",
+  community: "Community",
+};
+
+// 法文分组标题映射
+const GROUP_TITLES_FR: Record<string, string> = {
+  guide: "Premiers pas",
+  progression: "Progression",
+  combat: "Combat & builds",
+  items: "Objets & équipement",
+  mechanics: "Mécaniques de jeu",
+  platforms: "Plateformes & sortie",
+  community: "Communauté",
+};
+
 // locale → 分组标题映射
 const GROUP_TITLES_BY_LOCALE: Record<string, Record<string, string>> = {
+  de: GROUP_TITLES_DE,
+  fr: GROUP_TITLES_FR,
   ja: GROUP_TITLES_JA,
 };
 
 // locale → "Overview" 翻译
 const OVERVIEW_LABEL_BY_LOCALE: Record<string, string> = {
+  de: "Übersicht",
+  fr: "Vue d’ensemble",
   ja: "一覧",
 };
 

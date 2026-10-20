@@ -1,0 +1,135 @@
+export const metadata = {
+  title: "Configuration requise pour Loop Dungeon Incremental : votre PC peut-il le faire tourner ?",
+  description: "Analyse complète de la configuration requise pour Loop Dungeon Incremental : minimale vs recommandée, plateformes prises en charge, statut Steam Deck et correctifs au lancement.",
+  category: "platforms",
+  date: "2026-10-20",
+}
+
+La configuration requise pour Loop Dungeon Incremental est aussi clémente qu'une sortie Steam moderne puisse l'être : une machine Windows 10 en 64 bits, des graphismes intégrés et un demi-gigaoctet d'espace libre. Cela compte, car le RPG incrémental de dungeon-crawling de Playsect est arrivé le 19 octobre 2026, et la majorité de son public joue sur des ordinateurs portables, des PC de bureau et des consoles portables plutôt que sur des configurations de joueurs dédiées. Vérifier la configuration requise pour Loop Dungeon Incremental avant d'acheter vous évite une demande de remboursement — et vous indique exactement de quelle marge vous disposez sur la durée.
+
+Voici une analyse complète de ce que la page du magasin liste, de ce qu'elle omet discrètement, des plateformes réellement confirmées, et de la manière de corriger le seul crash au démarrage signalé par les joueurs depuis le lancement.
+
+## Configuration requise pour Loop Dungeon Incremental en un coup d'œil
+
+La version courte : si votre ordinateur a été construit au cours de la dernière décennie et exécute Windows 10 ou 11, vous passez presque certainement le seuil. Voici la fiche technique complète condensée en un seul tableau.
+
+| Composant | Ce que le jeu demande | Quel est le niveau d'exigence ? |
+| --- | --- | --- |
+| Système d'exploitation | Windows 10 (64 bits) | Très faible |
+| Processeur | Intel Core i3-2100 ou équivalent AMD | Très faible |
+| Graphismes | Graphismes intégrés (Intel HD Graphics 4000) | Très faible |
+| Stockage | 500 Mo d'espace disponible | Très faible |
+| RAM | Non indiquée sur la page du magasin | Inconnu |
+| Version de DirectX | Non indiquée | Inconnu |
+| Architecture | Processeur et OS 64 bits requis | Standard |
+
+Le Core i3-2100 est sorti en 2011, et l'Intel HD Graphics 4000 est du silicium intégré de l'époque 2012. Ce sont des cibles minimales, pas des aspirations. Pour un jeu incrémental construit autour du combat automatique, de la gestion de groupe de héros et des réinitialisations de prestige, c'est cohérent — le gros du travail se fait dans les menus et les tableaux de statistiques, pas dans le rendu 3D en temps réel.
+
+Ce que la fiche **ne** mentionne pas est tout aussi utile : aucune quantité de RAM, aucune exigence DirectX et aucun GPU dédié n'est listé nulle part. Considérez cela comme une bonne nouvelle pour le matériel peu puissant, mais ne le prenez pas pour une garantie.
+
+## Minimale vs recommandée : lire la fiche technique avec attention
+
+La plupart des pages Steam vous donnent deux niveaux complets. Celle-ci vous en donne un et demi. La colonne recommandée existe mais est presque vide, ce qui est suffisamment inhabituel pour être signalé.
+
+| Catégorie | Minimale | Recommandée |
+| --- | --- | --- |
+| OS 64 bits | Requis | Requis |
+| Version de l'OS | Windows 10 | Non spécifiée |
+| Processeur | Intel Core i3-2100 / équivalent AMD | Non spécifié |
+| Graphismes | Intégrés (Intel HD Graphics 4000) | Non spécifiés |
+| Mémoire | Non spécifiée | Non spécifiée |
+| Stockage | 500 Mo | Non spécifié |
+| Notes supplémentaires | Aucune listée | Aucune listée |
+
+En pratique, cela signifie que le niveau minimal est votre seul véritable point de référence. Quelques conclusions pratiques en découlent :
+
+- **Partez du principe que le minimum est la cible.** Lorsqu'un développeur ne publie qu'un seul niveau détaillé, les spécifications listées correspondent généralement à la configuration sur laquelle il a réellement testé.
+- **Prévoyez 4 Go de RAM ou plus.** Le jeu n'indique aucune exigence de mémoire, mais toute installation de Windows 10 en 64 bits nécessite environ 2 Go rien qu'au repos. Si votre machine dispose de 4 Go au total, fermez votre navigateur avant de lancer le jeu.
+- **Prévoyez plus de 500 Mo.** Le téléchargement tient confortablement dans 500 Mo, mais les fichiers de sauvegarde, les données de synchronisation Steam Cloud et les caches de shaders/préférences ajouteront un peu plus. Un gigaoctet complet d'espace libre élimine totalement le souci.
+- **Les graphismes intégrés suffisent.** Aucun GPU dédié n'est listé à quelque niveau que ce soit, donc un ordinateur portable avec graphismes intégrés Intel ou AMD est le cas d'usage attendu, pas un cas limite.
+
+Si votre matériel se situe quelque part entre « vieux PC de bureau » et « ordinateur portable de jeu », vous êtes largement au-delà du seuil. La vraie question pour la plupart des joueurs n'est pas la puissance brute — c'est de savoir quelles plateformes sont prises en charge tout court.
+
+## Prise en charge des plateformes : Windows, Steam Deck et tout le reste
+
+La page du magasin liste Windows comme plateforme, point final. Tout le reste est soit non confirmé, soit absent, et cette distinction compte si vous jouez sur une console portable ou un Mac.
+
+| Plateforme | Statut | Ce que cela signifie pour vous |
+| --- | --- | --- |
+| Windows 10 / 11 (Steam) | Confirmée | La seule plateforme officiellement listée |
+| Steam Deck | Inconnu | Valve marque la compatibilité comme « Inconnue », pas « Vérifiée » ni « Jouable » |
+| SteamOS / Linux | Non listé | Aucune version native annoncée |
+| macOS | Non listé | Aucune version native annoncée |
+| Consoles | Non listé | Aucune version PlayStation ou Xbox annoncée |
+| Mobile | Non listé | Aucune version iOS ou Android annoncée |
+
+Le label « Inconnu » du Steam Deck mérite d'être lu attentivement. Cela ne signifie pas que le jeu échoue — cela signifie que Valve n'a pas terminé ou publié d'évaluation de compatibilité. Les retours de la communauté sur les performances en mode portable restent rares, donc si un Deck est votre seule machine, téléchargez d'abord la démo gratuite et testez-la vous-même plutôt que de présumer l'un ou l'autre résultat.
+
+Au-delà de la question de l'OS, la liste des fonctionnalités est généreuse pour une sortie indé à 4,99 $ :
+
+| Fonctionnalité | Incluse ? | Notes |
+| --- | --- | --- |
+| Solo | Oui | Pas de multijoueur ni de coopération |
+| Succès Steam | Oui | 29 succès à débloquer |
+| Steam Cloud | Oui | La progression se transfère entre machines |
+| Partage familial | Oui | Partageable au sein d'une famille Steam |
+| Prise en charge des manettes | Partielle | Manettes Xbox et PlayStation listées |
+| Option souris uniquement | Oui | Fonction d'accessibilité pour trackpad ou souris |
+| Langues de l'interface | 13 | Anglais plus 12 autres ; interface uniquement, pas d'audio complet |
+
+L'option d'accessibilité souris uniquement est une bonne idée pour un jeu incrémental, puisque l'essentiel de la boucle consiste à cliquer dans des menus d'amélioration. Notez que les sous-titres et l'audio complet ne sont pas localisés — seul le texte de l'interface est traduit.
+
+## Conseils de performance et problèmes connus au lancement
+
+La semaine de lancement n'a pas été parfaitement fluide. Le développeur a publiquement reconnu un crash au démarrage spécifique, et l'expérience des joueurs à ce sujet est suffisamment constante pour qu'on puisse s'y préparer.
+
+| Symptôme | Cause probable | Que tenter |
+| --- | --- | --- |
+| « Fatal error: Failed to load il2cpp » au démarrage sous Windows 11 | Windows 11 Smart App Control bloque le runtime Unity IL2CPP | Consultez la publication Steam News du développeur sur le sujet ; Smart App Control peut être vérifié dans les paramètres de Sécurité Windows |
+| Le jeu se ferme immédiatement après le logo | Exécution d'une version 32 bits de Windows | Confirmez que votre OS est en 64 bits dans Paramètres > Système > À propos |
+| Fréquence d'images très basse dans les menus | Applications en arrière-plan se disputant un budget RAM réduit | Fermez les onglets du navigateur et les overlays avant de lancer |
+| Progression non synchronisée entre PC | Conflit Steam Cloud | Vérifiez que Cloud est activé pour le titre dans les propriétés Steam |
+| Rien ne se passe au clic sur Jouer | Installation de la démo corrompue | Supprimez les fichiers locaux et réinstallez |
+
+Deux choses méritent d'être soulignées. Premièrement, le crash il2cpp est spécifiquement lié à la fonction Smart App Control de Windows 11, et non à un matériel faible — un tout nouveau PC de jeu peut le rencontrer alors qu'un ordinateur portable de huit ans fonctionne très bien. Deuxièmement, le jeu est livré avec une démo gratuite, qui est le moyen le moins coûteux de confirmer que la configuration requise pour Loop Dungeon Incremental est satisfaite sur *votre* machine exacte avant de dépenser quoi que ce soit.
+
+Pour les performances générales, quelques habitudes aident sur du matériel peu puissant :
+
+- **Limitez la fréquence d'images.** Les jeux incrémentaux ne profitent pas d'un taux de rafraîchissement illimité, et le plafonnement réduit la chaleur sur les ordinateurs portables.
+- **Jouez en fenêtré.** Une résolution plus faible en mode fenêtré allège la charge sur les graphismes intégrés.
+- **Laissez-le tourner en veille délibérément.** Le combat automatique signifie que le jeu peut fonctionner sans surveillance ; gardez la machine branchée et désactivez les minuteries de veille pendant les longues boucles.
+- **Conservez des sauvegardes.** La synchronisation cloud est prise en charge, mais une copie manuelle occasionnelle de votre dossier de sauvegarde est une assurance bon marché avant une réinitialisation de prestige.
+
+## Comment vérifier que votre PC répond aux exigences
+
+Vous n'avez pas besoin d'un outil de benchmarking. Windows affiche tout ce dont vous avez besoin en environ quatre-vingt-dix secondes.
+
+| Étape | Que faire | Où regarder |
+| --- | --- | --- |
+| 1. Confirmer le 64 bits | Ouvrir Paramètres > Système > À propos | « Type de système » doit indiquer système d'exploitation 64 bits |
+| 2. Vérifier la version de Windows | Même écran À propos | Windows 10 ou Windows 11 |
+| 3. Identifier votre CPU | Gestionnaire des tâches > Performance > Processeur | Comparez le nom du modèle à « Intel Core i3-2100 ou équivalent AMD » |
+| 4. Identifier votre GPU | Gestionnaire des tâches > Performance > GPU | Un Intel HD Graphics 4000 intégré ou plus récent suffit |
+| 5. Vérifier l'espace libre | Explorateur de fichiers > Ce PC | Visez 1 Go libre plutôt que exactement 500 Mo |
+| 6. Vérifier la RAM | Gestionnaire des tâches > Performance > Mémoire | 4 Go minimum est une hypothèse de travail sûre |
+
+Si vous validez les étapes 1, 2 et 5, vous avez essentiellement terminé — les seuils de processeur et de graphismes sont si bas que presque toute machine Windows 10 fonctionnelle passe. La [page officielle de Loop Dungeon - Incremental sur Steam](https://store.steampowered.com/app/4621970/Loop_Dungeon__Incremental/) est la source faisant autorité si la fiche technique venait à être révisée après le lancement.
+
+Une dernière considération : le jeu est proposé à 4,99 $ avec une remise de lancement de 10 % valable jusqu'au 2 novembre 2026. À ce prix, le coût d'une erreur est faible — mais un téléchargement de démo ne coûte rien du tout, et c'est le seul test qui tient compte de vos pilotes, de vos applications en arrière-plan et de votre version spécifique de Windows.
+
+## FAQ
+
+**La configuration requise pour Loop Dungeon Incremental est-elle difficile à atteindre ?**
+Non. Le minimum listé est une machine Windows 10 en 64 bits avec un Intel Core i3-2100 ou équivalent AMD, des graphismes intégrés de niveau Intel HD Graphics 4000 et 500 Mo de stockage. C'est à peu près un ordinateur de bureau de l'époque 2012, donc presque tout PC fonctionnel de la dernière décennie le dépasse confortablement.
+
+**Loop Dungeon Incremental fonctionne-t-il sur Steam Deck ?**
+Valve liste actuellement la compatibilité Steam Deck comme « Inconnue », ce qui signifie qu'aucune évaluation officielle n'a encore été publiée. Comme il n'y a pas de statut vérifié et que les tests communautaires restent limités, installez la démo gratuite sur votre Deck et vérifiez vous-même les performances avant d'acheter.
+
+**De combien de RAM Loop Dungeon Incremental a-t-il besoin ?**
+La page du magasin ne publie aucune exigence de mémoire, ni au niveau minimal ni au niveau recommandé. En règle pratique, 4 Go de RAM système constituent une hypothèse raisonnable pour toute machine Windows 10 en 64 bits exécutant un jeu incrémental 2D léger, et plus de marge ne fait jamais de mal.
+
+**Pourquoi le jeu plante-t-il sous Windows 11 avec une erreur « Failed to load il2cpp » ?**
+Le développeur a reconnu un crash au démarrage lié à la fonction Smart App Control de Windows 11 qui interfère avec le runtime Unity IL2CPP. Il s'agit d'un conflit de paramètre de sécurité plutôt que d'un manque de matériel, et la publication Steam News du développeur couvre la solution de contournement recommandée. Les joueurs sous Windows 10 ne semblent pas affectés par ce problème spécifique.
+
+**Existe-t-il une démo que je peux tester avant d'acheter ?**
+Oui. Une démo gratuite est disponible sur la page du magasin Steam, et elle utilise le même moteur et les mêmes ressources que la version complète — ce qui en fait le moyen le plus fiable de confirmer la configuration requise pour Loop Dungeon Incremental sur votre propre matériel.

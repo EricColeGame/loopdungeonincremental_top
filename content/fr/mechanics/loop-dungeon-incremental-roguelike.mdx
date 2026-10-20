@@ -1,0 +1,131 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental Roguelike : mécaniques de base, boucles de prestige et conseils de composition d'équipe",
+  description: "Analyse approfondie des mécaniques du roguelike Loop Dungeon Incremental : synergies d'équipe, réinitialisations de prestige, combat automatique et conseils pour descendre toujours plus profond.",
+  category: "mechanics",
+  date: "2026-10-20",
+}
+
+## Pourquoi la boucle de Loop Dungeon Incremental Roguelike est différente
+
+Une expédition en donjon qui se termine devrait tout de même vous laisser plus fort qu'au départ — et c'est exactement la promesse de design derrière la boucle du roguelike Loop Dungeon Incremental. Au lieu de vous punir pour chaque mort, le jeu convertit chaque expédition ratée en monnaie, en déblocages et en progression permanente des statistiques, si bien qu'un anéantissement n'est jamais une impasse. Si vous avez décroché des idle games parce que la progression semblait sans poids, ou des roguelikes traditionnels parce qu'une mauvaise run ressemblait à des heures jetées par la fenêtre, cet hybride est conçu pour éliminer précisément cette friction.
+
+La structure roguelike de Loop Dungeon Incremental emprunte la tension propre aux runs d'un dungeon crawler — des étages qui montent en difficulté, des risques croissants — et la relie à une couche de méta-progression qui ne cesse de s'accumuler. Le développeur Playsect le décrit comme un RPG incrémental d'exploration de donjon où chaque run renforce votre équipe. Cette seule phrase résume tout l'attrait : des décisions à court terme à l'intérieur d'une boucle, des décisions à long terme d'une boucle à l'autre.
+
+Voici une analyse centrée sur les mécaniques et sur la façon dont les systèmes s'articulent, avec des conseils pratiques pour tirer davantage de profondeur de chaque réinitialisation.
+
+## ADN roguelike, bénéfice incrémental
+
+Loop Dungeon Incremental n'est pas un roguelike à permadeath au sens classique, et c'est justement là tout l'intérêt. La partie « roguelike » réside dans la structure de la run — vous poussez aussi loin que votre équipe peut survivre, puis vous recommencez. La partie « incrémentale » réside dans ce qui survit au redémarrage.
+
+| Convention roguelike | Comment Loop Dungeon Incremental la gère |
+|---|---|
+| La permadeath efface votre personnage | Une réinitialisation vide la run, pas vos améliorations permanentes |
+| Des étages procéduraux renouvellent les runs | Des boucles de donjon infinies continuent de gagner en profondeur |
+| Des objets qui définissent la run | Le butin se convertit en arbres d'amélioration permanente |
+| La construction de build au sein d'une seule run | La composition d'équipe et les synergies de héros portent la stratégie d'une run à l'autre |
+| Un coût d'échec élevé | Chaque expédition contribue à la croissance à long terme |
+
+Le résultat concret est un jeu où perdre une run reste synonyme de progrès. Ce choix de design abaisse le plafond de frustration et déplace le test de compétence de « puis-je survivre à cet étage » vers « est-ce que j'investis aux bons endroits entre les étages ».
+
+## La boucle de run centrale, phase par phase
+
+Chaque cycle suit à peu près le même rythme en cinq phases. Le comprendre est le moyen le plus rapide d'arrêter de jouer en réaction.
+
+| Phase | Ce que vous faites | Ce que vous gagnez |
+|---|---|---|
+| 1. Rassembler | Recruter des héros aux forces et rôles variés | Une forme d'équipe qui correspond à votre stratégie |
+| 2. Déployer | Envoyer l'équipe dans la boucle de donjon suivante | Le combat automatique résout les étages |
+| 3. Collecter | Vaincre des monstres et récupérer butin et ressources | De la monnaie et des matériaux pour les améliorations |
+| 4. Investir | Dépenser les ressources en améliorations permanentes | Une puissance de départ plus élevée pour les runs futures |
+| 5. Réinitialiser | Passer prestige quand les rendements commencent à s'aplatir | Des bonus de prestige qui ouvrent des étages plus profonds |
+
+Deux détails comptent plus qu'ils n'en ont l'air. Premièrement, le combat est automatique, ce qui signifie que vos vraies décisions se prennent aux phases un, quatre et cinq — composition d'équipe, dépenses et timing de la réinitialisation. Deuxièmement, la réinitialisation est facultative à court terme et obligatoire à long terme : rester dans une run au-delà du point de rendements décroissants est la façon la plus courante dont les joueurs se bloquent.
+
+Une règle empirique utile : si une seule boucle prend nettement plus de temps que la précédente sans rien débloquer de nouveau, il y a de fortes chances que vous soyez en retard pour un prestige.
+
+## Composition d'équipe et mécaniques de synergie
+
+Le recrutement est là où la couche roguelike de Loop Dungeon Incremental acquiert sa profondeur stratégique. Les héros remplissent différents rôles, et le jeu récompense les compositions équilibrées ainsi que les synergies entre personnages et améliorations, plutôt qu'un seul porteur surchargé.
+
+| Rôle | Fonction dans l'équipe | Quoi améliorer en premier |
+|---|---|---|
+| Cogneur de première ligne | Absorbe les dégâts pour que les héros fragiles survivent | Robustesse et statistiques défensives |
+| Dégâts principal | Raccourcit les combats avant que l'attrition ne l'emporte | Puissance d'attaque et vitesse |
+| Héros axé sur les capacités | Profite le plus des améliorations de synergie | Puissance et disponibilité des capacités |
+| Soutien | Maintient la boucle en fonctionnement sans surveillance | Soins, buffs, capacité de survie |
+
+Les noms de succès visibles sur la page du magasin — Unlock Warrior, Apprentice, First Run, Mastery — suggèrent que le roster s'ouvre progressivement plutôt que d'un seul coup. Traitez les premiers déblocages comme un tutoriel sur l'équilibre des rôles : une équipe qui ne survit pas assez longtemps pour que ses dégâts comptent finira par stagner, quelle que soit la qualité du butin.
+
+Trois habitudes de composition d'équipe sont toujours rentables :
+
+- **Gardez une éponge à dégâts dédiée.** Les escouades canon de verre nettoient vite les premiers étages et s'effondrent sur les suivants.
+- **Recherchez les synergies, pas les statistiques brutes.** Une amélioration modeste qui multiplie la force d'un héros existant bat généralement un bonus fixe plus élevé sans interaction.
+- **Reconstruisez après chaque prestige.** La composition qui vous a mené à l'étage 40 n'est pas automatiquement celle qui franchit l'étage 60.
+
+## Prestige, améliorations permanentes et méta-couche
+
+Le système de prestige est le moteur de toute l'expérience roguelike de Loop Dungeon Incremental. Quand vous réinitialisez, le jeu convertit votre progression accumulée en bonus de prestige qui relèvent votre plafond — des étages plus profonds, de nouveaux chemins, de nouvelles options d'amélioration et de nouvelles possibilités stratégiques.
+
+| Couche de progression | Effacée par le prestige ? | Bénéfice typique |
+|---|---|---|
+| Niveaux en run et butin temporaire | Oui | Pic de puissance immédiat pendant la boucle en cours |
+| Améliorations permanentes | Non | Croissance de base régulière à chaque run |
+| Bonus de prestige | Non, ils s'accumulent | Accès à des étages plus profonds |
+| Déblocages de compte et nouveaux chemins | Non | Nouvelles stratégies et options d'équipe |
+
+C'est pourquoi l'étiquette « incrémental » convient si bien. La progression ne cesse jamais de s'accumuler : même une run abandonnée à mi-chemin finance le palier d'amélioration suivant. La compétence réside dans le rythme — économiser des ressources pour un gros achat permanent plutôt que dépenser maintenant pour atteindre un étage de plus avant de réinitialiser.
+
+Si vous voulez consulter la liste complète des fonctionnalités, la configuration requise et le prix actuel, la [page officielle Loop Dungeon - Incremental sur Steam](https://store.steampowered.com/app/4621970/Loop_Dungeon__Incremental/) fait référence.
+
+## Jeu actif vs jeu passif : choisir son style d'optimisation
+
+Playsect a explicitement conçu le jeu à la fois pour les optimisateurs actifs et pour les amateurs de progression passive, et les deux styles produisent des sessions très différentes.
+
+| Style de jeu | À quoi cela ressemble | Idéal pour |
+|---|---|---|
+| Optimisation active | Reconstruire l'équipe et redépenser les améliorations à chaque boucle | Les joueurs qui aiment les tableurs et les gains marginaux |
+| Progression passive | Configurer une équipe, laisser le combat automatique tourner, revenir plus tard | Les emplois du temps chargés et les fans d'idle games |
+| Hybride | Inactif la journée, poussées actives sur les nouveaux étages | La plupart des joueurs, en réalité |
+
+Des conseils pratiques qui s'appliquent aux trois :
+
+1. **Revenez après de longues périodes d'inactivité.** Le combat automatique continue de générer des ressources, mais la monnaie non dépensée ne vous apporte rien.
+2. **Poussez la profondeur, pas le confort.** L'étage le plus profond que vous avez atteint est généralement la meilleure mesure pour savoir si votre build fonctionne.
+3. **Utilisez les contrôles souris uniquement si vous voulez une configuration épurée.** La page du magasin mentionne une option d'accessibilité à la souris seule, ce qui convient aux sessions incrémentales à faible attention.
+4. **Suivez ce qui vous a tué.** Des anéantissements répétés sur le même type d'étage indiquent une lacune défensive précise, pas de la malchance.
+
+## Retours de la communauté et réserves pratiques
+
+L'expérience des joueurs au lancement a été mitigée plutôt qu'enthousiaste. Au moment de la rédaction, la page du magasin affiche 108 évaluations d'utilisateurs avec 65 % positives — assez de bienveillance pour suggérer que la boucle centrale fonctionne, mais pas une sortie universellement peaufinée. Les retours de la communauté portent généralement sur les critiques habituelles des jeux incrémentaux : le rythme des premières heures et la vitesse à laquelle la boucle révèle sa profondeur.
+
+Il y a aussi un problème technique connu qui mérite d'être signalé. Le développeur a publié une annonce de lancement reconnaissant que certains joueurs sous Windows 11 rencontrent un crash au démarrage avec une erreur « Failed to load il2cpp » liée à Windows 11 Smart App Control. Si vous la rencontrez, consultez le fil d'actualités du jeu avant de chercher à l'aveugle.
+
+| Détail | Valeur |
+|---|---|
+| Développeur / Éditeur | Playsect |
+| Date de sortie | 19 octobre 2026 |
+| Tags de genre | Casual, Indie, Simulation, Strategy |
+| Prix de lancement | 4,99 $ avec une remise de lancement de 10 % |
+| Succès Steam | 29 |
+| Langues d'interface | 13 |
+| Système d'exploitation minimum | Windows 10, 64 bits |
+| Réputation des évaluations | Mitigée — 65 % positives sur 108 évaluations au moment de la rédaction |
+
+À ce niveau de prix et d'ampleur, le risque est faible et la boucle facile à tester — une démo gratuite est disponible sur la même page du magasin.
+
+## Questions fréquentes
+
+**Loop Dungeon Incremental est-il un roguelike ou un idle game ?**
+C'est un hybride. La structure de run, les étages croissants et le cycle de réinitialisation lui donnent la tension d'un roguelike, tandis que les améliorations permanentes et les bonus de prestige en font un véritable jeu incrémental. L'étiquette roguelike de Loop Dungeon Incremental convient parce que les deux moitiés sont porteuses — retirez l'une ou l'autre et le design cesse de fonctionner.
+
+**Le prestige efface-t-il ma progression ?**
+Non. Une réinitialisation de prestige vide la puissance temporaire de la run en cours, mais les améliorations permanentes, les bonus de prestige et les déblocages persistent. En pratique, réinitialiser est la façon de devenir plus fort plus vite une fois qu'une run cesse de produire des gains significatifs.
+
+**Combien de temps dure une boucle de donjon typique ?**
+Cela varie selon votre build et la profondeur que vous poussez, mais le design prend en charge à la fois de courtes sessions de vérification et de plus longues poussées actives. Si une seule boucle s'éternise bien au-delà de votre rythme habituel sans nouveaux déblocages, c'est le signal qu'il faut réinitialiser.
+
+**Y a-t-il une démo ?**
+Oui — une démo téléchargeable est listée aux côtés du jeu complet sur Steam, ce qui est le moyen le plus simple de vérifier si la boucle vous accroche avant d'acheter.
+
+**Que dois-je améliorer en premier ?**
+Privilégiez les améliorations permanentes qui relèvent votre plafond d'étages plutôt que celles qui ne font qu'accélérer les premiers nettoyages. Les étages plus profonds génèrent de meilleurs rendements, donc les améliorations qui relèvent le plafond s'accumulent plus vite que celles de confort.

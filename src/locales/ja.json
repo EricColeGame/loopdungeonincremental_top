@@ -1,1 +1,491 @@
-{}
+{
+  "site": {
+    "name": "Loop Dungeon Incremental Wiki",
+    "shortName": "Loop Dungeon",
+    "tagline": "ビルド、アップグレード、ダンジョンの進行",
+    "description": "Loop Dungeon - Incremental の初心者ガイド、ヒーロービルド、アップグレード経路、プレステージのコツ、ダンジョン進行、ゲームメカニクス、最新アップデートを紹介します。",
+    "legalNotice": "独立したファン Wiki。 Playsect または Valve とは無関係です。"
+  },
+  "nav": {
+    "guide": "ガイド",
+    "progression": "進行",
+    "combat": "戦闘",
+    "items": "アイテム",
+    "mechanics": "ゲームシステム",
+    "platforms": "プラットフォーム",
+    "community": "コミュニティ"
+  },
+  "home": {
+    "meta": {
+      "title": "Loop Dungeon Wiki - ビルド、アップグレード、進行",
+      "description": "Loop Dungeon - Incremental の初心者ガイド、ヒーロービルド、アップグレード経路、プレステージのコツ、ダンジョン進行、ゲームメカニクス、最新アップデートを紹介します。"
+    },
+    "hero": {
+      "eyebrow": "インクリメンタルダンジョンクローラーRPG",
+      "title": "Loop Dungeon Incremental Wiki",
+      "description": "ヒーローのパーティーを率いて無限のダンジョン ループを抜け、戦利品を集め、永久アップグレードのロックを解除し、戦闘を自動化し、より深いフロアに到達するための強力な相乗効果を発見します。",
+      "stats": [
+        "2026 年 10 月 19 日リリース",
+        "8,500以上のデモプレイヤー",
+        "発売前に 5,500 以上のウィッシュリスト",
+        "13 の言語をサポート"
+      ],
+      "primaryCta": "初心者ガイド",
+      "secondaryCta": "ヒーロービルドとTierリスト",
+      "tertiaryCta": "Steam でプレイする",
+      "videoLabel": "公式ゲームプレイトレーラー"
+    },
+    "updates": {
+      "title": "最新のアップデート",
+      "browse": "すべてのガイドを参照する",
+      "viewAll": "すべて見る"
+    },
+    "start": {
+      "eyebrow": "ここから始めましょう",
+      "title": "あなたの Loop Dungeon Incremental の旅",
+      "cards": [
+        {
+          "number": "1",
+          "title": "初心者ガイド",
+          "description": "初期のリソースを無駄にすることなく、コア ループ、パーティの役割、アップグレードの優先順位、最初の 1 時間の計画を学びましょう。"
+        },
+        {
+          "number": "2",
+          "title": "最速のレベリング",
+          "description": "集中的なキャリー、効率的な永久アップグレード、最初のダンジョンの壁を通る明確な道を使って奥深くまで進みましょう。"
+        },
+        {
+          "number": "3",
+          "title": "最適なファーミングスポット",
+          "description": "ループ、より深いフロア、モンスター撃破からの戦利品を、リセットごとに複合化するアップグレードにルーティングします。"
+        },
+        {
+          "number": "4",
+          "title": "最初のボスガイド",
+          "description": "持続的なダメージ、ローグバースト、プリーストの持続、そしてタイミングの良いActivateチェーンを備えた、ボスに対応したパーティーを構築しましょう。"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "人気のページ",
+      "title": "今のトレンド",
+      "quickLinks": [
+        "初心者ガイド",
+        "プレステージのタイミング",
+        "ベストビルド",
+        "ボス攻略法"
+      ],
+      "cards": [
+        {
+          "badge": "初心者",
+          "title": "初心者ガイド",
+          "description": "最初の 1 時間のプランでは、パーティーの構築、アップグレードの優先順位、プレステージのタイミング、初期のミスについて説明します。",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide"
+        },
+        {
+          "badge": "人気のある",
+          "title": "ヒーローの役割とパーティの規模",
+          "description": "ローグ、プリースト、メイジ、フレックススロットの役割を比較し、より深いループでも生き残れるコアを構築します。",
+          "href": "/progression/loop-dungeon-incremental-party-size"
+        },
+        {
+          "badge": "ビルド",
+          "title": "メイジビルドガイド",
+          "description": "コアダメージの柱、キャストのタイミング、パーティーの相乗効果、安定したメイジキャリーの背後にあるアップグレード順序。",
+          "href": "/combat/loop-dungeon-incremental-mage-build"
+        },
+        {
+          "badge": "人気のある",
+          "title": "プレステージガイド",
+          "description": "いつリセットするか、何が引き継がれるか、停滞したループを永続的な戦力に変える方法を学びます。",
+          "href": "/progression/loop-dungeon-incremental-prestige"
+        },
+        {
+          "badge": "ファーミング",
+          "title": "アイテムファーミングガイド",
+          "description": "ループの深さ、モンスター撃破、アップグレード、プレステージのタイミングを軸に、繰り返せるルート稼ぎを組み立てます。",
+          "href": "/items/loop-dungeon-incremental-item-farming"
+        },
+        {
+          "badge": "戦闘",
+          "title": "ボスガイド",
+          "description": "ボスに備えたパーティーを準備し、バースト ウィンドウを調整し、すべてのワイプを特定の修正に変えます。",
+          "href": "/combat/loop-dungeon-incremental-boss-guide"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Loop Dungeon Incremental とは何ですか？",
+      "paragraphs": [
+        "Loop Dungeon Incremental は、Playsect のシングルプレイヤー インクリメンタル RPG で、2026 年 10 月 19 日に Steam for Windows でリリースされました。あなたは、異なる役割を持つヒーローを募集し、繰り返し可能なダンジョン ループにパーティーを送り込み、ロスター、装備、アップグレードの選択肢を管理しながら自動戦闘に戦闘を処理させます。",
+        "各遠征で得た戦利品と資源は永続的な強化につながります。クリア速度が落ちたら、プレステージリセットで現在の深さを永続ボーナスに変換し、次のランでさらに先へ進めます。Loop Dungeon Incremental ガイドでは、最初の1時間の計画、パーティーの役割、メイジビルド、スキルツリーの優先順位、アイテムファーミング、ボス対策、29個のSteam実績を扱います。"
+      ],
+      "stats": [
+        {
+          "label": "開発者",
+          "value": "Playsect"
+        },
+        {
+          "label": "プラットフォーム",
+          "value": "PC (Steam)"
+        },
+        {
+          "label": "ジャンル",
+          "value": "インクリメンタルRPG"
+        },
+        {
+          "label": "リリース",
+          "value": "2026 年 10 月 19 日"
+        },
+        {
+          "label": "価格",
+          "value": "$4.99"
+        },
+        {
+          "label": "実績",
+          "value": "29"
+        },
+        {
+          "label": "言語",
+          "value": "13"
+        }
+      ],
+      "cta": "すべてのガイドを調べる"
+    },
+    "explore": {
+      "title": "Loop Dungeon Incremental Wiki を探索する",
+      "description": "より強力なパーティーを構築し、ダンジョン ループをルートし、時間プレステージをリセットし、すべての遠征を永続的な進歩に変えましょう。",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Loop Dungeon Incremental 初心者ガイド",
+          "description": "新しいプレイヤーが、核となるゲームプレイ ループ、自動戦闘、ヒーローの募集、ゲームを進める最初の 1 時間のアップグレードの選択肢を理解できるように支援します。",
+          "href": "/guide/loop-dungeon-incremental-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "開始パーティをアップグレードせずにダンジョンを通過させ、どこで失速したかに注目してください。"
+            },
+            {
+              "label": "2",
+              "detail": "ダメージアップグレードを購入する前に、2人目のヒーローを募集してください。"
+            },
+            {
+              "label": "3",
+              "detail": "一人のヒーローにダメージが集中しないように前線を埋めましょう。"
+            },
+            {
+              "label": "4",
+              "detail": "ボーナスが決して重くならないため、まず安価な永久アップグレードを購入してください。"
+            },
+            {
+              "label": "5",
+              "detail": "パーティーが同じフロアで 2 回ワイプするまで押し、その後リセットせずに投資します。"
+            },
+            {
+              "label": "6",
+              "detail": "いくつかの小さな購入ではなく、意味のあるティアアップグレードを1回行う余裕ができるまで、戦利品を貯めてしてください。"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Loop Dungeon Incremental ヒーローの役割 Tier リスト",
+          "description": "確定したヒーローの役割をダメージプロファイル、パーティのユーティリティ、相乗効果によって比較することで、幅広いロスターに投資する前に信頼できるコアを構築できます。",
+          "href": "/progression/loop-dungeon-incremental-party-size",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "ローグ: 優先ターゲットとエリートクリーンアップに対する高いバーストダメージ。"
+            },
+            {
+              "label": "あ",
+              "detail": "プリースト: 治癒に加えて、パーティーの相乗効果を引き起こす Activate スキル。"
+            },
+            {
+              "label": "B",
+              "detail": "メイジ: 保護されたバックラインからの持続的な遠距離プレッシャー。"
+            },
+            {
+              "label": "C",
+              "detail": "フレックス スロット: 不足しているヒーリング、バースト、またはトリガーのカバレッジを埋めます。"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Loop Dungeon Incremental ベストビルド",
+          "description": "エリアダメージ、キャストのタイミング、プリーストのサポート、前線の保護、安定したアップグレード順序を備えたメイジ中心のビルドを組み立てる方法を示します。",
+          "href": "/combat/loop-dungeon-incremental-mage-build",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "ダメージ",
+              "detail": "クールダウンの間アイドリングするのではなく、メイジのダメージアップタイムを長く保ちます。"
+            },
+            {
+              "label": "タイミング",
+              "detail": "単一のはぐれ者ではなく、固まった敵に大きなキャストを当てます。"
+            },
+            {
+              "label": "相乗効果",
+              "detail": "メイジをプリースト Activate およびローグ バーストと組み合わせて価値を高めます。"
+            },
+            {
+              "label": "サバイバル",
+              "detail": "メイジが長いループをキャストし続けることができるように、前線に投資します。"
+            },
+            {
+              "label": "経済",
+              "detail": "豪華なアップグレードの前に、ループ通貨をメイジのコアパスにルートします。"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Loop Dungeon Incremental プレステージ ガイド",
+          "description": "いつプレステージをリセットする価値があるのか​​、どのボーナスが繰り越されるのか、停滞したランをより深いループのための永続的なパワーに変える方法について説明します。",
+          "href": "/progression/loop-dungeon-incremental-prestige",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "クリアスピードが目に見えて遅くなり、新しい床が引きずり始めるまで走ります。"
+            },
+            {
+              "label": "2",
+              "detail": "リセットを検討する前に、バンクされたリソースを永久アップグレードに費やしてください。"
+            },
+            {
+              "label": "3",
+              "detail": "次に意味のあるアップグレードのコストを、リセットによって得られるボーナスと比較してください。"
+            },
+            {
+              "label": "4",
+              "detail": "ランが進歩を生み出さなくなり、マルチプライヤーが価値のあるときのプレステージ。"
+            },
+            {
+              "label": "5",
+              "detail": "永続的なボーナスを使用して、以前の最高のフロアを超えて、サイクルを繰り返します。"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Loop Dungeon Incremental スキルツリーガイド",
+          "description": "スキル ツリーのヒーロー、パーティー、戦利品、およびプレステージの各レイヤーを、ポイントを薄く分散するのではなく 1 つのキャリーをサポートする支出順序でマッピングします。",
+          "href": "/progression/loop-dungeon-incremental-skill-tree",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "安い",
+              "detail": "最も安価なヒーロー ノードを最初に購入すると、初期のボーナスが実行回数を重ねるごとに増えていきます。"
+            },
+            {
+              "label": "運ぶ",
+              "detail": "戦いを終わらせるヒーローを特定し、そのキャリーにマルチプライヤーを置きます。"
+            },
+            {
+              "label": "オーラ",
+              "detail": "フラットノードを広げるのではなく、キャリーの後ろにパーティー全体のバフを重ねます。"
+            },
+            {
+              "label": "バッファ",
+              "detail": "次のループがスムーズに開始できるように、最初のプレステージの前にリソース バッファーをバンクします。"
+            },
+            {
+              "label": "サバイバル",
+              "detail": "新しいフロアの深さをプッシュする前に、ダメージだけを追加するのではなく、生存性ノードを追加してください。"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Loop Dungeon Incremental ファーミングガイド",
+          "description": "標準ループ、より深いフロア、モンスター撃破、プレステージリセット、マイルストーンを比較して、すべてのファーミングセッションが永続的な成長をもたらすようにします。",
+          "href": "/items/loop-dungeon-incremental-item-farming",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "ループ",
+              "detail": "標準のダンジョン ループでは、共通の装備と安定したリソースが供給されます。"
+            },
+            {
+              "label": "深さ",
+              "detail": "深いフロアでは、より高いティアのドロップが生成され、パワースパイク後のより豊富なペイアウトが生成されます。"
+            },
+            {
+              "label": "キル",
+              "detail": "モンスターを倒すと、自動戦闘中にリソースが流れ続けます。"
+            },
+            {
+              "label": "リセット",
+              "detail": "プレステージリセットは、終了したランを永続的なボーナスに変換します。"
+            },
+            {
+              "label": "マーク",
+              "detail": "実績とマイルストーンは、リピートファームがすぐに到達できないギャップを埋めます。"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Loop Dungeon Incremental 実績ガイド",
+          "description": "ロスター、スキルのロック解除、ボスのコンテンツ、プレステージマイルストーン、およびオプションのシークレットを介した完了ルートを、ブロッカーと修正を記載して提供します。",
+          "href": "/guide/loop-dungeon-incremental-100-percent-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "ロスター",
+              "detail": "完全リリースで追加されたローグを含むすべてのヒーローを仲間にします。"
+            },
+            {
+              "label": "スキル",
+              "detail": "プリーストの Activate シナジーを含むすべてのスキルのロックを解除します。"
+            },
+            {
+              "label": "プレステージ",
+              "detail": "プレステージ通貨を獲得し、永続的なアップグレードに再投資します。"
+            },
+            {
+              "label": "ボス",
+              "detail": "最終ボスをクリアし、現在のダンジョンコンテンツの最後まで到達します。"
+            },
+            {
+              "label": "秘密",
+              "detail": "開発者が文書化せずに残したオプションの非表示コンテンツを追跡します。"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Loop Dungeon Incremental リリースとアップデート",
+          "description": "リリース日、価格、プラットフォームのステータス、デモ、サポートされている言語、Windows 11 起動時のクラッシュ ガイダンスを 1 か所で追跡します。",
+          "href": "/platforms/loop-dungeon-incremental-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "リリース",
+              "detail": "フルリリース: 2026 年 10 月 19 日、Windows PC で Steam を通じて。"
+            },
+            {
+              "label": "価格",
+              "detail": "基本価格は 4.99 ドルで、発売時は 10% 割引の 4.49 ドルです。"
+            },
+            {
+              "label": "プラットフォーム",
+              "detail": "Windows 10 64 ビットが最小です。 Steam デッキは未評価のままです。"
+            },
+            {
+              "label": "デモ",
+              "detail": "無料のデモは、Steam 公式ストアページで入手できます。"
+            },
+            {
+              "label": "クラッシュ",
+              "detail": "Windows 11 スマート アプリ コントロールは、「il2cpp のロードに失敗しました」エラーをトリガーする可能性があります。"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "よくある質問",
+      "description": "Loop Dungeon Incremental に関するよくある質問への簡単な回答。",
+      "items": [
+        {
+          "question": "Loop Dungeon Incremental とは何ですか？",
+          "answer": "Loop Dungeon Incremental は、Playsect のシングルプレイヤー インクリメンタル RPG です。さまざまな戦闘役割を持つヒーローを募集し、自動化されたダンジョン ループにパーティーを送り込み、戦利品を集め、永続的なアップグレードに投資します。 2026 年 10 月 19 日に Steam を通じて Windows PC でリリースされました。"
+        },
+        {
+          "question": "Loop Dungeon Incremental の無料デモはありますか?",
+          "answer": "はい。 Loop Dungeon Incremental の公式 Steam ストア ページでは無料のデモが提供されているため、ゲーム全体を購入する前に自動戦闘、パーティー構築、ルート ループ、アップグレード ペースをテストできます。"
+        },
+        {
+          "question": "Loop Dungeon Incremental ではプレステージはどのように機能しますか?",
+          "answer": "Loop Dungeon Incremental プレステージリセットにより現在の実行が終了し、将来の遠征に永続的なボーナスが付与されます。クリア速度が失速し、次の有意義なアップグレードのコストがプレステージボーナスで得られる以上に高くなったらリセットし、新しいマルチプライヤーを使用して以前の最高のフロアを超えてください。"
+        },
+        {
+          "question": "Loop Dungeon Incremental で最適なパーティのサイズはどれですか?",
+          "answer": "2 人または 3 人の十分に投資されたヒーローからなる集中したコアは、中途半端な装備のキャラクターの幅広いベンチよりも優れたパフォーマンスを発揮します。プリーストヒーリング、ローグバースト、Activate スタイルのトリガーなど、コアに欠けている特定の効果を提供する場合は、4 人目のヒーローを追加します。"
+        },
+        {
+          "question": "Loop Dungeon Incremental Windows 11 クラッシュを修正するにはどうすればよいですか?",
+          "answer": "Loop Dungeon Incremental について報告された起動エラーは、「致命的エラー: il2cpp のロードに失敗しました。Windows 11 スマート アプリ コントロールに関連付けられています」です。固定された Steam ニュース投稿を確認し、Steam を通じてゲーム ファイルを確認し、スマート アプリ コントロールが有効になっているかどうかを確認し、システム仕様とともにエラー テキストを Steam ディスカッション スレッドに投稿します。"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Loop Dungeon Incremental に飛び込む準備はできましたか?",
+      "description": "無料の最新ガイドを使用して、最初のパーティーを計画し、適切な永続アップグレードを選択し、すべてのダンジョン ループを進めてください。",
+      "primary": "初心者ガイドを読む",
+      "secondary": "Steam でプレイする"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Loop Dungeon Incremental 初心者ガイド",
+    "overviewDescription": "新しい Loop Dungeon Incremental プレイヤー向けのコア ループ、最初の 1 時間の優先事項、装備の基本、およびステップバイステップ ガイドから始めます。"
+  },
+  "progression": {
+    "overviewTitle": "Loop Dungeon Incremental 進行ガイド",
+    "overviewDescription": "ヒーローのアップグレード、パーティの成長、永続的なボーナス、プレステージのリセット、次回のランに適したスキル ツリー パスを計画します。"
+  },
+  "combat": {
+    "overviewTitle": "Loop Dungeon Incremental 戦闘・ビルドガイド",
+    "overviewDescription": "ボスの戦い、ダンジョンの難易度、無敵フレーム、より深いループを運ぶメイジまたはメテオのビルドを理解します。"
+  },
+  "items": {
+    "overviewTitle": "Loop Dungeon Incremental アイテム・装備ガイド",
+    "overviewDescription": "装備を比較し、装備のアップグレードを計画し、戦利品や資材を入手するための最適なファーミングルートを学びましょう。"
+  },
+  "mechanics": {
+    "overviewTitle": "Loop Dungeon Incremental ゲームの仕組み",
+    "overviewDescription": "自動戦闘、ダンジョン ループ、アイドル進行、ローグライク システムがどのように組み合わされるかを学びましょう。"
+  },
+  "platforms": {
+    "overviewTitle": "Loop Dungeon Incremental プラットフォームとリリース情報",
+    "overviewDescription": "開始する前に、Steam の可用性、デモの詳細、リリース日、およびシステム要件を確認してください。"
+  },
+  "community": {
+    "overviewTitle": "Loop Dungeon Incremental コミュニティ",
+    "overviewDescription": "パーティー構築や進行のヒントについては、公式 Discord、Reddit ディスカッション、コミュニティ リソースをご覧ください。"
+  },
+  "shared": {
+    "wikiNavigation": "Wiki ナビゲーション",
+    "activeCodes": "アクティブコード",
+    "updated": "更新されました",
+    "viewAllCodes": "すべてのコードを表示",
+    "playOnSteam": "Steam でプレイする",
+    "inThisSection": "このセクションの内容",
+    "tableOfContents": "目次",
+    "nextSteps": "次のステップ",
+    "needHelp": "助けが必要ですか?",
+    "relatedReading": "関連記事",
+    "relatedGuides": "関連ガイド",
+    "readMore": "続きを読む",
+    "officialMedia": "公式メディア",
+    "home": "ホーム",
+    "noGuidesAvailable": "まだ利用可能なガイドはありません。すぐにまたチェックしてください!"
+  },
+  "footer": {
+    "aboutTitle": "Loop Dungeon Incremental Wiki",
+    "about": "Loop Dungeon Incremental Wiki は、パーティー構成、永続的なアップグレード、プレステージルート、ダンジョンの進行、新規プレイヤーとベテラン プレイヤーの両方に必要なゲーム知識を網羅する、独立したファンが作成したガイド ハブです。",
+    "quickLinks": "クイックリンク",
+    "guides": "ガイド",
+    "legal": "法的情報",
+    "copyright": "© 2026 Loop Dungeon Incremental Wiki. Playsect または Valve とは無関係です。",
+    "description": "Steam のインクリメンタル ダンジョン クローラー RPG。パーティーを編成し、戦利品を集め、永続的なアップグレードのロックを解除し、さらに深くループしてください。",
+    "playGame": "Steam でプレイする",
+    "officialWebsite": "公式ウェブサイト",
+    "officialDiscord": "公式Discord",
+    "officialYoutube": "公式YouTube",
+    "steamCommunity": "Steam コミュニティ ハブ",
+    "beginnerGuide": "初心者ガイド",
+    "raceGuides": "進行ガイド",
+    "bossGuides": "戦闘ガイド",
+    "buildGuide": "アイテム＆ギアガイド",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約"
+  }
+}

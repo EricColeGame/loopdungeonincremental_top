@@ -1,0 +1,103 @@
+export const metadata = {
+  title: "Guide du premier jour de Loop Dungeon Incremental : correctifs de lancement, compositions d’équipe et ordre des améliorations",
+  description: "Nouveau sur Loop Dungeon - Incremental ? Ce guide du premier jour couvre les correctifs de lancement, la composition de l’équipe, l’ordre des améliorations et des conseils de prestige pour vos premières boucles.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Pourquoi vos deux premières heures décident de tout
+
+Loop Dungeon - Incremental vous confie une équipe de héros, une porte de donjon et presque aucune explication — votre session d’ouverture donne donc le ton pour tout le reste. Ce **guide du premier jour de Loop Dungeon Incremental** est conçu pour vous mener d’une installation toute fraîche à une réinitialisation de prestige sereine, sans perdre une seule boucle à tâtonner. Si vous suivez l’ordre ci-dessous, vous réglerez d’abord les obstacles techniques du jour du lancement, vous bâtirez une équipe qui synergise réellement et vous dépenserez vos premières ressources dans des améliorations qui se cumulent, plutôt que dans celles que vous rachèterez de toute façon.
+
+Cela compte parce que le jeu est court et concentré au début. Les retours de la communauté sur le hub Steam situent régulièrement une première partie complète à environ deux ou trois heures, ce qui signifie qu’une mauvaise première heure représente une énorme part de l’expérience. Considérez le premier jour comme une reconnaissance : apprenez les systèmes, testez une combinaison de héros, et seulement ensuite poussez plus loin. Tout dans ce **guide du premier jour de Loop Dungeon Incremental** part du principe que vous voulez voir l’arc complet du jeu avant de décider ce que vous en pensez.
+
+## À quoi ressemble réellement le premier jour
+
+Avant de toucher à la moindre amélioration, calibrez vos attentes. La version complète est un projet de développeur solo, Playsect, vendu 4,99 $ avec une remise de lancement de 10 % qui le ramène à environ 4,49 $. C’est un dungeon crawler en équipe avec une progression incrémentale superposée : vous bouclez, vous récoltez du butin, vous achetez des améliorations permanentes et vous descendez plus profond.
+
+| Détail | À savoir avant de commencer |
+|---|---|
+| Plateforme | Steam (PC Windows) |
+| Développeur | Playsect, développeur indie solo |
+| Prix de lancement | 4,99 $, avec une remise de lancement de 10 % à 4,49 $ |
+| Boucle principale | Faire avancer une équipe de héros dans les étages du donjon, encaisser le butin, acheter des améliorations permanentes |
+| Ajouts de la version complète | Héros Voleur, compétence « Activate » du Prêtre, boss, niveaux et secrets cachés supplémentaires |
+| Durée de première complétion | Environ 2 à 3 heures selon l’expérience des joueurs |
+| Modèle de progression | Les améliorations permanentes persistent ; une réinitialisation de prestige convertit la progression en monnaie bonus |
+
+Vous pouvez vérifier les prix actuels, les notes de correctif et la configuration requise sur la [page Steam officielle de Loop Dungeon - Incremental](https://store.steampowered.com/app/4621970/) avant d’acheter. Une chose que la fiche du magasin ne dit pas : le jeu est entièrement jouable hors ligne et sauvegarde en local, donc un hoquet de serveur le jour du lancement ne vous coûtera pas une run.
+
+## Corrigez les plantages au lancement avant de jouer
+
+Le principal blocage du premier jour signalé sur le hub Steam est un plantage au démarrage sous Windows 11 avec le message « Fatal error: Failed to load il2cpp ». Le développeur l’a attribué au Smart App Control de Windows 11, qui empêche le chargement de la DLL Unity non signée du jeu. Une version signée est en préparation, mais en attendant, appliquez ces correctifs dans l’ordre.
+
+| Ordre | Correctif | Comment faire |
+|---|---|---|
+| 1 | Débloquer les fichiers du jeu | Bibliothèque Steam → clic droit sur le jeu → Gérer → Parcourir les fichiers locaux → Ctrl+A → clic droit → Propriétés → cocher « Débloquer » → Appliquer → redémarrer |
+| 2 | Actualiser les définitions de sécurité | Sécurité Windows → Protection contre les virus et menaces → Rechercher des mises à jour → redémarrer |
+| 3 | Forcer DirectX 11 | Ajouter `-force-d3d11` comme option de lancement Steam (contournement signalé par la communauté pour les plantages au démarrage) |
+| 4 | Le signaler | Envoyer au développeur votre version de Windows 11, une capture d’écran de l’erreur et les correctifs que vous avez essayés |
+
+Faites le correctif n° 1 même si le jeu se lance correctement — cela prend trente secondes et évite un plantage en cours de session. Et gardez le jeu à jour : un correctif post-lancement a déjà corrigé un bug d’infobulle qui affichait de mauvaises informations sur les améliorations, exactement le genre de chose qui vous induit en erreur pendant votre première heure.
+
+## Bâtissez votre première équipe autour de la synergie, pas des dégâts bruts
+
+La version complète a ajouté le Voleur, un héros à dégâts burst, et a donné au Prêtre une nouvelle compétence appelée Activate qui interagit avec les capacités des autres héros. Ces deux faits devraient façonner votre première composition plus que n’importe quelle tier list. Activate est un activateur de combos — elle change ce que font les compétences de vos autres héros — donc une équipe entièrement construite autour d’un seul type de dégâts laisse de la valeur sur la table.
+
+| Héros | Rôle | Conseil pour le premier jour |
+|---|---|---|
+| Prêtre | Soutien et moteur de combos | Placez Activate tôt et observez comment elle change les compétences de vos autres héros |
+| Voleur | Dégâts burst (nouveau dans la version complète) | Très bon ouvreur pour les étages courts ; associez-le à une source de soutien |
+| Mage | Dégâts à distance, déblocable | Un choix de ligne arrière fiable une fois débloqué dans la version complète |
+| Autres héros | Variable | Expérimentez — le développeur invite explicitement les joueurs à trouver des combos qu’il n’a jamais conçus |
+
+Trois règles pratiques pour votre première équipe, tirées de ce cadre de **guide du premier jour de Loop Dungeon Incremental** :
+
+- **Un soutien, deux dégâts.** Sans soins, vous bloquez dans les étages plus longs ; sans dégâts, vous n’y arrivez jamais.
+- **Testez Activate sur chacun des héros.** La valeur de la compétence dépend entièrement de ce qu’elle modifie, donc faites-la tourner dans votre effectif lors de vos deux premières boucles.
+- **Ne reconstruisez pas après chaque défaite.** Une boucle qui se termine mal encaisse quand même de la monnaie. Changez un héros à la fois pour pouvoir identifier ce qui a changé.
+
+## Priorités d’amélioration pour vos premières boucles
+
+Les jeux incrémentaux récompensent la largeur au début et la profondeur plus tard, et celui-ci ne fait pas exception. L’expérience des joueurs sur les forums Steam décrit un système où vous achetez en grande partie votre progression niveau par niveau, ce qui signifie que la tentation est d’acheter tout dès que c’est abordable. Résistez-y pendant la première heure.
+
+| Priorité | Type d’amélioration | Pourquoi elle passe en premier |
+|---|---|---|
+| 1 | Améliorations de stats bon marché et générales | De petits gains en pourcentage s’appliquent à chaque héros et à chaque étage |
+| 2 | Déblocages de héros | Plus de héros signifie plus de cibles pour Activate et plus d’options de synergie |
+| 3 | Soutien et survie | Prolonge la profondeur qu’une seule boucle peut atteindre avant votre réinitialisation |
+| 4 | Spécialisation poussée | Ne vaut le coup qu’une fois que vous savez quel héros porte vos runs |
+| 5 | Achats cosmétiques ou de confort | Aucun impact sur la profondeur ; gardez-les pour après votre premier prestige |
+
+Une deuxième chose à prévoir : les capacités sont déclenchées manuellement par défaut. Des membres de la communauté ont spécifiquement demandé une option d’incantation automatique, décrivant la gestion des capacités comme du clic répétitif. En attendant qu’elle existe, mettez en place un rythme — d’abord les buffs, puis le burst, puis le soutien — et vous arrêterez de cafouiller en plein combat. Si vous jouez à la manette ou sur un petit clavier, remappez tôt plutôt que de vous adapter plus tard.
+
+## Prestige, compétences verrouillées et erreurs du premier jour
+
+Le prestige est l’endroit où la plupart des joueurs du premier jour se forgent leur opinion. Le système convertit la progression de votre run en une monnaie bonus que vous dépensez pour resélectionner des améliorations que vous possédiez déjà — ce qui semble peu gratifiant à certains joueurs et stratégique à d’autres. La formulation honnête issue des retours de la communauté est qu’il s’agit d’un système de rachat, pas d’un nouvel arbre de déblocage. Partez avec cette idée et ce sera bien moins frustrant.
+
+| Erreur | Ce qui se passe | Meilleure approche |
+|---|---|---|
+| Faire un prestige avec une sauvegarde de démo importée | Certaines compétences peuvent se reverrouiller et afficher « get the full version » même dans le jeu complet, selon les retours des joueurs | Vérifiez les fichiers du jeu, puis signalez-le au développeur avec les détails de votre sauvegarde |
+| Acheter toutes les améliorations immédiatement | La monnaie s’évapore et votre build n’a plus d’identité | Suivez le tableau des priorités ci-dessus et sautez le palier 5 |
+| Faire un prestige dès que possible | Vous réinitialisez avant d’avoir testé votre meilleure combinaison de héros | Faites une boucle de plus pour confirmer votre carry d’abord |
+| Attendre un scaling infini | Le contenu se termine après quelques heures ; plusieurs testeurs notent que la ligne d’arrivée arrive vite | Prévoyez de terminer l’arc en une ou deux sessions et jugez-le là-dessus |
+
+À retenir pour un lecteur de ce **guide du premier jour de Loop Dungeon Incremental** : le prestige est un outil pour répéter une boucle plus vite, pas un robinet à contenu. Utilisez votre première réinitialisation pour racheter uniquement les améliorations qui vous ont réellement porté, et ignorez le reste jusqu’à ce que vous en ayez besoin.
+
+## Questions fréquentes
+
+**Combien de temps devrait durer ma première session de Loop Dungeon - Incremental ?**
+Les retours de la communauté suggèrent que deux à trois heures couvrent la majeure partie du contenu du jeu. Bloquez quatre-vingt-dix minutes pour votre première session afin de pouvoir boucler au moins un cycle de prestige et avoir encore le temps d’expérimenter.
+
+**Ce guide du premier jour de Loop Dungeon Incremental reste-t-il utile après les correctifs ?**
+Oui — les conseils structurels (corriger les problèmes de lancement, un soutien plus deux sources de dégâts, acheter d’abord les améliorations générales) ne dépendent pas des numéros de version. Seule la liste précise des contournements peut changer à mesure que le développeur publie la version signée.
+
+**Le jeu ne démarre pas sous Windows 11. Que dois-je essayer en premier ?**
+Débloquez les fichiers du jeu via le navigateur de fichiers locaux de Steam, puis mettez à jour les définitions de Sécurité Windows et redémarrez. Si cela échoue, essayez l’option de lancement `-force-d3d11` et contactez le développeur avec votre version de Windows et une capture d’écran.
+
+**Est-ce que je perds tout quand je fais un prestige ?**
+Vous perdez vos améliorations de la run, mais la réinitialisation accorde une monnaie bonus que vous dépensez en rachats permanents. Rien de ce que vous avez débloqué comme héros ou système ne disparaît définitivement — même si des sauvegardes de démo importées ont causé des bugs d’affichage de compétences verrouillées chez certains joueurs.
+
+## La version courte
+
+Le premier jour dans Loop Dungeon - Incremental est une question de séquencement : corrigez le lanceur, choisissez une équipe avec un soutien et deux sources de dégâts, achetez les améliorations générales bon marché avant les profondes, et traitez votre premier prestige comme une routine répétable plutôt qu’une ligne d’arrivée. Faites cela et l’arc de deux à trois heures se présentera comme une expérience serrée et complète plutôt que précipitée. Les boucles du donjon sont courtes — votre préparation n’a pas besoin de l’être.

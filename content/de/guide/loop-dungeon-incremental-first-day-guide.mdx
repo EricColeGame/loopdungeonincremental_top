@@ -1,0 +1,103 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental Erste-Tag-Guide: Launch-Fixes, Party-Builds und Upgrade-Reihenfolge",
+  description: "Neu bei Loop Dungeon - Incremental? Dieser Erste-Tag-Guide behandelt Launch-Fixes, Party-Setup, Upgrade-Reihenfolge und Prestige-Tipps für deine ersten Loops.",
+  category: "guide",
+  date: "2026-10-20",
+}
+
+## Warum deine ersten zwei Stunden alles entscheiden
+
+Loop Dungeon - Incremental gibt dir eine Heldengruppe, eine Dungeon-Tür und so gut wie keine Erklärung – deine erste Session prägt also alles, was danach kommt. Dieser **Loop Dungeon Incremental Erste-Tag-Guide** bringt dich von der frischen Installation bis zu einem souveränen Prestige-Reset, ohne dass du auch nur einen Loop mit Rätselraten verschwendest. Wenn du der Reihenfolge unten folgst, räumst du zuerst die technischen Hürden des Launch-Tags aus dem Weg, baust eine Party, die wirklich synergiert, und gibst deine frühe Währung für Upgrades aus, die sich aufaddieren – statt für solche, die du ohnehin neu kaufen würdest.
+
+Das ist wichtig, weil das Spiel kurz ist und seinen Inhalt nach vorne packt. Community-Berichte im Steam-Hub beziffern einen ersten vollständigen Durchlauf durchweg auf etwa zwei bis drei Stunden – eine schlechte erste Stunde ist also ein riesiger Teil der Erfahrung. Behandle Tag eins als Erkundungslauf: Lerne die Systeme, teste eine Heldenkombination und stoße erst dann richtig tief vor. Alles in diesem **Loop Dungeon Incremental Erste-Tag-Guide** geht davon aus, dass du den kompletten Bogen des Spiels sehen willst, bevor du dir ein Urteil bildest.
+
+## Wie Tag eins tatsächlich aussieht
+
+Bevor du auch nur ein einziges Upgrade anfasst, solltest du deine Erwartungen kalibrieren. Die Vollversion ist ein Solo-Entwickler-Projekt von Playsect und kostet 4,99 US-Dollar, mit 10 % Launch-Rabatt etwa 4,49 US-Dollar. Es ist ein gruppenbasierter Dungeon-Crawler mit einer Incremental-Progression-Schicht obendrauf: Du loopst, sammelst Beute, kaufst permanente Upgrades und stößt tiefer vor.
+
+| Detail | Was du vor dem Start wissen solltest |
+|---|---|
+| Plattform | Steam (Windows-PC) |
+| Entwickler | Playsect, ein Solo-Indie-Entwickler |
+| Launch-Preis | 4,99 $, mit 10 % Launch-Rabatt 4,49 $ |
+| Kern-Loop | Eine Heldengruppe durch Dungeon-Etagen führen, Beute sichern, permanente Upgrades kaufen |
+| Neuerungen der Vollversion | Schurken-Held, „Aktivieren“-Skill des Priesters, zusätzliche Bosse, Level und versteckte Geheimnisse |
+| Erste Durchspielzeit | Laut Spielerberichten etwa 2–3 Stunden |
+| Progressionsmodell | Permanente Upgrades bleiben bestehen; ein Prestige-Reset wandelt Fortschritt in Bonuswährung um |
+
+Aktuelle Preise, Patch-Notes und Systemanforderungen kannst du vor dem Kauf auf der [offiziellen Steam-Seite von Loop Dungeon - Incremental](https://store.steampowered.com/app/4621970/) prüfen. Eines verrät dir der Store-Text nicht: Das Spiel ist komplett offline spielbar und speichert lokal – ein Server-Wackler am Launch-Tag kostet dich also keinen Run.
+
+## Behebe Launch-Crashes, bevor du spielst
+
+Das mit Abstand größte Startproblem am ersten Tag, das im Steam-Hub gemeldet wird, ist ein Startabbruch unter Windows 11 mit der Meldung „Fatal error: Failed to load il2cpp“. Der Entwickler führt es auf die Smart App Control von Windows 11 zurück, die das Laden der unsignierten Unity-DLL des Spiels blockiert. Ein codesignierter Build ist in Arbeit, aber bis dahin arbeite diese Fixes der Reihe nach durch.
+
+| Reihenfolge | Fix | So geht's |
+|---|---|---|
+| 1 | Spieldateien entsperren | Steam-Bibliothek → Rechtsklick auf das Spiel → Verwalten → Lokale Dateien durchsuchen → Strg+A → Rechtsklick → Eigenschaften → „Zulassen“ (Entsperren) ankreuzen → Übernehmen → neu starten |
+| 2 | Sicherheitsdefinitionen aktualisieren | Windows-Sicherheit → Viren- & Bedrohungsschutz → Nach Updates suchen → neu starten |
+| 3 | DirectX 11 erzwingen | `-force-d3d11` als Steam-Startoption hinzufügen (von der Community gemeldeter Workaround für Startabstürze) |
+| 4 | Melden | Schick dem Entwickler deinen Windows-11-Build, einen Screenshot der Fehlermeldung und die Fixes, die du versucht hast |
+
+Mach Fix #1 auch dann, wenn das Spiel problemlos startet – er kostet dreißig Sekunden und verhindert einen Absturz mitten in der Session. Und halte das Spiel aktuell: Ein Patch nach dem Launch hat bereits einen Tooltip-Bug behoben, der falsche Upgrade-Informationen anzeigte – genau die Sorte Fehler, die dich in deiner ersten Stunde in die Irre führt.
+
+## Baue deine erste Party um Synergie, nicht um reinen Schaden
+
+Die Vollversion hat den Schurken ergänzt, einen Helden für Burst-Schaden, und dem Priester einen neuen Skill namens Aktivieren gegeben, der mit den Fähigkeiten anderer Helden interagiert. Diese beiden Fakten sollten deine erste Zusammenstellung stärker prägen als jede Tier-Liste. Aktivieren ist ein Combo-Enabler – es verändert, was die Skills deiner anderen Helden tun –, eine Party, die komplett auf einen Schadenstyp setzt, verschenkt also Potenzial.
+
+| Held | Rolle | Tipp für Tag eins |
+|---|---|---|
+| Priester | Support und Combo-Motor | Setz Aktivieren früh ein und beobachte, wie es die Skills deiner anderen Helden verändert |
+| Schurke | Burst-Schaden (neu in der Vollversion) | Starker Opener für kurze Etagen; kombiniere ihn mit einer Sustain-Quelle |
+| Magier | Fernkampfschaden, freischaltbar | Eine verlässliche Backline-Wahl, sobald in der Vollversion freigeschaltet |
+| Weitere Helden | Unterschiedlich | Experimentiere – der Entwickler lädt Spieler ausdrücklich ein, Kombos zu finden, die er selbst nie entworfen hat |
+
+Drei praktische Regeln für deine erste Party, abgeleitet aus dem Rahmen dieses **Loop Dungeon Incremental Erste-Tag-Guides**:
+
+- **Ein Sustain, zwei Schadensrollen.** Ohne Heilung bleibst du auf längeren Etagen hängen; ohne Schaden kommst du gar nicht erst dorthin.
+- **Teste Aktivieren bei jedem Helden.** Der Wert des Skills hängt völlig davon ab, was er modifiziert – rotiere ihn in deinen ersten zwei Loops durch dein Roster.
+- **Baue nicht nach jeder Niederlage um.** Ein Loop, der schlecht endet, bringt trotzdem Währung ein. Tausche jeweils nur einen Helden, damit du erkennst, was sich verändert hat.
+
+## Upgrade-Prioritäten für deine ersten Loops
+
+Incremental-Spiele belohnen früh Breite und später Tiefe – dieses hier ist keine Ausnahme. Spielerberichte in den Steam-Foren beschreiben ein System, in dem man sich Stufe für Stufe vorwärtskauft – die Versuchung ist also groß, alles sofort zu kaufen, sobald man es sich leisten kann. Widersteh dem in der ersten Stunde.
+
+| Priorität | Upgrade-Typ | Warum es zuerst kommt |
+|---|---|---|
+| 1 | Günstige, breite Stat-Upgrades | Kleine prozentuale Zuwächse wirken auf jeden Helden und jede Etage |
+| 2 | Helden-Freischaltungen | Mehr Helden bedeuten mehr Ziele für Aktivieren und mehr Synergie-Optionen |
+| 3 | Sustain und Überlebensfähigkeit | Verlängert, wie tief ein einzelner Loop vor dem Reset kommt |
+| 4 | Tiefe Spezialisierung | Lohnt sich erst, wenn du weißt, welcher Held deine Runs trägt |
+| 5 | Kosmetik- oder Komfort-Käufe | Kein Einfluss auf die Tiefe; spar sie dir für nach deinem ersten Prestige |
+
+Ein zweiter Punkt, den du einplanen solltest: Fähigkeiten werden standardmäßig manuell ausgelöst. Community-Mitglieder haben ausdrücklich eine Autocast-Option gefordert und das Fähigkeitsmanagement als wiederholtes Klicken beschrieben. Bis es so weit ist, leg dir einen Rhythmus zu – erst Buffs, dann Burst, dann Sustain – und du hörst auf, mitten im Kampf herumzufummeln. Wenn du mit Controller oder einer kleinen Tastatur spielst, belege die Tasten früh neu, statt dich später umzugewöhnen.
+
+## Prestige, gesperrte Skills und Fehler am ersten Tag
+
+Beim Prestige bilden die meisten Spieler am ersten Tag ihre Meinung. Das System wandelt den Fortschritt deines Runs in eine Bonuswährung um, die du ausgibst, um Upgrades erneut auszuwählen, die du schon hattest – für manche Spieler fühlt sich das unlohnend an, für andere strategisch. Die ehrliche Einordnung aus Community-Berichten: Es ist ein Nachkauf-System, kein neuer Freischaltbaum. Wenn du das weißt, ist es deutlich weniger frustrierend.
+
+| Fehler | Was passiert | Besserer Ansatz |
+|---|---|---|
+| Prestige mit importiertem Demo-Spielstand | Laut Spielerberichten können manche Skills wieder gesperrt werden und „Hol dir die Vollversion“ anzeigen, selbst in der Vollversion | Spieldateien überprüfen und dann mit deinen Save-Details beim Entwickler melden |
+| Sofort jedes Upgrade kaufen | Die Währung verdampft und dein Build hat keine Identität | Folge der Prioritätentabelle oben und überspringe Stufe 5 |
+| Prestige, sobald es verfügbar ist | Du resettest, bevor du deine beste Heldenkombination getestet hast | Spiele noch einen Loop, um deinen Carry zu bestätigen |
+| Unendliches Scaling erwarten | Der Inhalt endet nach ein paar Stunden; mehrere Reviewer merken an, dass die Ziellinie schnell kommt | Plane, den Bogen in ein oder zwei Sitzungen abzuschließen, und beurteile es danach |
+
+Die Kernaussage für Leser eines **Loop Dungeon Incremental Erste-Tag-Guides** ist einfach: Prestige ist ein Werkzeug, um einen Loop schneller zu wiederholen, kein Content-Hahn. Nutze deinen ersten Reset, um nur die Upgrades nachzukaufen, die dich messbar getragen haben, und überspringe den Rest, bis du ihn brauchst.
+
+## Häufig gestellte Fragen
+
+**Wie lang sollte meine erste Session in Loop Dungeon - Incremental sein?**
+Community-Berichte legen nahe, dass zwei bis drei Stunden den Großteil des Spielinhalts abdecken. Plane neunzig Minuten für deine erste Sitzung ein, damit du mindestens einen Prestige-Zyklus abschließt und noch Zeit zum Experimentieren hast.
+
+**Ist dieser Loop Dungeon Incremental Erste-Tag-Guide auch nach Patches noch nützlich?**
+Ja – die strukturellen Ratschläge (Launch-Probleme beheben, ein Sustain plus zwei Schadensrollen, zuerst breite Upgrades kaufen) hängen nicht von Versionsnummern ab. Nur die konkrete Workaround-Liste kann sich ändern, sobald der Entwickler den codesignierten Build ausliefert.
+
+**Das Spiel startet unter Windows 11 nicht. Was sollte ich zuerst versuchen?**
+Entsperre die Spieldateien über den lokalen Dateibrowser von Steam, aktualisiere dann die Windows-Sicherheitsdefinitionen und starte neu. Wenn das nicht hilft, probiere die Startoption `-force-d3d11` und kontaktiere den Entwickler mit deinem Windows-Build und einem Screenshot.
+
+**Verliere ich beim Prestige alles?**
+Du verlierst deine Upgrades aus dem Run, aber der Reset gewährt Bonuswährung, die du für permanente Nachkäufe ausgibst. Nichts, was du als Held oder System freigeschaltet hast, verschwindet dauerhaft – allerdings haben importierte Demo-Spielstände bei manchen Spielern Anzeigefehler bei gesperrten Skills verursacht.
+
+## Die Kurzfassung
+
+Am ersten Tag in Loop Dungeon - Incremental geht es um die Reihenfolge: Bring den Launcher zum Laufen, wähle eine Party mit einem Sustain und zwei Schadensausteilern, kaufe günstige breite Upgrades vor den tiefen und behandle dein erstes Prestige als wiederholbare Routine statt als Ziellinie. Wenn du das so machst, wirkt der Zwei-bis-drei-Stunden-Bogen wie ein dichtes, vollständiges Erlebnis statt wie ein gehetzter Durchlauf. Die Dungeon-Loops sind kurz – dein Setup muss es nicht sein.

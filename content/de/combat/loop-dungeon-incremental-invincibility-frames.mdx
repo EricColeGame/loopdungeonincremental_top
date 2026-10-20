@@ -1,0 +1,104 @@
+export const metadata = {
+  title: "Loop Dungeon Incremental Unverwundbarkeitsframes erklärt: Ausweichfenster, Timing und Kampftipps",
+  description: "Erfahre, wie Loop Dungeon Incremental Unverwundbarkeitsframes funktionieren, wie du Ausweichfenster mitten im Kampf erkennst und welche Gruppenaufstellungen das Beste aus dem I-Frame-Timing herausholen.",
+  category: "combat",
+  date: "2026-10-20",
+}
+
+Timing entscheidet in Loop Dungeon Incremental über Runs. Unverwundbarkeitsframes sind die unsichtbaren Fenster, die darüber bestimmen, ob eine Burst-Fähigkeit sauber trifft oder ob deine Frontlinie einen Boss-Schlag einsteckt, den sie niemals hätte nehmen dürfen. Die meisten Spieler beenden einen Loop, ohne sie je zu bemerken, und wundern sich dann, warum dieselbe Gruppe, die durch Ebene zwölf spaziert ist, plötzlich auf Ebene fünfzehn zusammenbricht. Wer Loop Dungeon Incremental Unverwundbarkeitsframes versteht, verwandelt dieses Rätselraten in einen wiederholbaren Plan, den du testen, verfeinern und in jeden neuen Loop mitnehmen kannst.
+
+Die gute Nachricht: Du musst das Spiel nicht dataminen, um Loop Dungeon Incremental Unverwundbarkeitsframes gut zu nutzen. Du brauchst eine wiederholbare Methode, sie zu beobachten, eine Gruppe, die sie ausnutzen kann, und realistische Erwartungen daran, wovor I-Frames dich bewahren können und wovor nicht. Dieser Leitfaden deckt alle drei Punkte ab – mit dem Hinweis, dass der Entwickler keine offiziellen Frame-Daten veröffentlicht hat, sodass alles Folgende Genre-Konventionen mit beobachtbarem, testbarem Verhalten verbindet.
+
+## Was Unverwundbarkeitsframes in Loop Dungeon Incremental bedeuten
+
+Ein Unverwundbarkeitsframe ist ein kurzer Moment, in dem eine Figur eingehenden Schaden ignoriert. In Actionspielen stammt dieses Fenster normalerweise von einem Ausweichrollen. In einem gruppenbasierten inkrementellen Dungeon-Crawler wie diesem ist es weit wahrscheinlicher, dass I-Frames an Fähigkeitsanimationen, Effektauflösungen oder bestimmte Upgrade-Zustände gekoppelt sind. Dieser Unterschied ist wichtig, weil er verändert, was du kontrollierst: Du timst keinen Tastendruck, sondern die Reihenfolge, in der deine Helden handeln.
+
+Die offizielle Beschreibung auf dem [Loop Dungeon - Incremental Steam Community Hub](https://steamcommunity.com/app/4621970) stellt das Spiel darum herum, eine Heldengruppe durch endlose Dungeon-Loops zu führen, Beute zu sammeln, permanente Upgrades freizuschalten und Synergien aufzubauen. Nichts in dieser Präsentation verspricht manuelles Ausweichen, und nichts verspricht frame-perfekte Verteidigung. Betrachte Unverwundbarkeitsframes als eine emergente Eigenschaft des Fähigkeitsdesigns und nicht als Kernmechanik.
+
+| Begriff | Bedeutung in einfachen Worten | Warum es im Run wichtig ist |
+|---|---|---|
+| Unverwundbarkeitsframes (I-Frames) | Ein kurzer Zeitraum, in dem Schaden vollständig ignoriert wird | Lässt einen Helden einen schweren Treffer überleben, der sonst den Run beenden würde |
+| Ausweichfenster | Der Abschnitt einer Fähigkeit oder eines Effekts, der diese Immunität gewährt | Bestimmt, wann du deinen Burst ansetzt |
+| Tick-Rate | Wie oft Schaden-über-Zeit-Effekte wirken | I-Frames können einen Tick oder mehrere absorbieren, je nach Überlappung |
+| Hitstun | Kurze Unterbrechung nach einem Treffer | Kann eine Fähigkeit abbrechen, bevor ihre I-Frames überhaupt beginnen |
+| Damage Gating | Eine Obergrenze, wie viel ein einzelner Treffer verursachen kann | Imitiert manchmal I-Frames, ist aber ein separates System |
+
+Die praktische Erkenntnis ist einfach: I-Frames sind ein Planungsproblem. Wenn das Activate deines Priesters vor dem großen Schlag des Gegners aufgelöst wird, findet die Interaktion, um die du die Gruppe herum gebaut hast, tatsächlich statt. Wird es danach aufgelöst, verlierst du den Helden und die Synergie gleichzeitig.
+
+## Wie Loop Dungeon Incremental Unverwundbarkeitsframes mit Schadensarten interagieren
+
+Nicht jeder Angriff respektiert ein Immunitätsfenster gleichermaßen, und genau hier brechen die meisten Annahmen zusammen. Mehrfachtreffer-Angriffe, Schaden-über-Zeit-Effekte und einzelne schwere Schläge interagieren alle unterschiedlich mit I-Frames. Berichte aus der Community und allgemeines Genre-Verhalten legen die folgenden Muster nahe, aber überprüfe sie in deinen eigenen Runs, bevor du eine Strategie darauf aufbaust.
+
+| Schadensquelle | Typisches I-Frame-Verhalten | Worauf du achten solltest |
+|---|---|---|
+| Einzelner schwerer Schlag | Vollständig absorbiert, wenn er im Fenster landet | Der klarste Testfall, um zu bestätigen, dass ein Fenster existiert |
+| Mehrfachtreffer-Kombo | Teilweise absorbiert; spätere Treffer landen oft | Schaden erscheint reduziert, nicht eliminiert |
+| Schaden über Zeit | Hängt vom Tick-Timing ab; kann vollständig oder teilweise übersprungen werden | Beobachte die Lebensleiste zwischen sichtbaren Treffern |
+| Spezialangriffe von Bosssen | Meist absorbiert, aber die Erholungsframes danach sind verwundbar | Der gefährliche Moment kommt oft direkt nach dem Ende der Immunität |
+| Umgebungs- oder Ebeneneffekte | Ignoriert I-Frames häufig vollständig | Gehe nicht davon aus, dass Immunität Gefahren abdeckt |
+
+Aus dieser Tabelle folgen zwei Gewohnheiten. Erstens: Gehe niemals davon aus, dass ein I-Frame-Fenster die gesamte Animation abdeckt; der verwundbare Schwanz ist der Ort, an dem Helden sterben. Zweitens: Wenn ein Run scheitert, frage dich, ob der Schaden von einem Treffer oder von einem Tick kam. Das sind unterschiedliche Probleme mit unterschiedlichen Lösungen, und Unverwundbarkeitsframes für einen Schaden-über-Zeit-Tod verantwortlich zu machen, lässt dich am falschen Teil des Builds schrauben.
+
+## Den Kampf lesen: Hinweise, dass ein Held sich in einem I-Frame-Fenster befindet
+
+Du kannst nicht managen, was du nicht siehst, und Loop Dungeon Incremental stempelt keinen Timer auf den Bildschirm. Lerne stattdessen die Anzeichen. Das sind die Hinweise, die Spieler am häufigsten nutzen, um abzuleiten, dass ein Held gerade immun ist, und sie lohnen sich zu merken, bevor du mit der Gruppenreihenfolge experimentierst.
+
+- **Schadenszahlen verschwinden, statt zu schrumpfen.** Eine reduzierte Zahl bedeutet Schadensminderung; gar keine Zahl bedeutet meist Immunität.
+- **Die Lebensleiste bleibt völlig still** während einer Animation, die sie normalerweise anknabbert.
+- **Ein Fähigkeitseffekt bleibt über seinen visuellen Höhepunkt hinaus bestehen.** Das anhaltende Leuchten oder die Aura ist oft das Fenster selbst.
+- **Die Angriffsanimation des Gegners läuft ohne Reaktion ab.** Kein Zucken, kein Treffergeräusch, kein Taumeln.
+- **Eine Boss-Kombo „überspringt" einen Schritt.** Wenn der zweite Treffer nie registriert wird, warst du in diesem Moment in einem Fenster.
+
+| Hinweis | Sicherheit | Wie du ihn bestätigst |
+|---|---|---|
+| Fehlende Schadenszahlen | Hoch | Wiederhole denselben Kampf dreimal und prüfe die Konsistenz |
+| Statische Lebensleiste | Hoch | Vergleiche mit einem Run ohne ausgerüstete Fähigkeit |
+| Anhaltender visueller Effekt | Mittel | Überlappt mit der Animation, also mit einem zweiten Hinweis verifizieren |
+| Kein Treffergeräusch | Mittel | Audiocues können von anderen Effekten überdeckt werden |
+| Übersprungene Gegneranimation | Allein niedrig | Erst mit einer Schadenszahlen-Prüfung kombinieren, bevor du ihm vertraust |
+
+## Eine Gruppe um Loop Dungeon Incremental Unverwundbarkeitsframes bauen
+
+Die Gruppenaufstellung ist der Ort, an dem sich I-Frame-Wissen auszahlt. Die Vollversion fügte einen Rogue hinzu, der auf hohen Burst-Schaden ausgelegt ist, sowie eine neue Priester-Fähigkeit namens Activate, die auf unerwartete Weise mit den Fähigkeiten anderer Helden interagiert. Beide sind natürliche Kandidaten für die Ausnutzung von I-Frames, denn Burst will ein sicheres Fenster und Activate will präzise Reihenfolge.
+
+| Rolle | Relevanz für I-Frames | Praktischer Ansatz |
+|---|---|---|
+| Rogue (Burst-Schaden) | Will innerhalb eines geschützten Fensters feuern | Burst nach dem platzieren, was Immunität gewährt |
+| Priester mit Activate | Löst heldenübergreifende Interaktionen aus, die Fenster erzeugen können | Activate einzeln gegen die Fähigkeit jedes Helden testen |
+| Frontlinien-Helden | Fangen Treffer ab, während Fenster anderswo aktiv sind | Positionierung staffeln, damit Tanks nicht gleichzeitig immun sind |
+| Sustain oder Heilung | Füllt die Lücke nach dem Ende der Immunität | Heilung auf den verwundbaren Schwanz timen, nicht auf den geschützten Höhepunkt |
+
+Eine nützliche Faustregel: Stapel niemals alle deine defensiven Effekte auf einmal. Immunität, die sich überlappt, ist verschwendete Immunität. Staffele deine Fenster so, dass, wenn eines schließt, ein anderes öffnet. Spieler, die von flüssigem Fortschritt durch tiefere Loops berichten, beschreiben genau diese Art von Sequenzierung, selbst wenn sie den Begriff Unverwundbarkeitsframes nicht verwenden.
+
+Erwähnenswert aus Spielererfahrung: Mehrere Steam-Rezensionen beschreiben das Prestige-System als wenig lohnend und die Inhalte als kurz, wobei Runs in etwa zwei Stunden abgeschlossen sind. Das macht Effizienz wichtiger, nicht unwichtiger. Jedes verschwendete Burst-Fenster macht einen größeren Anteil eines kurzen Runs aus, also ist es einer der günstigsten Leistungsgewinne, Loop Dungeon Incremental Unverwundbarkeitsframes früh lesen zu lernen.
+
+## Wie du Unverwundbarkeitsframes selbst testest (ohne Datamining)
+
+Da keine offiziellen Frame-Daten existieren, ist Selbsttesten der einzige verlässliche Weg. Die folgende Methode ist bewusst langweilig: eine Variable ändern, wiederholen, aufzeichnen. Sie funktioniert, weil sie das Rauschen entfernt, das Kämpfe zufällig wirken lässt.
+
+| Schritt | Aktion | Was du lernst |
+|---|---|---|
+| 1 | Wähle eine einzelne wiederholbare Begegnung | Erzeugt eine stabile Ausgangsbasis |
+| 2 | Entferne alle Schaden-über-Zeit-Quellen | Trennt Treffer von Ticks |
+| 3 | Führe den Kampf mit einer deaktivierten Fähigkeit durch | Etabliert ein Kontrollergebnis |
+| 4 | Aktiviere die Fähigkeit wieder und wiederhole dreimal | Bestätigt, ob ein Fenster existiert |
+| 5 | Verschiebe die Position der Fähigkeit in der Reihenfolge um einen Schritt | Kartiert Anfang und Ende des Fensters |
+| 6 | Zeichne den Kampf auf und scrubb Bild für Bild | Verwandelt Gefühl in eine tatsächliche Schätzung |
+
+Zwei Warnungen. Erstens: Vertraue keiner einzelnen Beobachtung; die Kampfvarianz wird dich belügen. Zweitens: Jage keinen exakten Frame-Zahlen hinterher. Ohne Entwicklerdaten ist deine Messung eine Schätzung, und eine konsistent verwendete Schätzung ist wertvoller als eine präzise Zahl, die du nicht verifizieren kannst. Baue deine Rotation um beobachtetes Verhalten, nicht um eine Zahl, die jemand ohne Belege gepostet hat.
+
+Wenn du dich austauschen möchtest, sind die [Steam-Community-Diskussionen zu Loop Dungeon - Incremental](https://steamcommunity.com/app/4621970) der direkteste Ort, um andere Spieler zu fragen, was sie beobachtet haben. Frame-Daten-Threads sind selten, aber Diskussionen über Kampftempo und Gruppensynergien kommen regelmäßig auf.
+
+## FAQ: Loop Dungeon Incremental Unverwundbarkeitsframes
+
+**Veröffentlicht Loop Dungeon Incremental offizielle Unverwundbarkeitsframe-Daten?**
+Zum Zeitpunkt dieses Textes nicht. Der Entwickler hat Patch-Notes und technische Fixes geteilt, aber keine Frame-für-Frame-Kampfdokumentation. Jedes Timing, das du online zitiert siehst, sollte als Spielerschätzung und nicht als Spezifikation behandelt werden.
+
+**Welche Fähigkeiten geben die längsten Unverwundbarkeitsframes in Loop Dungeon Incremental?**
+Es gibt kein verifiziertes Ranking. Community-Berichte deuten auf längere, aufwendigere Fähigkeitsanimationen als wahrscheinlichste Kandidaten hin, und das Activate des Priesters ist es wert, getestet zu werden, weil es mit den Fähigkeiten anderer Helden interagiert. Teste jede Fähigkeit in einer kontrollierten Begegnung, statt einer Liste zu vertrauen.
+
+**Schützen Unverwundbarkeitsframes vor Bosssen und Schaden über Zeit?**
+Gegen direkte Boss-Angriffe oft ja, wobei die verwundbare Erholung nach dem Fenster meist die eigentliche Gefahr ist. Gegen Schaden-über-Zeit-Ticks ist der Schutz inkonsistent und hängt vom Tick-Timing ab. Baue keine Strategie, die annimmt, dass I-Frames alles abdecken.
+
+**Kann ich das Spiel abschließen, ohne Loop Dungeon Incremental Unverwundbarkeitsframes zu lernen?**
+Viele Spieler tun das, da die Kampagne kurz ist. Aber wenn du sauberere Runs, weniger verschwendete Burst-Fenster und ein besseres Verständnis dafür willst, warum bestimmte Gruppen auf derselben Ebene immer wieder scheitern, ist das Lesen dieser Fenster die wertvollste Fähigkeit, die du entwickeln kannst.
